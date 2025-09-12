@@ -107,6 +107,14 @@
             margin-top: 10px;
             font-size: 0.9em;
         }
+
+        /* Buttons Container */
+        .buttons-container {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
         
         .buy-button {
             background: linear-gradient(45deg, #FF1717, #e74c3c);
@@ -117,16 +125,49 @@
             font-weight: bold;
             border-radius: 10px;
             cursor: pointer;
-            width: 100%;
-            margin-bottom: 20px;
             transition: all 0.3s ease;
             text-transform: uppercase;
             letter-spacing: 1px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
         }
         
         .buy-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(231, 76, 60, 0.4);
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-button {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            border: none;
+            padding: 18px 25px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 80px;
+            height: 58px;
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-button img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
         }
         
         .tagline {
@@ -293,6 +334,22 @@
             .installer-section {
                 padding: 40px 25px;
             }
+
+            /* Buttons responsive */
+            .buttons-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .buy-button {
+                width: 100%;
+                min-width: unset;
+            }
+
+            .whatsapp-button {
+                width: 100%;
+                min-width: unset;
+            }
         }
         
         @media (max-width: 480px) {
@@ -309,9 +366,21 @@
                 font-size: 1.1em;
             }
 
+            .whatsapp-button {
+                padding: 15px 25px;
+                font-size: 1.1em;
+                height: 52px;
+            }
+
             .description-section,
             .installer-section {
                 padding: 30px 20px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .buttons-container {
+                flex-direction: row;
             }
         }
     </style>
@@ -330,9 +399,19 @@
                     <div class="discount-badge">82% OFF</div>
                 </div>
                 
-                <a href="https://pay.hotmart.com/G76287480I?off=hjt19llj&bid=1757658917659" target="_blank">
-                    <button class="buy-button">Comprar Ahora</button>
-                </a>
+                <div class="buttons-container">
+                    <a href="https://pay.hotmart.com/G76287480I?off=hjt19llj&bid=1757658917659" target="_blank" class="buy-button">
+                        Comprar Ahora
+                    </a>
+                    
+                    <a href="https://wa.me/5214621579719?text=Hola%2C%20me%20interesa%20el%20curso%20de%20SolidWorks" 
+                       class="whatsapp-button" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="Contactar por WhatsApp">
+                        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" alt="WhatsApp">
+                    </a>
+                </div>
                 
                 <div class="tagline">¡La práctica te lleva a la perfección!</div>
                 <div class="tagline">Único pago + Acceso de por vida</div>
@@ -398,18 +477,10 @@
                 + Videos paso a paso para que puedas instalarlo sin ningún problema
             </p>
             
-            <a href="https://pay.hotmart.com/G76287480I?off=hjt19llj" target="_blank">
-                <button class="buy-button">Obtener Acceso Completo - $14.999,00 ARS</button>
+            <a href="https://pay.hotmart.com/G76287480I?off=hjt19llj" target="_blank" class="buy-button">
+                Obtener Acceso Completo - $14.999,00 ARS
             </a>
         </section>
     </div>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5214621579719?text=Hola%2C%20me%20interesa%20el%20curso%20de%20SolidWorks" 
-       class="whatsapp-float" 
-       target="_blank"
-       rel="noopener noreferrer">
-        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp">
-    </a>
 </body>
 </html>
