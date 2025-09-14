@@ -193,6 +193,222 @@
             border-radius: 15px;
         }
 
+        /* Problem & Solution Section */
+        .problem-solution-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        .problem-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .problem-title {
+            font-size: 2.3em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .problem-subtitle {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .problems-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .problem-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .problem-icon {
+            font-size: 1.8em;
+            flex-shrink: 0;
+        }
+
+        .problem-text {
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .solution-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .solution-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #fff200;
+        }
+
+        .solution-text {
+            font-size: 1.2em;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .benefits-section {
+            margin-bottom: 40px;
+        }
+
+        .benefits-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #fff200;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 18px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .benefit-icon {
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+
+        .benefit-text {
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .investment-box {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .investment-title {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .investment-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #2d3748;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .problem-solution-section {
+                padding: 40px 25px;
+            }
+
+            .problem-title {
+                font-size: 1.9em;
+            }
+
+            .problems-list {
+                gap: 15px;
+            }
+
+            .problem-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                padding: 20px 15px;
+            }
+
+            .benefits-list {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .benefit-item {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .investment-box {
+                padding: 30px 20px;
+            }
+
+            .investment-title {
+                font-size: 1.8em;
+            }
+
+            .cta-button {
+                width: 100%;
+                padding: 18px 30px;
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .problem-title {
+                font-size: 1.6em;
+            }
+
+            .solution-box {
+                padding: 25px 20px;
+            }
+        }
+
         /* Product Description */
         .description-section {
             background: white;
@@ -297,6 +513,120 @@
             object-fit: contain;
         }
 
+        /* Preview Section */
+        .preview-section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .preview-content {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .preview-image {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .access-section {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        .access-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .access-title {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #ffd700;
+        }
+
+        .access-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: left;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .step-number {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #2d3748;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .warning-box {
+            background: rgba(255, 193, 7, 0.2);
+            border: 2px solid #ffc107;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .whatsapp-contact-button {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .whatsapp-contact-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -333,6 +663,34 @@
 
             .installer-section {
                 padding: 40px 25px;
+            }
+
+            .preview-section {
+                padding: 30px 25px;
+            }
+
+            .access-section {
+                padding: 40px 25px;
+            }
+
+            .access-title {
+                font-size: 1.8em;
+            }
+
+            .step {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .step-text {
+                font-size: 1em;
+            }
+
+            .whatsapp-contact-button {
+                width: 100%;
+                padding: 18px 30px;
+                font-size: 1.1em;
             }
 
             /* Buttons responsive */
@@ -375,6 +733,10 @@
             .description-section,
             .installer-section {
                 padding: 30px 20px;
+            }
+
+            .preview-section {
+                padding: 25px 20px;
             }
         }
 
@@ -482,6 +844,14 @@
             </a>
         </section>
 
+        <!-- Product Preview Section -->
+        <section class="preview-section">
+            <div class="preview-content">
+                <img src="https://static.wixstatic.com/media/32c95b_c44665bb25514f4ab4b2285ba776eaec~mv2.webp" 
+                     alt="Vista previa del contenido del libro SolidWorks" 
+                     class="preview-image"
+                     loading="lazy">
+            </div>
         </section>
 
         <!-- Access Instructions Section -->
@@ -526,126 +896,6 @@
                 </a>
             </div>
         </section>
-    </div>
-
-    <style>
-        .access-section {
-            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-            color: white;
-            border-radius: 20px;
-            padding: 50px 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-        }
-
-        .access-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .access-title {
-            font-size: 2.2em;
-            font-weight: 700;
-            margin-bottom: 40px;
-            color: #ffd700;
-        }
-
-        .access-steps {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        .step {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 25px;
-            border-radius: 15px;
-            text-align: left;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .step-number {
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            color: #2d3748;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5em;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .step-text {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .warning-box {
-            background: rgba(255, 193, 7, 0.2);
-            border: 2px solid #ffc107;
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
-            font-size: 1.1em;
-        }
-
-        .whatsapp-contact-button {
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
-            border: none;
-            padding: 20px 40px;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .whatsapp-contact-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
-        }
-
-        @media (max-width: 768px) {
-            .access-section {
-                padding: 40px 25px;
-            }
-
-            .access-title {
-                font-size: 1.8em;
-            }
-
-            .step {
-                flex-direction: column;
-                text-align: center;
-                gap: 15px;
-            }
-
-            .step-text {
-                font-size: 1em;
-            }
-
-            .whatsapp-contact-button {
-                width: 100%;
-                padding: 18px 30px;
-                font-size: 1.1em;
-            }
-        }
-    </style>
     </div>
 </body>
 </html>
