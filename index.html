@@ -536,6 +536,97 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
 
+        /* Free Sample Section */
+        .free-sample-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        .free-sample-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .free-sample-title {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .free-sample-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 35px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .free-sample-button {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.4em;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 25px rgba(76, 175, 80, 0.3);
+            margin-bottom: 25px;
+        }
+
+        .free-sample-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(76, 175, 80, 0.4);
+            background: linear-gradient(45deg, #45a049, #4CAF50);
+        }
+
+        .free-sample-note {
+            font-size: 1em;
+            opacity: 0.8;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .free-sample-section {
+                padding: 40px 25px;
+            }
+
+            .free-sample-title {
+                font-size: 1.8em;
+            }
+
+            .free-sample-subtitle {
+                font-size: 1.1em;
+            }
+
+            .free-sample-button {
+                width: 100%;
+                padding: 18px 30px;
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .free-sample-title {
+                font-size: 1.6em;
+            }
+
+            .free-sample-button {
+                font-size: 1.1em;
+            }
+        }
+
         .access-section {
             background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
             color: white;
@@ -851,6 +942,26 @@
                      alt="Vista previa del contenido del libro SolidWorks" 
                      class="preview-image"
                      loading="lazy">
+            </div>
+        </section>
+
+        <!-- Free Sample Section -->
+        <section class="free-sample-section">
+            <div class="free-sample-content">
+                <h2 class="free-sample-title">
+                    🎁 ¿Quieres ver la calidad de nuestros planos?
+                </h2>
+                <p class="free-sample-subtitle">
+                    Descarga algunos planos de muestra completamente GRATIS y comprueba por ti mismo la calidad profesional de nuestro contenido
+                </p>
+                
+                <a href="https://drive.google.com/drive/u/0/folders/1UsTtGKXgguc7PElcl3y6Vt433DZj8Nvq" class="free-sample-button" target="_blank">
+                    📋 Ver Planos de Muestra GRATIS
+                </a>
+                
+                <p class="free-sample-note">
+                    💡 Sin compromiso • Descarga inmediata • Calidad profesional garantizada
+                </p>
             </div>
         </section>
 
