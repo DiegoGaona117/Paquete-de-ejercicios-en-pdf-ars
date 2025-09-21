@@ -855,6 +855,10 @@
             .hero-content h1 {
                 font-size: 1.7em;
             }
+
+            .bonus-course-title {
+                font-size: 24px;
+            }
             
             .new-price {
                 font-size: 1.8em;
@@ -886,6 +890,258 @@
                 flex-direction: row;
             }
         }
+
+        /* ===========================================
+           BONUS COURSE SECTION
+        =========================================== */
+        .bonus-course-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            min-height: 400px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .bonus-left-content {
+            flex: 1;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .bonus-tag {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .bonus-course-title {
+            font-size: 42px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .bonus-course-subtitle {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.9;
+            max-width: 400px;
+        }
+
+        .bonus-right-content {
+            flex: 0.8;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .bonus-course-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            max-width: 350px;
+            width: 100%;
+        }
+
+        .free-tag {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+        }
+
+        .bonus-card-title {
+            color: #2d3436;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===========================================
+           REVIEWS SECTION
+        =========================================== */
+        .reviews-section {
+            margin-bottom: 40px;
+        }
+
+        .reviews-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .reviews-header {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .reviews-header h2 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .rating-summary {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .overall-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .rating-summary .rating-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ff6b6b;
+        }
+
+        .stars-large {
+            font-size: 2rem;
+            color: #ffd700;
+        }
+
+        .total-reviews {
+            color: #6c757d;
+            font-size: 1.1rem;
+        }
+
+        .comments-section {
+            padding: 30px;
+        }
+
+        .comment {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .comment:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .user-avatar {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .user-details h3 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 2px;
+        }
+
+        .comment-date {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .comment-rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .comment-rating .stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+
+        .rating-value {
+            background: #ff6b6b;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .comment-text {
+            color: #495057;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+        }
+
+        .no-comments {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+            font-style: italic;
+        }
+
     </style>
 </head>
 
