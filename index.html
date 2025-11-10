@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro SolidWorks +130 Hojas + Videos Tutoriales</title>
     
-    <!-- Meta Pixel Code -->
+    <!-- Preconnect para optimización -->
+    <link rel="preconnect" href="https://static.wixstatic.com">
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <!-- Meta Pixel Code - PRIORIDAD MÁXIMA -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -21,15 +27,6 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=373277814132384&ev=PageView&noscript=1"
     /></noscript>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-RN68VLQLTW');
-    </script>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Libro SolidWorks +130 Hojas + Videos Tutoriales">
@@ -48,7 +45,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            line-height: 1.9;
+            line-height: 1.6;
             color: #333;
             min-height: 100vh;
         }
@@ -56,63 +53,35 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
         }
 
-        /* Hero Section */
+        /* Hero Section - OPTIMIZADO MÓVIL */
         .hero-section {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-            padding: 40px;
-            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: 1fr;
+            gap: 25px;
             align-items: center;
         }
         
         .hero-content h1 {
-            font-size: 2.5em;
+            font-size: 1.6em;
             font-weight: 700;
             color: #2c3e50;
             margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        .price-section {
-            margin-bottom: 30px;
-        }
-        
-        .old-price {
-            text-decoration: line-through;
-            color: #e74c3c;
-            font-size: 1.3em;
-            margin-right: 15px;
-        }
-        
-        .new-price {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #2c3e50;
+            line-height: 1.3;
         }
 
-        .discount-badge {
-            background: linear-gradient(45deg, #e74c3c, #c0392b);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 25px;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
-            font-size: 0.9em;
-        }
-
-        /* Buttons Container */
+        /* Buttons Container - OPTIMIZADO TÁCTIL */
         .buttons-container {
             display: flex;
-            gap: 15px;
-            align-items: center;
+            flex-direction: column;
+            gap: 12px;
             margin-bottom: 20px;
         }
         
@@ -120,355 +89,161 @@
             background: linear-gradient(45deg, #FF1717, #e74c3c);
             color: white;
             border: none;
-            padding: 18px 40px;
-            font-size: 1.3em;
+            padding: 16px 30px;
+            font-size: 1.1em;
             font-weight: bold;
             border-radius: 10px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: transform 0.2s ease;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             text-decoration: none;
-            display: inline-block;
+            display: block;
             text-align: center;
-            flex: 1;
-            min-width: 250px;
+            min-height: 48px;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
         }
         
-        .buy-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.4);
+        .buy-button:active {
+            transform: scale(0.98);
         }
 
-        /* WhatsApp Button */
+        /* WhatsApp Button - OPTIMIZADO */
         .whatsapp-button {
             background: linear-gradient(45deg, #25D366, #128C7E);
             color: white;
             border: none;
-            padding: 18px 25px;
-            font-size: 1.3em;
+            padding: 14px 25px;
+            font-size: 1.1em;
             font-weight: bold;
             border-radius: 10px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: transform 0.2s ease;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 80px;
-            height: 58px;
+            min-height: 48px;
+            touch-action: manipulation;
+            gap: 10px;
         }
 
-        .whatsapp-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        .whatsapp-button:active {
+            transform: scale(0.98);
         }
 
         .whatsapp-button img {
-            width: 42px;
-            height: 42px;
+            width: 32px;
+            height: 32px;
             object-fit: contain;
         }
         
         .tagline {
             color: #3498db;
-            font-weight: bold;
-            font-style: italic;
-            font-size: 1.1em;
+            font-weight: 600;
+            font-size: 1em;
             text-align: center;
+            margin: 8px 0;
         }
         
+        /* Video Container - LAZY LOAD OPTIMIZADO */
         .video-container {
             position: relative;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-            background: #f8f9fa;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            background: #000;
             aspect-ratio: 16/9;
+            cursor: pointer;
+        }
+        
+        .video-thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 0, 0, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            pointer-events: none;
         }
         
         .video-container iframe {
             width: 100%;
             height: 100%;
-            border-radius: 15px;
-        }
-
-        /* Problem & Solution Section */
-        .problem-solution-section {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            border-radius: 20px;
-            padding: 50px 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-        }
-
-        .problem-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .problem-title {
-            font-size: 2.3em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .problem-subtitle {
-            font-size: 1.3em;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-
-        .problems-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .problem-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .problem-icon {
-            font-size: 1.8em;
-            flex-shrink: 0;
-        }
-
-        .problem-text {
-            font-size: 1.1em;
-            font-weight: 500;
-        }
-
-        .solution-box {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 30px;
-            border-radius: 20px;
-            margin-bottom: 30px;
-            backdrop-filter: blur(15px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .solution-title {
-            font-size: 1.6em;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #fff200;
-        }
-
-        .solution-text {
-            font-size: 1.2em;
-            font-weight: 500;
-            line-height: 1.4;
-        }
-
-        .benefits-section {
-            margin-bottom: 40px;
-        }
-
-        .benefits-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 25px;
-            color: #fff200;
-        }
-
-        .benefits-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .benefit-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 18px;
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .benefit-icon {
-            font-size: 1.5em;
-            flex-shrink: 0;
-        }
-
-        .benefit-text {
-            font-size: 1em;
-            font-weight: 500;
-        }
-
-        .investment-box {
-            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-
-        .investment-title {
-            font-size: 2.2em;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #ffd700;
-        }
-
-        .investment-subtitle {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .cta-button {
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            color: #2d3748;
             border: none;
-            padding: 20px 40px;
-            font-size: 1.3em;
-            font-weight: bold;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.4);
-        }
-
-        @media (max-width: 768px) {
-            .problem-solution-section {
-                padding: 40px 25px;
-            }
-
-            .problem-title {
-                font-size: 1.9em;
-            }
-
-            .problems-list {
-                gap: 15px;
-            }
-
-            .problem-item {
-                flex-direction: column;
-                text-align: center;
-                gap: 10px;
-                padding: 20px 15px;
-            }
-
-            .benefits-list {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-
-            .benefit-item {
-                justify-content: center;
-                text-align: center;
-            }
-
-            .investment-box {
-                padding: 30px 20px;
-            }
-
-            .investment-title {
-                font-size: 1.8em;
-            }
-
-            .cta-button {
-                width: 100%;
-                padding: 18px 30px;
-                font-size: 1.1em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .problem-title {
-                font-size: 1.6em;
-            }
-
-            .solution-box {
-                padding: 25px 20px;
-            }
         }
 
         /* Product Description */
         .description-section {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-            padding: 40px;
-            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 20px;
+            margin-bottom: 30px;
         }
 
         .description-title {
-            font-size: 2em;
+            font-size: 1.6em;
             font-weight: 700;
             color: #2c3e50;
             margin-bottom: 25px;
             text-align: center;
+            line-height: 1.3;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
         }
 
         .feature-card {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
 
         .feature-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
+            font-size: 2.5em;
+            margin-bottom: 12px;
         }
 
         .feature-title {
-            font-size: 1.4em;
+            font-size: 1.3em;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .feature-description {
             font-size: 1em;
-            opacity: 0.9;
-            line-height: 1.9;
+            opacity: 0.95;
+            line-height: 1.6;
         }
 
         .highlight {
             background: linear-gradient(45deg, #f39c12, #e67e22);
             color: white;
-            padding: 3px 8px;
-            border-radius: 5px;
+            padding: 2px 6px;
+            border-radius: 4px;
             font-weight: bold;
         }
 
@@ -477,39 +252,41 @@
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
             border-radius: 20px;
-            padding: 50px 40px;
-            margin-bottom: 40px;
+            padding: 40px 25px;
+            margin-bottom: 30px;
             text-align: center;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
         }
 
         .installer-title {
-            font-size: 2.2em;
+            font-size: 1.8em;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            line-height: 1.3;
         }
 
         .installer-subtitle {
-            font-size: 1.2em;
+            font-size: 1.1em;
             opacity: 0.9;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            line-height: 1.5;
         }
 
         .solidworks-logo {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 30px;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 25px;
             background: white;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
 
         .solidworks-logo img {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             object-fit: contain;
         }
 
@@ -517,9 +294,9 @@
         .preview-section {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-            padding: 40px;
-            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
             text-align: center;
         }
 
@@ -530,10 +307,9 @@
 
         .preview-image {
             width: 100%;
-            max-width: 900px;
             height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
 
         /* Free Sample Section */
@@ -541,10 +317,10 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border-radius: 20px;
-            padding: 50px 40px;
-            margin-bottom: 40px;
+            padding: 40px 25px;
+            margin-bottom: 30px;
             text-align: center;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
         }
 
         .free-sample-content {
@@ -553,595 +329,208 @@
         }
 
         .free-sample-title {
-            font-size: 2.2em;
+            font-size: 1.8em;
             font-weight: 700;
             margin-bottom: 20px;
-            line-height: 1.2;
+            line-height: 1.3;
         }
 
         .free-sample-subtitle {
-            font-size: 1.2em;
-            margin-bottom: 35px;
+            font-size: 1.1em;
+            margin-bottom: 30px;
             opacity: 0.95;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         .free-sample-button {
             background: linear-gradient(45deg, #4CAF50, #45a049);
             color: white;
             border: none;
-            padding: 20px 50px;
-            font-size: 1.4em;
-            font-weight: bold;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 10px 25px rgba(76, 175, 80, 0.3);
-            margin-bottom: 25px;
-        }
-
-        .free-sample-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(76, 175, 80, 0.4);
-            background: linear-gradient(45deg, #45a049, #4CAF50);
-        }
-
-        .free-sample-note {
-            font-size: 1em;
-            opacity: 0.8;
-            font-style: italic;
-        }
-
-        @media (max-width: 768px) {
-            .free-sample-section {
-                padding: 40px 25px;
-            }
-
-            .free-sample-title {
-                font-size: 1.8em;
-            }
-
-            .free-sample-subtitle {
-                font-size: 1.1em;
-            }
-
-            .free-sample-button {
-                width: 100%;
-                padding: 18px 30px;
-                font-size: 1.2em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .free-sample-title {
-                font-size: 1.6em;
-            }
-
-            .free-sample-button {
-                font-size: 1.1em;
-            }
-        }
-
-        .access-section {
-            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-            color: white;
-            border-radius: 20px;
-            padding: 50px 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-        }
-
-        .access-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .access-title {
-            font-size: 2.2em;
-            font-weight: 700;
-            margin-bottom: 40px;
-            color: #ffd700;
-        }
-
-        .access-steps {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        .step {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 25px;
-            border-radius: 15px;
-            text-align: left;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .step-number {
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            color: #2d3748;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5em;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .step-text {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .warning-box {
-            background: rgba(255, 193, 7, 0.2);
-            border: 2px solid #ffc107;
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
-            font-size: 1.1em;
-        }
-
-        .whatsapp-contact-button {
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
-            border: none;
-            padding: 20px 40px;
+            padding: 18px 40px;
             font-size: 1.2em;
             font-weight: bold;
             border-radius: 15px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: transform 0.2s ease;
             text-decoration: none;
             display: inline-block;
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+            margin-bottom: 20px;
+            min-height: 48px;
+            touch-action: manipulation;
         }
 
-        .whatsapp-contact-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+        .free-sample-button:active {
+            transform: scale(0.98);
         }
 
-        .bonus-course-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            min-height: 400px;
-            margin-bottom: 40px;
-            display: flex;
-            align-items: center;
-            color: white;
+        .free-sample-note {
+            font-size: 0.95em;
+            opacity: 0.85;
+            font-style: italic;
         }
 
-        .bonus-left-content {
-            flex: 1;
-            padding: 60px 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .bonus-tag {
-                font-size: 36px;
-            }
-
-        .bonus-course-title {
-            font-size: 42px;
-            font-weight: bold;
-            line-height: 1.2;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
+        /* Desktop optimizations */
+        @media (min-width: 769px) {
             .container {
-                padding: 15px;
-            }
-            .bonus-course-section {
-                flex-direction: column;
-                margin: 20px 0;
+                padding: 20px;
             }
 
-            .bonus-tag {
-                font-size: 28px;
-            }
-
-            .bonus-course-title {
-                font-size: 32px;
-            }
-
-            .bonus-left-content {
-                padding: 40px 30px;
-                text-align: center;
-            }
             .hero-section {
-                grid-template-columns: 1fr;
-                padding: 30px 25px;
-                gap: 25px;
-            }
-            
-            .hero-content {
-                order: 2;
-                text-align: center;
-            }
-            
-            .video-container {
-                order: 1;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                padding: 40px;
+                margin-bottom: 40px;
             }
             
             .hero-content h1 {
-                font-size: 2em;
+                font-size: 2.5em;
+                line-height: 1.2;
             }
-            
-            .new-price {
+
+            .buttons-container {
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            .buy-button {
+                flex: 1;
+                min-width: 250px;
+                padding: 18px 40px;
+                font-size: 1.3em;
+            }
+
+            .whatsapp-button {
+                width: auto;
+                min-width: 80px;
+                padding: 18px 25px;
+                font-size: 1.3em;
+            }
+
+            .whatsapp-button img {
+                width: 42px;
+                height: 42px;
+            }
+
+            .tagline {
+                font-size: 1.1em;
+            }
+
+            .description-section {
+                padding: 40px;
+                margin-bottom: 40px;
+            }
+
+            .description-title {
                 font-size: 2em;
             }
 
             .features-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                margin-bottom: 30px;
+            }
+
+            .feature-card {
+                padding: 30px;
+            }
+
+            .feature-icon {
+                font-size: 3em;
+                margin-bottom: 15px;
+            }
+
+            .feature-title {
+                font-size: 1.4em;
+                margin-bottom: 15px;
+            }
+
+            .feature-description {
+                line-height: 1.9;
             }
 
             .installer-section {
-                padding: 40px 25px;
+                padding: 50px 40px;
+                margin-bottom: 40px;
+            }
+
+            .installer-title {
+                font-size: 2.2em;
+                margin-bottom: 20px;
+            }
+
+            .installer-subtitle {
+                font-size: 1.2em;
+                margin-bottom: 30px;
+            }
+
+            .solidworks-logo {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 30px;
+            }
+
+            .solidworks-logo img {
+                width: 80px;
+                height: 80px;
             }
 
             .preview-section {
-                padding: 30px 25px;
+                padding: 40px;
+                margin-bottom: 40px;
             }
 
-            .access-section {
-                padding: 40px 25px;
+            .free-sample-section {
+                padding: 50px 40px;
+                margin-bottom: 40px;
             }
 
-            .access-title {
-                font-size: 1.8em;
+            .free-sample-title {
+                font-size: 2.2em;
             }
 
-            .step {
-                flex-direction: column;
-                text-align: center;
-                gap: 15px;
+            .free-sample-subtitle {
+                font-size: 1.2em;
+                margin-bottom: 35px;
+                line-height: 1.6;
             }
 
-            .step-text {
+            .free-sample-button {
+                padding: 20px 50px;
+                font-size: 1.4em;
+                margin-bottom: 25px;
+            }
+
+            .free-sample-note {
                 font-size: 1em;
             }
-
-            .whatsapp-contact-button {
-                width: 100%;
-                padding: 18px 30px;
-                font-size: 1.1em;
-            }
-
-            /* Buttons responsive */
-            .buttons-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .buy-button {
-                width: 100%;
-                min-width: unset;
-            }
-
-            .whatsapp-button {
-                width: 100%;
-                min-width: unset;
-            }
         }
-        
-        @media (max-width: 480px) {
+
+        /* Tablet optimization */
+        @media (min-width: 501px) and (max-width: 768px) {
             .hero-content h1 {
-                font-size: 1.7em;
+                font-size: 2em;
             }
 
-            .bonus-course-title {
-                font-size: 24px;
-            }
-            
-            .new-price {
+            .description-title {
                 font-size: 1.8em;
             }
-            
-            .buy-button {
-                padding: 15px 30px;
-                font-size: 1.1em;
-            }
 
-            .whatsapp-button {
-                padding: 15px 25px;
-                font-size: 1.1em;
-                height: 52px;
-            }
-
-            .description-section,
-            .installer-section {
-                padding: 30px 20px;
-            }
-
-            .preview-section {
-                padding: 25px 20px;
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media (min-width: 769px) {
-            .buttons-container {
-                flex-direction: row;
+        /* Reduce animations on low-end devices */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
             }
         }
-
-        /* ===========================================
-           BONUS COURSE SECTION
-        =========================================== */
-        .bonus-course-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            min-height: 400px;
-            margin-bottom: 40px;
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-
-        .bonus-left-content {
-            flex: 1;
-            padding: 60px 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .bonus-tag {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .bonus-course-title {
-            font-size: 42px;
-            font-weight: bold;
-            line-height: 1.2;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .bonus-course-subtitle {
-            font-size: 16px;
-            line-height: 1.6;
-            opacity: 0.9;
-            max-width: 400px;
-        }
-
-        .bonus-right-content {
-            flex: 0.8;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px;
-        }
-
-        .bonus-course-card {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-            position: relative;
-            max-width: 350px;
-            width: 100%;
-        }
-
-        .free-tag {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 14px;
-            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
-        }
-
-        .bonus-card-title {
-            color: #2d3436;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .card-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        /* ===========================================
-           REVIEWS SECTION
-        =========================================== */
-        .reviews-section {
-            margin-bottom: 40px;
-        }
-
-        .reviews-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .reviews-header {
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-            padding: 40px 30px;
-            text-align: center;
-            color: white;
-        }
-
-        .reviews-header h2 {
-            font-size: 2.5rem;
-            margin: 0;
-            font-weight: 700;
-        }
-
-        .rating-summary {
-            background: #f8f9fa;
-            padding: 30px;
-            text-align: center;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .overall-rating {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .rating-summary .rating-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #ff6b6b;
-        }
-
-        .stars-large {
-            font-size: 2rem;
-            color: #ffd700;
-        }
-
-        .total-reviews {
-            color: #6c757d;
-            font-size: 1.1rem;
-        }
-
-        .comments-section {
-            padding: 30px;
-        }
-
-        .comment {
-            background: #fff;
-            border: 1px solid #e9ecef;
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .comment:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .comment-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .user-info {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .user-avatar {
-            width: 45px;
-            height: 45px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .user-details h3 {
-            color: #2c3e50;
-            font-size: 1.1rem;
-            margin-bottom: 2px;
-        }
-
-        .comment-date {
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-
-        .comment-rating {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .comment-rating .stars {
-            color: #ffd700;
-            font-size: 1.2rem;
-        }
-
-        .rating-value {
-            background: #ff6b6b;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .comment-text {
-            color: #495057;
-            line-height: 1.6;
-            font-size: 1rem;
-        }
-
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #6c757d;
-        }
-
-        .no-comments {
-            text-align: center;
-            padding: 40px;
-            color: #6c757d;
-            font-style: italic;
-        }
-
     </style>
 </head>
 
@@ -1153,7 +542,10 @@
                 <h1>📚 Libro SolidWorks +130 Hojas + Videos Tutoriales + Instalador</h1>
                 
                 <div class="buttons-container">
-                    <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc&bid=1758661787842" target="_blank" class="buy-button">
+                    <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc&bid=1758661787842" 
+                       target="_blank" 
+                       class="buy-button"
+                       rel="noopener">
                         Comprar Ahora
                     </a>
                     
@@ -1162,7 +554,11 @@
                        target="_blank"
                        rel="noopener noreferrer"
                        title="Contactar por WhatsApp">
-                        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" alt="WhatsApp">
+                        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
+                             alt="WhatsApp"
+                             width="32"
+                             height="32"
+                             loading="lazy">
                     </a>
                 </div>
                 
@@ -1170,15 +566,14 @@
                 <div class="tagline">Único pago + Acceso de por vida</div>
             </div>
             
-            <div class="video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/bEWQwtBM9dU?si=HRfAai79dadSqPwj" 
-                    title="Detalles libro SolidWorks" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    loading="lazy">
-                </iframe>
+            <div class="video-container" id="videoContainer">
+                <img src="https://i.ytimg.com/vi/bEWQwtBM9dU/maxresdefault.jpg" 
+                     alt="Video presentación SolidWorks"
+                     class="video-thumbnail"
+                     loading="lazy"
+                     width="1280"
+                     height="720">
+                <div class="play-button">▶</div>
             </div>
         </section>
 
@@ -1216,10 +611,12 @@
         <!-- Installer Section -->
         <section class="installer-section">
             <div class="solidworks-logo">
-                <img src="https://static.wixstatic.com/media/32c95b_1fb5d39a16d2429aa1544093b5b87170~mv2.webp" 
+                <img src="https://static.wixstatic.com/media/32c95b_1b9e11a1e9c24ae6b833d9f439089d82~mv2.webp" 
                      alt="SolidWorks 2022 Logo" 
                      referrerpolicy="no-referrer"
-                     loading="lazy">
+                     loading="lazy"
+                     width="80"
+                     height="80">
             </div>
             
             <h2 class="installer-title">
@@ -1230,34 +627,34 @@
                 + Videos paso a paso para que puedas instalarlo sin ningún problema
             </p>
             
-            <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc&bid=1758661787842" target="_blank" class="buy-button">
+            <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc&bid=1758661787842" 
+               target="_blank" 
+               class="buy-button"
+               rel="noopener">
                 Obtener Acceso Completo - Planos + Videos
             </a>
         </section>
 
         <!-- Product Preview Section -->
-<section class="preview-section">
-    <div class="preview-content">
-        <picture>
-            <!-- Imagen para móvil (se carga en pantallas menores a 500px) -->
-            <source media="(max-width: 500px)" 
-                    srcset="https://static.wixstatic.com/media/32c95b_4e1d0db77563484baba6b2990634f47e~mv2.webp">
-            
-            <!-- Imagen para tablet (se carga en pantallas de 501px a 1023px) -->
-            <source media="(min-width: 501px) and (max-width: 1023px)" 
-                    srcset="https://static.wixstatic.com/media/32c95b_9059df28ecd44244805d198f326438f1~mv2.webp">
-            
-            <!-- Imagen para escritorio (por defecto, pantallas mayores a 1024px) -->
-            <img src="https://static.wixstatic.com/media/32c95b_9059df28ecd44244805d198f326438f1~mv2.webp" 
-                 alt="Vista previa del contenido del libro SolidWorks" 
-                 class="preview-image"
-                 referrerpolicy="no-referrer"
-                 loading="lazy"
-                 width="1200"
-                 height="800">
-        </picture>
-    </div>
-</section>
+        <section class="preview-section">
+            <div class="preview-content">
+                <picture>
+                    <source media="(max-width: 500px)" 
+                            srcset="https://static.wixstatic.com/media/32c95b_4e1d0db77563484baba6b2990634f47e~mv2.webp">
+                    
+                    <source media="(min-width: 501px) and (max-width: 1023px)" 
+                            srcset="https://static.wixstatic.com/media/32c95b_9059df28ecd44244805d198f326438f1~mv2.webp">
+                    
+                    <img src="https://static.wixstatic.com/media/32c95b_9059df28ecd44244805d198f326438f1~mv2.webp" 
+                         alt="Vista previa del contenido del libro SolidWorks" 
+                         class="preview-image"
+                         referrerpolicy="no-referrer"
+                         loading="lazy"
+                         width="1200"
+                         height="800">
+                </picture>
+            </div>
+        </section>
 
         <!-- Free Sample Section -->
         <section class="free-sample-section">
@@ -1269,7 +666,10 @@
                     Descarga algunos planos de muestra completamente GRATIS y comprueba por ti mismo la calidad profesional de nuestro contenido
                 </p>
                 
-                <a href="https://drive.google.com/drive/u/0/folders/1UsTtGKXgguc7PElcl3y6Vt433DZj8Nvq" class="free-sample-button" target="_blank">
+                <a href="https://drive.google.com/drive/u/0/folders/1UsTtGKXgguc7PElcl3y6Vt433DZj8Nvq" 
+                   class="free-sample-button" 
+                   target="_blank"
+                   rel="noopener">
                     📋 Ver Planos de Muestra GRATIS
                 </a>
                 
@@ -1278,7 +678,34 @@
                 </p>
             </div>
         </section>
-  
     </div>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RN68VLQLTW');
+    </script>
+
+    <!-- Scripts al final -->
+    <script>
+        // Lazy load del video YouTube (ahorra datos móviles)
+        const videoContainer = document.getElementById('videoContainer');
+        if (videoContainer) {
+            videoContainer.addEventListener('click', function() {
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://www.youtube.com/embed/bEWQwtBM9dU?autoplay=1';
+                iframe.title = 'Detalles libro SolidWorks';
+                iframe.frameBorder = '0';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                
+                this.innerHTML = '';
+                this.appendChild(iframe);
+            }, { once: true });
+        }
+    </script>
 </body>
 </html>
