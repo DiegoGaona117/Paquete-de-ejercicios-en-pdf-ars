@@ -1236,14 +1236,28 @@
         </section>
 
         <!-- Product Preview Section -->
-        <section class="preview-section">
-            <div class="preview-content">
-                <img src="https://static.wixstatic.com/media/32c95b_4e1d0db77563484baba6b2990634f47e~mv2.webp" 
-                     alt="Vista previa del contenido del libro SolidWorks" 
-                     class="preview-image"
-                     loading="lazy">
-            </div>
-        </section>
+<section class="preview-section">
+    <div class="preview-content">
+        <picture>
+            <!-- Imagen para móvil (se carga en pantallas menores a 500px) -->
+            <source media="(max-width: 500px)" 
+                    srcset="https://static.wixstatic.com/media/32c95b_4e1d0db77563484baba6b2990634f47e~mv2.webp">
+            
+            <!-- Imagen para tablet (se carga en pantallas de 501px a 1023px) -->
+            <source media="(min-width: 501px) and (max-width: 1023px)" 
+                    srcset="https://static.wixstatic.com/media/32c95b_9059df28ecd44244805d198f326438f1~mv2.webp">
+            
+            <!-- Imagen para escritorio (por defecto, pantallas mayores a 1024px) -->
+            <img src="https://static.wixstatic.com/media/32c95b_9059df28ecd44244805d198f326438f1~mv2.webp" 
+                 alt="Vista previa del contenido del libro SolidWorks" 
+                 class="preview-image"
+                 referrerpolicy="no-referrer"
+                 loading="lazy"
+                 width="1200"
+                 height="800">
+        </picture>
+    </div>
+</section>
 
         <!-- Free Sample Section -->
         <section class="free-sample-section">
