@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libro SolidWorks: Documentos en PDF + Videos Tutoriales</title>
+    <title>Libro SolidWorks +130 Hojas + Videos Tutoriales</title>
     
     <!-- Preconnect para optimización -->
     <link rel="preconnect" href="https://static.wixstatic.com">
@@ -109,34 +109,66 @@
             transform: scale(0.98);
         }
 
-        /* WhatsApp Button - OPTIMIZADO */
+        /* WhatsApp Button - OCULTO (solo flotante visible) */
         .whatsapp-button {
+            display: none;
+        }
+
+        /* WhatsApp Flotante - FIXED BUTTON */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
             background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
-            border: none;
-            padding: 14px 25px;
-            font-size: 1.1em;
-            font-weight: bold;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-            text-decoration: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 48px;
-            touch-action: manipulation;
-            gap: 10px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            animation: pulse 2s infinite;
         }
 
-        .whatsapp-button:active {
-            transform: scale(0.98);
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
 
-        .whatsapp-button img {
-            width: 32px;
-            height: 32px;
+        .whatsapp-float:active {
+            transform: scale(0.95);
+        }
+
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
             object-fit: contain;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8);
+            }
+        }
+
+        /* Ajustar en desktop */
+        @media (min-width: 769px) {
+            .whatsapp-float {
+                width: 70px;
+                height: 70px;
+            }
+
+            .whatsapp-float img {
+                width: 40px;
+                height: 40px;
+            }
         }
         
         .tagline {
@@ -539,7 +571,7 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-content">
-                <h1>📚 Libro SolidWorks: Documentos en PDF + Videos Tutoriales + Instalador</h1>
+                <h1>📚 Libro SolidWorks +130 Hojas + Videos Tutoriales + Instalador</h1>
                 
                 <div class="buttons-container">
                     <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc&bid=1758661787842" 
@@ -563,7 +595,7 @@
                 </div>
                 
                 <div class="tagline">¡La práctica te lleva a la perfección!</div>
-                <div class="tagline">Paga una sola vez y obtén acceso para siempre</div>
+                <div class="tagline">Único pago + Acceso de por vida</div>
             </div>
             
             <div class="video-container" id="videoContainer">
@@ -611,7 +643,7 @@
         <!-- Installer Section -->
         <section class="installer-section">
             <div class="solidworks-logo">
-                <img src="https://static.wixstatic.com/media/32c95b_1fb5d39a16d2429aa1544093b5b87170~mv2.webp" 
+                <img src="https://static.wixstatic.com/media/32c95b_1b9e11a1e9c24ae6b833d9f439089d82~mv2.webp" 
                      alt="SolidWorks 2022 Logo" 
                      referrerpolicy="no-referrer"
                      loading="lazy"
@@ -679,6 +711,20 @@
             </div>
         </section>
     </div>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/5214622856400?text=Hola%2C%20me%20interesa%20el%20libro%20en%20PDF%20de%20piezas%20con%20videos%20de%20SolidWorks" 
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       title="Contactar por WhatsApp"
+       aria-label="Contactar por WhatsApp">
+        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
+             alt="WhatsApp"
+             width="35"
+             height="35"
+             loading="lazy">
+    </a>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
