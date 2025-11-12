@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libro SolidWorks +130 Hojas + Videos Tutoriales</title>
+    <title>Libro SolidWorks PDF + Videos Tutoriales</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
     
-    <!-- Preconnect para optimización -->
     <link rel="preconnect" href="https://static.wixstatic.com">
     <link rel="preconnect" href="https://www.youtube.com">
     <link rel="preconnect" href="https://connect.facebook.net">
     <link rel="preconnect" href="https://www.googletagmanager.com">
 
-    <!-- Meta Pixel Code - PRIORIDAD MÁXIMA -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -28,9 +28,8 @@
     src="https://www.facebook.com/tr?id=373277814132384&ev=PageView&noscript=1"
     /></noscript>
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Libro SolidWorks +130 Hojas + Videos Tutoriales">
-    <meta property="og:description" content="Libro PDF completo con +130 hojas de planos técnicos + videos explicativos para cada pieza.">
+    <meta property="og:title" content="Libro SolidWorks +130 páginas + Videos Tutoriales">
+    <meta property="og:description" content="Libro PDF completo con +130 páginas de planos técnicos + videos explicativos para cada pieza.">
     <meta property="og:image" content="https://static.wixstatic.com/media/32c95b_b9de4af1e8a84ec2a6ccb4cb636bf869~mv2.webp">
     <meta property="og:url" content="https://cursodiegogaona.com">
     <meta property="og:type" content="website">
@@ -103,6 +102,40 @@
             min-height: 48px;
             touch-action: manipulation;
             -webkit-tap-highlight-color: transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-tag {
+            display: block;
+            font-size: 0.85em;
+            margin-top: 6px;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .price-original {
+            text-decoration: line-through;
+            opacity: 0.8;
+            font-size: 0.9em;
+            margin-right: 8px;
+        }
+
+        .price-discount {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .price-save {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-size: 0.75em;
+            margin-left: 8px;
+            font-weight: bold;
         }
         
         .buy-button:active {
@@ -405,6 +438,313 @@
             font-style: italic;
         }
 
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        .faq-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto 30px;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 20px 0;
+            text-align: left;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            transition: color 0.3s ease;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .faq-question:hover {
+            color: #3498db;
+        }
+
+        .faq-question:active {
+            transform: scale(0.98);
+        }
+
+        .faq-icon {
+            font-size: 1.5em;
+            font-weight: 300;
+            color: #3498db;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-question[aria-expanded="true"] .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0;
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding-bottom: 20px;
+        }
+
+        .faq-answer p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .faq-answer strong {
+            color: #2c3e50;
+        }
+
+        .faq-cta {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            margin-top: 30px;
+        }
+
+        .faq-cta-text {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* --- FIN DEL CSS ORIGINAL --- */
+        /* --- INICIO DEL CSS MEJORADO PARA SECCIONES DE VALOR Y APRENDIZAJE --- */
+
+        /* 1. Estilos para la Sección: ¿Qué vas a recibir exactamente? (.package-section) */
+        .package-section {
+            background: white; 
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+        
+        .package-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        /* Contenedor de la cuadrícula */
+        .package-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna en móvil */
+            gap: 20px;
+        }
+        
+        /* Estilos para cada tarjeta del paquete */
+        .package-item {
+            display: flex; /* Para alinear ícono y texto */
+            align-items: flex-start;
+            padding: 20px;
+            background: #f8f8ff; /* Fondo muy claro (casi blanco) */
+            border: 1px solid #e0e6ff; /* Borde sutil */
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .package-item:hover {
+            transform: translateY(-5px); /* Pequeño efecto hover */
+            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.15); /* Sombra de color */
+        }
+        
+        .package-icon {
+            font-size: 2.5em;
+            color: #667eea; /* Color primario de tu paleta (morado/azul) */
+            margin-right: 15px;
+            flex-shrink: 0; /* Asegura que el ícono no se comprima */
+        }
+        
+        .package-content h3 {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        
+        .package-content p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* 2. Estilos para la Sección: Lo que aprenderás (.learning-section) */
+        .learning-section {
+            background: white; 
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        .learning-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna en móvil */
+            gap: 15px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .learning-item {
+            display: flex;
+            align-items: flex-start;
+            background: #ffffff; /* Fondo blanco */
+            border-left: 5px solid #3498db; /* Línea de color azul para destacar */
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .learning-check {
+            font-size: 1.5em;
+            color: #27ae60; /* Verde brillante para el check */
+            margin-right: 10px;
+            line-height: 1;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .learning-item p {
+            font-size: 1em;
+            color: #333;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* 3. Estilos para la Sección: ¿Para quién es este libro? (.audience-section) */
+        .audience-section {
+            background: white; 
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        .audience-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna en móvil */
+            gap: 25px;
+        }
+
+        .audience-card {
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Estilo para la tarjeta "SÍ" (Color de éxito) */
+        .audience-yes {
+            background: #e6fff3; /* Fondo verde muy suave */
+            border: 2px solid #2ecc71; /* Borde verde fuerte */
+        }
+
+        /* Estilo para la tarjeta "NO" (Color de precaución/advertencia) */
+        .audience-no {
+            background: #fff0f0; /* Fondo rojo muy suave */
+            border: 2px solid #e74c3c; /* Borde rojo fuerte */
+        }
+
+        .audience-card-title {
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .audience-yes .audience-card-title {
+            color: #27ae60; /* Título verde */
+        }
+
+        .audience-no .audience-card-title {
+            color: #c0392b; /* Título rojo oscuro */
+        }
+
+        .audience-list {
+            list-style: none; /* Eliminar el estilo de lista por defecto */
+            padding-left: 0;
+        }
+
+        .audience-list li {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            align-items: flex-start;
+        }
+
+        .audience-yes .audience-list li::before {
+            content: "✅"; /* Icono de pulgar arriba */
+            margin-right: 10px;
+            font-size: 1.2em;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .audience-no .audience-list li::before {
+            content: "🚫"; /* Icono de prohibido */
+            margin-right: 10px;
+            font-size: 1.2em;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+        
+        /* --- FIN DEL CSS MEJORADO --- */
+
         /* Desktop optimizations */
         @media (min-width: 769px) {
             .container {
@@ -433,6 +773,15 @@
                 min-width: 250px;
                 padding: 18px 40px;
                 font-size: 1.3em;
+            }
+
+            .price-tag {
+                font-size: 0.75em;
+                margin-top: 8px;
+            }
+
+            .price-discount {
+                font-size: 1.4em;
             }
 
             .whatsapp-button {
@@ -539,6 +888,47 @@
             .free-sample-note {
                 font-size: 1em;
             }
+
+            .faq-section {
+                padding: 50px 40px;
+                margin-bottom: 40px;
+            }
+
+            .faq-title {
+                font-size: 2.2em;
+                margin-bottom: 40px;
+            }
+
+            .faq-question {
+                padding: 25px 0;
+                font-size: 1.2em;
+            }
+
+            .faq-answer p {
+                font-size: 1.05em;
+                line-height: 1.8;
+            }
+
+            .faq-cta-text {
+                font-size: 1.5em;
+                margin-bottom: 25px;
+            }
+            
+            /* Desktop media queries para las secciones mejoradas */
+            .package-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en desktop */
+                gap: 30px;
+            }
+            
+            .learning-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en desktop */
+                gap: 20px 30px; /* Separación horizontal y vertical */
+            }
+            
+            .audience-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en desktop */
+                gap: 40px;
+            }
         }
 
         /* Tablet optimization */
@@ -563,15 +953,116 @@
                 transition-duration: 0.01ms !important;
             }
         }
+
+        /* --- INICIO DEL CSS PARA TESTIMONIOS (PRUEBA SOCIAL) --- */
+.testimonials-section {
+    background: #f0f4ff; /* Fondo ligeramente azulado/claro */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.testimonials-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en móvil */
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid #667eea; /* Borde de color para destacar */
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: "❝";
+    font-family: serif;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4em;
+    color: #e0e6ff;
+    line-height: 0.5;
+    z-index: 1;
+}
+
+.testimonial-text {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    z-index: 2;
+    position: relative;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ccc; /* Placeholder color */
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #667eea;
+}
+
+.author-details p {
+    margin: 0;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1em;
+}
+
+.author-details small {
+    color: #7f8c8d;
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+/* Rating Stars */
+.rating {
+    color: #f39c12; /* Color de estrella dorado */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Optimización para Desktop (2 o 3 columnas) */
+@media (min-width: 769px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
+        gap: 40px;
+    }
+}
+/* --- FIN DEL CSS PARA TESTIMONIOS (PRUEBA SOCIAL) --- */
     </style>
 </head>
 
 <body>
     <div class="container">
-        <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-content">
-                <h1>📚 Libro SolidWorks +130 Hojas + Videos Tutoriales + Instalador</h1>
+                <h1>📚 Libro de planos en PDF + Videos Tutoriales + Instalador SolidWorks</h1>
                 
                 <div class="buttons-container">
                     <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc&bid=1758661787842" 
@@ -579,9 +1070,14 @@
                        class="buy-button"
                        rel="noopener">
                         Comprar Ahora
+                        <span class="price-tag">
+                            <span class="price-original">$28 USD</span>
+                            <span class="price-discount">$13.99 USD</span>
+                            <span class="price-save">AHORRA 50%</span>
+                        </span>
                     </a>
                     
-                    <a href="https://wa.me/5214622856400?text=Hola%2C%20me%20interesa%20el%20libro%20en%20PDF%20de%20piezas%20con%20videos%20de%20SolidWorks" 
+                    <a href="https://wa.me/5214621579719?text=Hola%2C%20vi%20todos%20los%20detalles%20del%20paquete%20de%20planos%20+%20videos%20y%20tengo%20la%20siguiente%20duda:" 
                        class="whatsapp-button" 
                        target="_blank"
                        rel="noopener noreferrer"
@@ -596,6 +1092,9 @@
                 
                 <div class="tagline">¡La práctica te lleva a la perfección!</div>
                 <div class="tagline">Único pago + Acceso de por vida</div>
+                <p style="text-align: center; color: #7f8c8d; font-size: 0.9em; margin-top: 10px;">
+                    💳 El precio se convierte automáticamente a tu moneda local
+                </p>
             </div>
             
             <div class="video-container" id="videoContainer">
@@ -609,16 +1108,15 @@
             </div>
         </section>
 
-        <!-- Product Description -->
         <section class="description-section">
             <h2 class="description-title">🔥 ¿Aprendiendo SolidWorks pero sin planos REALES para practicar?</h2>
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">📖</div>
-                    <div class="feature-title">Libro Completo PDF</div>
+                    <div class="feature-icon">📚</div>
+                    <div class="feature-title">Paquete Completo PDF</div>
                     <div class="feature-description">
-                        <span class="highlight">+130 hojas</span> con planos técnicos profesionales desde piezas simples hasta diseños complejos industriales
+                        <span class="highlight">+50</span> planos técnicos profesionales desde piezas simples hasta diseños complejos industriales
                     </div>
                 </div>
                 
@@ -626,7 +1124,7 @@
                     <div class="feature-icon">🎥</div>
                     <div class="feature-title">Videos Explicativos</div>
                     <div class="feature-description">
-                        <span class="highlight">Cada pieza incluye su video tutorial</span> paso a paso en alta definición - nunca más te quedarás trabado
+                        <span class="highlight">Cada plano incluye su video tutorial</span> paso a paso en alta definición - nunca más te quedarás trabado
                     </div>
                 </div>
                 
@@ -640,7 +1138,101 @@
             </div>
         </section>
 
-        <!-- Installer Section -->
+        <section class="package-section">
+            <h2 class="package-title">📦 ¿Qué vas a recibir exactamente?</h2>
+            
+            <div class="package-grid">
+                <div class="package-item">
+                    <div class="package-icon">📄</div>
+                    <div class="package-content">
+                        <h3>Paquete PDF Completo</h3>
+                        <p><strong>+50</strong> planos técnicos de piezas individuales, desde nivel básico hasta avanzado</p>
+                    </div>
+                </div>
+
+                <div class="package-item">
+                    <div class="package-icon">🎬</div>
+                    <div class="package-content">
+                        <h3>50 Videos Tutoriales</h3>
+                        <p>Cada Plano incluye su <strong>video paso a paso en español</strong> para que nunca te quedes atorado</p>
+                    </div>
+                </div>
+
+                <div class="package-item">
+                    <div class="package-icon">💿</div>
+                    <div class="package-content">
+                        <h3>Instalador SolidWorks 2022</h3>
+                        <p><strong>Premium SP5 + videos de instalación</strong> - Activación permanente incluida</p>
+                    </div>
+                </div>
+
+                <div class="package-item">
+                    <div class="package-icon">🔄</div>
+                    <div class="package-content">
+                        <h3>Actualizaciones Gratis</h3>
+                        <p><strong>Acceso de por vida</strong> a todos los nuevos planos y videos que se agreguen al paquete</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-section">
+            <h2 class="learning-title">🎓 Lo que aprenderás</h2>
+            
+            <div class="learning-grid">
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Modelado de <strong>piezas mecánicas individuales</strong> desde básico a avanzado</p>
+                </div>
+
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Interpretación de <strong>planos técnicos profesionales</strong> con todas sus especificaciones</p>
+                </div>
+
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Técnicas y herramientas <strong>usadas en la industria real</strong></p>
+                </div>
+
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Progresión estructurada: <strong>empieza con piezas simples, termina modelando piezas complejas</strong></p>
+                </div>
+
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Geometrías avanzadas: <strong>Creación de geometrías, redondeos, chaflanes, cortes complejos, barridos, operaciones múltiples, simetrías, matríces</strong></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="audience-section">
+            <h2 class="audience-title">¿Para quién es este libro?</h2>
+            
+            <div class="audience-grid">
+                <div class="audience-card audience-yes">
+                    <h3 class="audience-card-title">ES PERFECTO PARA TI SI:</h3>
+                    <ul class="audience-list">
+                        <li>Eres <strong>estudiante de ingeniería</strong> o diseño industrial</li>
+                        <li>Eres <strong>técnico</strong> que quiere mejorar sus habilidades en SolidWorks</li>
+                        <li>Necesitas <strong>práctica con planos reales</strong> para tu portafolio</li>
+                        <li>Buscas <strong>ejemplos profesionales</strong> que puedas seguir paso a paso</li>
+                        <li>Quieres aprender con <strong>progresión estructurada</strong> desde básico a avanzado</li>
+                    </ul>
+                </div>
+
+                <div class="audience-card audience-no">
+                    <h3 class="audience-card-title">❌ NO ES PARA TI SI:</h3>
+                    <ul class="audience-list">
+                        <li>Ya tienes <strong>+3 años de experiencia</strong> profesional con SolidWorks</li>
+                        <li>Buscas específicamente <strong>proyectos de ensambles</strong> (este libro son piezas individuales)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section class="installer-section">
             <div class="solidworks-logo">
                 <img src="https://static.wixstatic.com/media/32c95b_1b9e11a1e9c24ae6b833d9f439089d82~mv2.webp" 
@@ -664,11 +1256,16 @@
                class="buy-button"
                rel="noopener">
                 Obtener Acceso Completo - Planos + Videos
+                <span class="price-tag">
+                    <span class="price-original">$28 USD</span>
+                    <span class="price-discount">$13.99 USD</span>
+                    <span class="price-save">AHORRA 50%</span>
+                </span>
             </a>
         </section>
 
-        <!-- Product Preview Section -->
         <section class="preview-section">
+            <h2 class="audience-title">Planos en PDF que contiene este paquete</h2>
             <div class="preview-content">
                 <picture>
                     <source media="(max-width: 500px)" 
@@ -688,7 +1285,6 @@
             </div>
         </section>
 
-        <!-- Free Sample Section -->
         <section class="free-sample-section">
             <div class="free-sample-content">
                 <h2 class="free-sample-title">
@@ -710,10 +1306,183 @@
                 </p>
             </div>
         </section>
+
+        <section class="faq-section">
+            <h2 class="faq-title">❓ Preguntas Frecuentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cada plano incluye su video tutorial?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>¡Sí!</strong> Cada uno de los 50 planos incluye su video explicativo paso a paso en español. Nunca te quedarás trabado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cómo recibo el producto después de comprar?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La compra se realiza a través de <strong>Hotmart</strong> (plataforma segura). Una vez que completes el pago, recibirás un correo electrónico con las instrucciones para crear tu cuenta y acceder inmediatamente a todo el contenido.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Ofrecen garantía de devolución?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Sí, tienes 7 días de garantía.</strong> Si el contenido no cumple tus expectativas, puedes solicitar el reembolso completo dentro de los primeros 7 días después de tu compra.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué incluye exactamente el instalador de SolidWorks 2022?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Incluye el <strong>instalador completo de SolidWorks 2022 Premium SP5</strong> + videos paso a paso que te guían durante todo el proceso de instalación. Una vez instalado, quedará <strong>activado permanentemente</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿El instalador funciona en Mac o solo en Windows?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El instalador es <strong>compatible únicamente con Windows 10 en adelante</strong>. No funciona en Mac de forma nativa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué archivos incluye el paquete?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El paquete contiene <strong>50 archivos PDF de planos técnicos profesionales</strong> + enlaces directos para acceder al video tutorial de cada pieza.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Los videos están en español o inglés?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Todos los videos están en español</strong>, con explicaciones claras y detalladas para que puedas seguir cada paso sin problemas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cuántos videos incluye y habrá más contenido en el futuro?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Actualmente incluye <strong>50 videos tutoriales</strong>. Lo mejor es que <strong>constantemente se agregan nuevos planos y videos</strong>, y todas las actualizaciones futuras son <strong>completamente GRATIS</strong> para quienes ya compraron.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Las actualizaciones futuras tienen costo adicional?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>No. Todas las actualizaciones son gratis para siempre.</strong> Pago único y acceso de por vida a todo el contenido nuevo que se agregue.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <p class="faq-cta-text">¿Listo para dominar SolidWorks con planos profesionales?</p>
+                <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc&bid=1758661787842" 
+                   target="_blank" 
+                   class="buy-button"
+                   rel="noopener">
+                    Comenzar Ahora - Acceso Inmediato
+                    <span class="price-tag">
+                        <span class="price-original">$28 USD</span>
+                        <span class="price-discount">$13.99 USD</span>
+                        <span class="price-save">AHORRA 50%</span>
+                    </span>
+                </a>
+            </div>
+        </section>
     </div>
 
-    <!-- WhatsApp Flotante -->
-    <a href="https://wa.me/5214622856400?text=Hola%2C%20me%20interesa%20el%20libro%20en%20PDF%20de%20piezas%20con%20videos%20de%20SolidWorks" 
+        <section class="testimonials-section">
+            <h2 class="testimonials-title">✨ Lo que dicen nuestros estudiantes</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "El instalador funcionó perfecto, sin problemas. Los videos son muy claros y el libro me dio la práctica real que buscaba. ¡Excelente relación calidad-precio! Lo recomiendo a cualquier estudiante de ingeniería."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://static.wixstatic.com/media/32c95b_7c53b2fe08c6472abea1f11dedd10170~mv2.png" alt="Avatar Juan M." class="author-avatar" loading="lazy">
+                        <div class="author-details">
+                            <p>Juan M.</p>
+                            <small>Estudiante de Ingeniería Mecánica</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Por fin encontré planos con medidas reales, no son solo ejercicios. Me ayudó muchísimo a armar mi portafolio. Las actualizaciones gratuitas son un plus increíble, estoy muy satisfecha con la compra."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://static.wixstatic.com/media/32c95b_113e9b88f0c442c798e6f58e8b470c4c~mv2.png" alt="Avatar Ana R." class="author-avatar" loading="lazy">
+                        <div class="author-details">
+                            <p>Ana R.</p>
+                            <small>Diseñadora Industrial</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Soy técnico y necesitaba mejorar mi interpretación de planos. Intento resolver las piezas por mi mismo pero el video tutorial para cada pieza es un salvavidas. Comprarlo a este precio fue la mejor inversión para mi desarrollo profesional en SolidWorks."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://static.wixstatic.com/media/32c95b_5336d0946b644da68878df30073aae69~mv2.png" alt="Avatar Luis G." class="author-avatar" loading="lazy">
+                        <div class="author-details">
+                            <p>Luis G.</p>
+                            <small>Técnico Mecánico Industrial</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta" style="margin-top: 40px; border-top: none;">
+                <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc&bid=1758661787842" 
+                   target="_blank" 
+                   class="buy-button"
+                   rel="noopener"
+                   style="max-width: 400px; margin: 0 auto;">
+                    Comprar Ahora
+                    <span class="price-tag">
+                        <span class="price-original">$25 USD</span>
+                        <span class="price-discount">$12 USD</span>
+                        <span class="price-save">AHORRA 52%</span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+    <a href="https://wa.me/5214621579719?text=Hola%2C%20vi%20todos%20los%20detalles%20del%20paquete%20de%20planos%20+%20videos%20y%20tengo%20la%20siguiente%20duda:"
        class="whatsapp-float" 
        target="_blank"
        rel="noopener noreferrer"
@@ -726,7 +1495,6 @@
              loading="lazy">
     </a>
 
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -735,7 +1503,6 @@
       gtag('config', 'G-RN68VLQLTW');
     </script>
 
-    <!-- Scripts al final -->
     <script>
         // Lazy load del video YouTube (ahorra datos móviles)
         const videoContainer = document.getElementById('videoContainer');
@@ -752,6 +1519,26 @@
                 this.appendChild(iframe);
             }, { once: true });
         }
+
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                const answer = this.nextElementSibling;
+                
+                // Close all other open FAQs
+                document.querySelectorAll('.faq-question').forEach(otherButton => {
+                    if (otherButton !== this) {
+                        otherButton.setAttribute('aria-expanded', 'false');
+                        otherButton.nextElementSibling.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current FAQ
+                this.setAttribute('aria-expanded', !isExpanded);
+                answer.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 </html>
