@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica guiada en PDF + Videos Tutoriales</title>
+    
+    <!-- Título optimizado para SEO y Conversión -->
+    <title>Curso SolidWorks: Libro de Planos PDF + 77 Videos Tutoriales | Aprende desde Cero</title>
+    
+    <!-- Meta Description para Google (CRUCIAL PARA SEO) -->
+    <meta name="description" content="Domina SolidWorks con práctica real. Descarga el libro con 77 planos técnicos y videos explicativos paso a paso. Incluye instalador 2022 y certificación. Ideal para estudiantes y profesionales.">
 
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
     
+    <!-- Optimizaciones de carga (Preconnects) -->
     <link rel="preconnect" href="https://static.wixstatic.com">
     <link rel="preconnect" href="https://www.youtube.com">
     <link rel="preconnect" href="https://connect.facebook.net">
     <link rel="preconnect" href="https://www.googletagmanager.com">
 
+    <!-- Facebook Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -27,9 +35,11 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=373277814132384&ev=PageView&noscript=1"
     /></noscript>
+    <!-- End Facebook Pixel Code -->
 
-    <meta property="og:title" content="Libro SolidWorks +77 páginas + Videos Tutoriales">
-    <meta property="og:description" content="Libro PDF completo con +77 páginas de planos técnicos + videos explicativos para cada pieza.">
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
+    <meta property="og:title" content="Libro SolidWorks +77 Planos + Videos Tutoriales">
+    <meta property="og:description" content="Aprende SolidWorks con práctica real. 77 Planos PDF + Videos explicativos paso a paso para cada pieza.">
     <meta property="og:image" content="https://static.wixstatic.com/media/32c95b_1aff33112fd7422e88b7743fda2f6d8c~mv2.webp">
     <meta property="og:url" content="https://cursodiegogaona.com">
     <meta property="og:type" content="website">
@@ -55,7 +65,7 @@
             padding: 15px;
         }
 
-        /* Hero Section - OPTIMIZADO MÓVIL */
+        /* Hero Section */
         .hero-section {
             background: white;
             border-radius: 20px;
@@ -76,7 +86,7 @@
             line-height: 1.3;
         }
 
-        /* Buttons Container - OPTIMIZADO TÁCTIL */
+        /* Buttons Container */
         .buttons-container {
             display: flex;
             flex-direction: column;
@@ -142,7 +152,7 @@
             transform: scale(0.98);
         }
 
-        /* WhatsApp Button - OCULTO (solo flotante visible) */
+        /* WhatsApp Button - Visible on Desktop Header */
         .whatsapp-button {
             display: none;
         }
@@ -183,21 +193,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% {
-                box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-            }
-            50% {
-                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8);
-            }
+            0%, 100% { box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8); }
         }
 
-        /* Ajustar en desktop */
         @media (min-width: 769px) {
             .whatsapp-float {
                 width: 70px;
                 height: 70px;
             }
-
             .whatsapp-float img {
                 width: 40px;
                 height: 40px;
@@ -212,7 +216,7 @@
             margin: 8px 0;
         }
         
-        /* Video Container - LAZY LOAD OPTIMIZADO */
+        /* Video Container */
         .video-container {
             position: relative;
             border-radius: 15px;
@@ -253,7 +257,7 @@
             border: none;
         }
 
-        /* Product Description */
+        /* Description Section */
         .description-section {
             background: white;
             border-radius: 20px;
@@ -375,6 +379,7 @@
             height: auto;
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
 
         /* Free Sample Section */
@@ -545,10 +550,7 @@
             margin-bottom: 20px;
         }
 
-        /* --- FIN DEL CSS ORIGINAL --- */
-        /* --- INICIO DEL CSS MEJORADO PARA SECCIONES DE VALOR Y APRENDIZAJE --- */
-
-        /* 1. Estilos para la Sección: ¿Qué vas a recibir exactamente? (.package-section) */
+        /* Package Section */
         .package-section {
             background: white; 
             border-radius: 20px;
@@ -565,34 +567,32 @@
             margin-bottom: 30px;
         }
         
-        /* Contenedor de la cuadrícula */
         .package-grid {
             display: grid;
-            grid-template-columns: 1fr; /* 1 columna en móvil */
+            grid-template-columns: 1fr;
             gap: 20px;
         }
         
-        /* Estilos para cada tarjeta del paquete */
         .package-item {
-            display: flex; /* Para alinear ícono y texto */
+            display: flex;
             align-items: flex-start;
             padding: 20px;
-            background: #f8f8ff; /* Fondo muy claro (casi blanco) */
-            border: 1px solid #e0e6ff; /* Borde sutil */
+            background: #f8f8ff;
+            border: 1px solid #e0e6ff;
             border-radius: 12px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .package-item:hover {
-            transform: translateY(-5px); /* Pequeño efecto hover */
-            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.15); /* Sombra de color */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.15);
         }
         
         .package-icon {
             font-size: 2.5em;
-            color: #667eea; /* Color primario de tu paleta (morado/azul) */
+            color: #667eea;
             margin-right: 15px;
-            flex-shrink: 0; /* Asegura que el ícono no se comprima */
+            flex-shrink: 0;
         }
         
         .package-content h3 {
@@ -608,7 +608,7 @@
             line-height: 1.6;
         }
 
-        /* 2. Estilos para la Sección: Lo que aprenderás (.learning-section) */
+        /* Learning Section */
         .learning-section {
             background: white; 
             border-radius: 20px;
@@ -627,7 +627,7 @@
 
         .learning-grid {
             display: grid;
-            grid-template-columns: 1fr; /* 1 columna en móvil */
+            grid-template-columns: 1fr;
             gap: 15px;
             max-width: 900px;
             margin: 0 auto;
@@ -636,8 +636,8 @@
         .learning-item {
             display: flex;
             align-items: flex-start;
-            background: #ffffff; /* Fondo blanco */
-            border-left: 5px solid #3498db; /* Línea de color azul para destacar */
+            background: #ffffff;
+            border-left: 5px solid #3498db;
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -645,7 +645,7 @@
 
         .learning-check {
             font-size: 1.5em;
-            color: #27ae60; /* Verde brillante para el check */
+            color: #27ae60;
             margin-right: 10px;
             line-height: 1;
             font-weight: bold;
@@ -659,7 +659,7 @@
             line-height: 1.5;
         }
 
-        /* 3. Estilos para la Sección: ¿Para quién es este libro? (.audience-section) */
+        /* Audience Section */
         .audience-section {
             background: white; 
             border-radius: 20px;
@@ -678,7 +678,7 @@
 
         .audience-grid {
             display: grid;
-            grid-template-columns: 1fr; /* 1 columna en móvil */
+            grid-template-columns: 1fr;
             gap: 25px;
         }
 
@@ -688,16 +688,14 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
 
-        /* Estilo para la tarjeta "SÍ" (Color de éxito) */
         .audience-yes {
-            background: #e6fff3; /* Fondo verde muy suave */
-            border: 2px solid #2ecc71; /* Borde verde fuerte */
+            background: #e6fff3;
+            border: 2px solid #2ecc71;
         }
 
-        /* Estilo para la tarjeta "NO" (Color de precaución/advertencia) */
         .audience-no {
-            background: #fff0f0; /* Fondo rojo muy suave */
-            border: 2px solid #e74c3c; /* Borde rojo fuerte */
+            background: #fff0f0;
+            border: 2px solid #e74c3c;
         }
 
         .audience-card-title {
@@ -706,16 +704,11 @@
             margin-bottom: 15px;
         }
 
-        .audience-yes .audience-card-title {
-            color: #27ae60; /* Título verde */
-        }
-
-        .audience-no .audience-card-title {
-            color: #c0392b; /* Título rojo oscuro */
-        }
+        .audience-yes .audience-card-title { color: #27ae60; }
+        .audience-no .audience-card-title { color: #c0392b; }
 
         .audience-list {
-            list-style: none; /* Eliminar el estilo de lista por defecto */
+            list-style: none;
             padding-left: 0;
         }
 
@@ -724,11 +717,12 @@
             color: #333;
             margin-bottom: 10px;
             line-height: 1.6;
+            display: flex;
             align-items: flex-start;
         }
 
         .audience-yes .audience-list li::before {
-            content: "✅"; /* Icono de pulgar arriba */
+            content: "✅";
             margin-right: 10px;
             font-size: 1.2em;
             line-height: 1;
@@ -736,21 +730,317 @@
         }
 
         .audience-no .audience-list li::before {
-            content: "🚫"; /* Icono de prohibido */
+            content: "🚫";
             margin-right: 10px;
             font-size: 1.2em;
             line-height: 1;
             flex-shrink: 0;
         }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background: #f0f4ff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        .testimonials-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 5px solid #667eea;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: "❝";
+            font-family: serif;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4em;
+            color: #e0e6ff;
+            line-height: 0.5;
+            z-index: 1;
+        }
+
+        .testimonial-text {
+            font-size: 1.1em;
+            font-style: italic;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            z-index: 2;
+            position: relative;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ccc;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 2px solid #667eea;
+        }
+
+        .author-details p {
+            margin: 0;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1em;
+        }
+
+        .author-details small {
+            color: #7f8c8d;
+            font-size: 0.85em;
+            font-weight: normal;
+        }
+
+        .rating {
+            color: #f39c12;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        /* Results Section */
+        .results-section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+
+        .results-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .result-card {
+            background: #f8f8ff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .result-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .result-card h3 {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .result-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Transformation Section */
+        .transformation-section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px 25px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.8) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.6) 0%, transparent 20%);
+        }
+
+        .transformation-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #e74c3c, #3498db, #2ecc71);
+        }
+
+        .transformation-section:hover::before {
+            animation: shine 2s ease-in-out infinite;
+        }
+
+        .transformation-section h2 {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        .transformation-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .before, .after {
+            padding: 30px 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .before:hover, .after:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .before {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffecec 100%);
+            border: 2px solid #e74c3c;
+            animation-delay: 0.1s;
+        }
+
+        .before::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #e74c3c, #c0392b);
+            border-radius: 15px 15px 0 0;
+        }
+
+        .after {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6ffe6 100%);
+            border: 2px solid #27ae60;
+            animation-delay: 0.3s;
+        }
+
+        .after::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #27ae60, #219653);
+            border-radius: 15px 15px 0 0;
+        }
+
+        .before h3, .after h3 {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .before h3 { color: #c0392b; }
+        .after h3 { color: #27ae60; }
+
+        .before ul, .after ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .before li, .after li {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .before li {
+            background: rgba(231, 76, 60, 0.08);
+            border-left: 4px solid #e74c3c;
+        }
+        .before li:hover {
+            background: rgba(231, 76, 60, 0.15);
+            transform: translateX(5px);
+        }
+
+        .after li {
+            background: rgba(39, 174, 96, 0.08);
+            border-left: 4px solid #27ae60;
+        }
+        .after li:hover {
+            background: rgba(39, 174, 96, 0.15);
+            transform: translateX(5px);
+        }
+
+        .before li::before, .after li::before {
+            font-size: 1.3em;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
         
-        /* --- FIN DEL CSS MEJORADO --- */
+        @keyframes shine {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
 
-        /* Desktop optimizations */
+        /* Desktop Optimizations */
         @media (min-width: 769px) {
-            .container {
-                padding: 20px;
-            }
-
+            .container { padding: 20px; }
+            
             .hero-section {
                 grid-template-columns: 1fr 1fr;
                 gap: 40px;
@@ -758,16 +1048,9 @@
                 margin-bottom: 40px;
             }
             
-            .hero-content h1 {
-                font-size: 2.5em;
-                line-height: 1.2;
-            }
-
-            .buttons-container {
-                flex-direction: row;
-                gap: 15px;
-            }
-
+            .hero-content h1 { font-size: 2.5em; line-height: 1.2; }
+            .buttons-container { flex-direction: row; gap: 15px; }
+            
             .buy-button {
                 flex: 1;
                 min-width: 250px;
@@ -775,587 +1058,68 @@
                 font-size: 1.3em;
             }
 
-            .price-tag {
-                font-size: 0.75em;
-                margin-top: 8px;
-            }
-
-            .price-discount {
-                font-size: 1.4em;
-            }
-
             .whatsapp-button {
+                display: flex; /* Visible en header de escritorio */
                 width: auto;
                 min-width: 80px;
                 padding: 18px 25px;
                 font-size: 1.3em;
+                background: linear-gradient(45deg, #25D366, #128C7E);
+                border-radius: 10px;
+                align-items: center;
+                justify-content: center;
             }
+            .whatsapp-button img { width: 42px; height: 42px; }
 
-            .whatsapp-button img {
-                width: 42px;
-                height: 42px;
-            }
-
-            .tagline {
-                font-size: 1.1em;
-            }
-
-            .description-section {
-                padding: 40px;
-                margin-bottom: 40px;
-            }
-
-            .description-title {
-                font-size: 2em;
-            }
-
+            .description-section { padding: 40px; margin-bottom: 40px; }
+            .description-title { font-size: 2em; }
+            
             .features-grid {
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 gap: 30px;
                 margin-bottom: 30px;
             }
+            .feature-card { padding: 30px; }
+            .feature-icon { font-size: 3em; margin-bottom: 15px; }
 
-            .feature-card {
-                padding: 30px;
-            }
+            .installer-section { padding: 50px 40px; margin-bottom: 40px; }
+            .installer-title { font-size: 2.2em; margin-bottom: 20px; }
+            .solidworks-logo { width: 120px; height: 120px; margin-bottom: 30px; }
+            .solidworks-logo img { width: 80px; height: 80px; }
 
-            .feature-icon {
-                font-size: 3em;
-                margin-bottom: 15px;
-            }
+            .free-sample-section { padding: 50px 40px; margin-bottom: 40px; }
+            .free-sample-title { font-size: 2.2em; }
+            .free-sample-button { padding: 20px 50px; font-size: 1.4em; }
 
-            .feature-title {
-                font-size: 1.4em;
-                margin-bottom: 15px;
-            }
-
-            .feature-description {
-                line-height: 1.9;
-            }
-
-            .installer-section {
-                padding: 50px 40px;
-                margin-bottom: 40px;
-            }
-
-            .installer-title {
-                font-size: 2.2em;
-                margin-bottom: 20px;
-            }
-
-            .installer-subtitle {
-                font-size: 1.2em;
-                margin-bottom: 30px;
-            }
-
-            .solidworks-logo {
-                width: 120px;
-                height: 120px;
-                margin-bottom: 30px;
-            }
-
-            .solidworks-logo img {
-                width: 80px;
-                height: 80px;
-            }
-
-            .preview-section {
-                padding: 40px;
-                margin-bottom: 40px;
-            }
-
-            .free-sample-section {
-                padding: 50px 40px;
-                margin-bottom: 40px;
-            }
-
-            .free-sample-title {
-                font-size: 2.2em;
-            }
-
-            .free-sample-subtitle {
-                font-size: 1.2em;
-                margin-bottom: 35px;
-                line-height: 1.6;
-            }
-
-            .free-sample-button {
-                padding: 20px 50px;
-                font-size: 1.4em;
-                margin-bottom: 25px;
-            }
-
-            .free-sample-note {
-                font-size: 1em;
-            }
-
-            .faq-section {
-                padding: 50px 40px;
-                margin-bottom: 40px;
-            }
-
-            .faq-title {
-                font-size: 2.2em;
-                margin-bottom: 40px;
-            }
-
-            .faq-question {
-                padding: 25px 0;
-                font-size: 1.2em;
-            }
-
-            .faq-answer p {
-                font-size: 1.05em;
-                line-height: 1.8;
-            }
-
-            .faq-cta-text {
-                font-size: 1.5em;
-                margin-bottom: 25px;
-            }
+            .faq-section { padding: 50px 40px; margin-bottom: 40px; }
+            .faq-title { font-size: 2.2em; margin-bottom: 40px; }
+            .faq-question { padding: 25px 0; font-size: 1.2em; }
             
-            /* Desktop media queries para las secciones mejoradas */
-            .package-grid {
-                grid-template-columns: repeat(2, 1fr); /* 2 columnas en desktop */
-                gap: 30px;
-            }
+            .package-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+            .learning-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 30px; }
+            .audience-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+            .testimonials-grid { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+            .results-grid { grid-template-columns: repeat(3, 1fr); }
             
-            .learning-grid {
-                grid-template-columns: repeat(2, 1fr); /* 2 columnas en desktop */
-                gap: 20px 30px; /* Separación horizontal y vertical */
-            }
-            
-            .audience-grid {
-                grid-template-columns: repeat(2, 1fr); /* 2 columnas en desktop */
-                gap: 40px;
-            }
+            .transformation-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+            .transformation-section { padding: 50px 40px; }
+            .transformation-section h2 { font-size: 2.2em; }
+            .before h3, .after h3 { font-size: 1.7em; }
         }
 
-        /* Tablet optimization */
-        @media (min-width: 501px) and (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2em;
-            }
-
-            .description-title {
-                font-size: 1.8em;
-            }
-
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        /* Reduce animations on low-end devices */
+        /* Reduced Motion */
         @media (prefers-reduced-motion: reduce) {
             * {
                 animation-duration: 0.01ms !important;
                 transition-duration: 0.01ms !important;
             }
         }
-
-        /* --- INICIO DEL CSS PARA TESTIMONIOS (PRUEBA SOCIAL) --- */
-.testimonials-section {
-    background: #f0f4ff; /* Fondo ligeramente azulado/claro */
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    padding: 30px 20px;
-    margin-bottom: 30px;
-}
-
-.testimonials-title {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 columna en móvil */
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.testimonial-card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-top: 5px solid #667eea; /* Borde de color para destacar */
-    position: relative;
-}
-
-.testimonial-card::before {
-    content: "❝";
-    font-family: serif;
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    font-size: 4em;
-    color: #e0e6ff;
-    line-height: 0.5;
-    z-index: 1;
-}
-
-.testimonial-text {
-    font-size: 1.1em;
-    font-style: italic;
-    color: #444;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    z-index: 2;
-    position: relative;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #f0f0f0;
-    padding-top: 15px;
-}
-
-.author-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #ccc; /* Placeholder color */
-    margin-right: 15px;
-    object-fit: cover;
-    border: 2px solid #667eea;
-}
-
-.author-details p {
-    margin: 0;
-    font-weight: bold;
-    color: #2c3e50;
-    font-size: 1em;
-}
-
-.author-details small {
-    color: #7f8c8d;
-    font-size: 0.85em;
-    font-weight: normal;
-}
-
-/* Rating Stars */
-.rating {
-    color: #f39c12; /* Color de estrella dorado */
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-/* Optimización para Desktop (2 o 3 columnas) */
-@media (min-width: 769px) {
-    .testimonials-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
-        gap: 40px;
-    }
-}
-
-.results-section {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    padding: 30px 20px;
-    margin-bottom: 30px;
-}
-
-.results-title {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.results-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.result-card {
-    background: #f8f8ff;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-.result-icon {
-    font-size: 3em;
-    margin-bottom: 15px;
-}
-
-.result-card h3 {
-    font-size: 1.4em;
-    color: #2c3e50;
-    margin-bottom: 15px;
-}
-
-.result-card p {
-    color: #555;
-    line-height: 1.6;
-}
-
-@media (min-width: 769px) {
-    .results-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.transformation-section {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    padding: 40px 25px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.transformation-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, #e74c3c, #3498db, #2ecc71);
-}
-
-.transformation-section h2 {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 40px;
-    line-height: 1.3;
-}
-
-.transformation-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.before, .after {
-    padding: 30px 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.before:hover, .after:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
-.before {
-    background: linear-gradient(135deg, #fff5f5 0%, #ffecec 100%);
-    border: 2px solid #e74c3c;
-}
-
-.before::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg, #e74c3c, #c0392b);
-    border-radius: 15px 15px 0 0;
-}
-
-.after {
-    background: linear-gradient(135deg, #f0fff4 0%, #e6ffe6 100%);
-    border: 2px solid #27ae60;
-}
-
-.after::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg, #27ae60, #219653);
-    border-radius: 15px 15px 0 0;
-}
-
-.before h3, .after h3 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.before h3 {
-    color: #c0392b;
-}
-
-.after h3 {
-    color: #27ae60;
-}
-
-.before ul, .after ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.before li, .after li {
-    padding: 12px 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    font-size: 1.1em;
-    line-height: 1.5;
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    transition: all 0.3s ease;
-}
-
-.before li {
-    background: rgba(231, 76, 60, 0.08);
-    border-left: 4px solid #e74c3c;
-}
-
-.before li:hover {
-    background: rgba(231, 76, 60, 0.15);
-    transform: translateX(5px);
-}
-
-.after li {
-    background: rgba(39, 174, 96, 0.08);
-    border-left: 4px solid #27ae60;
-}
-
-.after li:hover {
-    background: rgba(39, 174, 96, 0.15);
-    transform: translateX(5px);
-}
-
-.before li::before, .after li::before {
-    font-size: 1.3em;
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-/* Efectos adicionales para hacerlo más atractivo */
-.transformation-section {
-    background-image: 
-        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.8) 0%, transparent 20%),
-        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.6) 0%, transparent 20%);
-}
-
-/* Animación sutil de aparición */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.before, .after {
-    animation: fadeInUp 0.6s ease-out;
-}
-
-.before {
-    animation-delay: 0.1s;
-}
-
-.after {
-    animation-delay: 0.3s;
-}
-
-/* Responsive Design */
-@media (min-width: 768px) {
-    .transformation-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-    
-    .transformation-section h2 {
-        font-size: 2.2em;
-    }
-    
-    .before h3, .after h3 {
-        font-size: 1.7em;
-    }
-    
-    .before li, .after li {
-        font-size: 1.15em;
-        padding: 15px 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .transformation-section {
-        padding: 50px 40px;
-    }
-    
-    .before, .after {
-        padding: 40px 30px;
-    }
-}
-
-/* Para dispositivos muy pequeños */
-@media (max-width: 480px) {
-    .transformation-section {
-        padding: 30px 15px;
-    }
-    
-    .transformation-section h2 {
-        font-size: 1.5em;
-        margin-bottom: 30px;
-    }
-    
-    .before, .after {
-        padding: 20px 15px;
-    }
-    
-    .before li, .after li {
-        font-size: 1em;
-        padding: 10px 12px;
-    }
-}
-
-/* Efecto de brillo al hacer hover en toda la sección */
-.transformation-section:hover::before {
-    animation: shine 2s ease-in-out infinite;
-}
-
-@keyframes shine {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.7;
-    }
-}
-/* --- FIN DEL CSS PARA TESTIMONIOS (PRUEBA SOCIAL) --- */
     </style>
 </head>
 
 <body>
     <div class="container">
+        <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-content">
                 <h1>📚 Práctica guiada de planos en PDF + Videos Tutoriales</h1>
@@ -1364,7 +1128,7 @@
                     <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" 
                        target="_blank" 
                        class="buy-button"
-                       rel="noopener">
+                       rel="noopener noreferrer">
                         Comprar Ahora
                         <span class="price-tag">
                             <span class="price-original">$500 mxn</span>
@@ -1404,8 +1168,9 @@
             </div>
         </section>
 
+        <!-- Description Section -->
         <section class="description-section">
-            <h2 class="description-title">🔥 ¿Aprendiendo SolidWorks pero sin planos REALES para Prácticar?</h2>
+            <h2 class="description-title">🔥 ¿Aprendiendo SolidWorks pero sin planos REALES para Practicar?</h2>
             
             <div class="features-grid">
                 <div class="feature-card">
@@ -1434,6 +1199,7 @@
             </div>
         </section>
 
+        <!-- Package Section -->
         <section class="package-section">
             <h2 class="package-title">📦 ¿Qué vas a recibir exactamente?</h2>
             
@@ -1472,6 +1238,7 @@
             </div>
         </section>
 
+        <!-- Learning Section -->
         <section class="learning-section">
             <h2 class="learning-title">🎓 Lo que aprenderás</h2>
             
@@ -1500,10 +1267,10 @@
                     <span class="learning-check">✅</span>
                     <p>Geometrías avanzadas: <strong>Creación de geometrías, redondeos, chaflanes, cortes complejos, barridos, operaciones múltiples, simetrías, matríces</strong></p>
                 </div>
-
             </div>
         </section>
 
+        <!-- Audience Section -->
         <section class="audience-section">
             <h2 class="audience-title">¿Para quién es este paquete?</h2>
             
@@ -1529,6 +1296,7 @@
             </div>
         </section>
 
+        <!-- Installer Section -->
         <section class="installer-section">
             <div class="solidworks-logo">
                 <img src="https://static.wixstatic.com/media/32c95b_1b9e11a1e9c24ae6b833d9f439089d82~mv2.webp" 
@@ -1550,7 +1318,7 @@
             <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" 
                target="_blank" 
                class="buy-button"
-               rel="noopener">
+               rel="noopener noreferrer">
                 Obtener Acceso Completo - Planos + Videos
                 <span class="price-tag">
                     <span class="price-original">$500 mxn</span>
@@ -1560,81 +1328,51 @@
             </a>
         </section>
 
+        <!-- Preview Section -->
         <section class="preview-section">
             <h2 class="audience-title">Planos en PDF que contiene este paquete</h2>
             <div class="preview-content">
                 <picture>
-                    <source media="(max-width: 500px)" 
-                            srcset="https://static.wixstatic.com/media/32c95b_68cf75ac2a4f41ffaab41803899d8ff2~mv2.webp">
-                    
-                    <source media="(min-width: 501px) and (max-width: 1023px)" 
-                            srcset="https://static.wixstatic.com/media/32c95b_4b8f3c9a162247aeba41ea11c26bd901~mv2.webp">
-                    
-                    <img src="https://static.wixstatic.com/media/32c95b_4b8f3c9a162247aeba41ea11c26bd901~mv2.webp" 
-                         alt="Vista previa del contenido del libro SolidWorks" 
-                         class="preview-image"
-                         referrerpolicy="no-referrer"
-                         loading="lazy"
-                         width="1200"
-                         height="800">
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_68cf75ac2a4f41ffaab41803899d8ff2~mv2.webp">
+                    <source media="(min-width: 501px) and (max-width: 1023px)" srcset="https://static.wixstatic.com/media/32c95b_4b8f3c9a162247aeba41ea11c26bd901~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_4b8f3c9a162247aeba41ea11c26bd901~mv2.webp" alt="Vista previa del contenido del libro SolidWorks" class="preview-image" referrerpolicy="no-referrer" loading="lazy" width="1200" height="800">
                 </picture>
                 <picture>
-                    <source media="(max-width: 500px)" 
-                            srcset="https://static.wixstatic.com/media/32c95b_3c1f1e237b5240c5bc2b096821ccb3e6~mv2.webp">
-                    
-                    <source media="(min-width: 501px) and (max-width: 1023px)" 
-                            srcset="https://static.wixstatic.com/media/32c95b_2756659dba344b2fa7ef2f2d01101c15~mv2.webp">
-                    
-                    <img src="https://static.wixstatic.com/media/32c95b_2756659dba344b2fa7ef2f2d01101c15~mv2.webp" 
-                         alt="Vista previa del contenido del libro SolidWorks" 
-                         class="preview-image"
-                         referrerpolicy="no-referrer"
-                         loading="lazy"
-                         width="1200"
-                         height="800">
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_3c1f1e237b5240c5bc2b096821ccb3e6~mv2.webp">
+                    <source media="(min-width: 501px) and (max-width: 1023px)" srcset="https://static.wixstatic.com/media/32c95b_2756659dba344b2fa7ef2f2d01101c15~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_2756659dba344b2fa7ef2f2d01101c15~mv2.webp" alt="Vista previa del contenido del libro SolidWorks" class="preview-image" referrerpolicy="no-referrer" loading="lazy" width="1200" height="800">
                 </picture>
-
                 <picture>
-                    <source media="(max-width: 500px)" 
-                            srcset="https://static.wixstatic.com/media/32c95b_cd14b0f19dfc43fb8edc22ca633c4bce~mv2.webp">
-                    
-                    <source media="(min-width: 501px) and (max-width: 1023px)" 
-                            srcset="https://static.wixstatic.com/media/32c95b_871f6733582c4fc7a2bd8cbcc7f21911~mv2.webp">
-                    
-                    <img src="https://static.wixstatic.com/media/32c95b_871f6733582c4fc7a2bd8cbcc7f21911~mv2.webp" 
-                         alt="Vista previa del contenido del libro SolidWorks" 
-                         class="preview-image"
-                         referrerpolicy="no-referrer"
-                         loading="lazy"
-                         width="1200"
-                         height="800">
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_cd14b0f19dfc43fb8edc22ca633c4bce~mv2.webp">
+                    <source media="(min-width: 501px) and (max-width: 1023px)" srcset="https://static.wixstatic.com/media/32c95b_871f6733582c4fc7a2bd8cbcc7f21911~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_871f6733582c4fc7a2bd8cbcc7f21911~mv2.webp" alt="Vista previa del contenido del libro SolidWorks" class="preview-image" referrerpolicy="no-referrer" loading="lazy" width="1200" height="800">
                 </picture>
             </div>
         </section>
 
-        
-
+        <!-- Results Section -->
         <section class="results-section">
-    <h2 class="results-title">🚀 Resultados que han logrado nuestros estudiantes</h2>
-    <div class="results-grid">
-        <div class="result-card">
-            <div class="result-icon">💼</div>
-            <h3>Consiguieron trabajo</h3>
-            <p>Más del 50% de nuestros estudiantes consiguieron un empleo en el sector después de completar el curso.</p>
-        </div>
-        <div class="result-card">
-            <div class="result-icon">📈</div>
-            <h3>Mejoraron su portafolio</h3>
-            <p>El 100% de los estudiantes que completaron el curso lograron armar un portafolio profesional con los planos.</p>
-        </div>
-        <div class="result-card">
-            <div class="result-icon">⏱️</div>
-            <h3>Ahorraron tiempo</h3>
-            <p>Los estudiantes reportaron ahorrar hasta 3 meses de aprendizaje autodidacta gracias a la práctica guiada.</p>
-        </div>
-    </div>
-</section>
+            <h2 class="results-title">🚀 Resultados que han logrado nuestros estudiantes</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">💼</div>
+                    <h3>Consiguieron trabajo</h3>
+                    <p>Más del 50% de nuestros estudiantes consiguieron un empleo en el sector después de completar el curso.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">📈</div>
+                    <h3>Mejoraron su portafolio</h3>
+                    <p>El 100% de los estudiantes que completaron el curso lograron armar un portafolio profesional con los planos.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">⏱️</div>
+                    <h3>Ahorraron tiempo</h3>
+                    <p>Los estudiantes reportaron ahorrar hasta 3 meses de aprendizaje autodidacta gracias a la práctica guiada.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Free Sample Section -->
         <section class="free-sample-section">
             <div class="free-sample-content">
                 <h2 class="free-sample-title">
@@ -1647,7 +1385,7 @@
                 <a href="https://diegogaona117.github.io/pdf-gratuitos/" 
                    class="free-sample-button" 
                    target="_blank"
-                   rel="noopener">
+                   rel="noopener noreferrer">
                     📋 Ver Planos de Muestra GRATIS
                 </a>
                 
@@ -1657,28 +1395,30 @@
             </div>
         </section>
 
+        <!-- Transformation Section -->
         <section class="transformation-section">
-    <h2>De Principiante a Profesional en 4 Semanas o menos</h2>
-    <div class="transformation-grid">
-        <div class="before">
-            <h3>ANTES:</h3>
-            <ul>
-                <li>❌ Te cuesta interpretar planos complejos</li>
-                <li>❌ Pierdes horas buscando ejercicios</li>
-                <li>❌ No tienes retroalimentación</li>
-            </ul>
-        </div>
-        <div class="after">
-            <h3>DESPUÉS:</h3>
-            <ul>
-                <li>✅ Interpretas planos profesionales con confianza</li>
-                <li>✅ Tienes 77 proyectos reales para tu portafolio</li>
-                <li>✅ Aprendes con guía paso a paso en video</li>
-            </ul>
-        </div>
-    </div>
-</section>
+            <h2>De Principiante a Profesional en 4 Semanas o menos</h2>
+            <div class="transformation-grid">
+                <div class="before">
+                    <h3>ANTES:</h3>
+                    <ul>
+                        <li>❌ Te cuesta interpretar planos complejos</li>
+                        <li>❌ Pierdes horas buscando ejercicios</li>
+                        <li>❌ No tienes retroalimentación</li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <h3>DESPUÉS:</h3>
+                    <ul>
+                        <li>✅ Interpretas planos profesionales con confianza</li>
+                        <li>✅ Tienes 77 proyectos reales para tu portafolio</li>
+                        <li>✅ Aprendes con guía paso a paso en video</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <!-- FAQ Section -->
         <section class="faq-section">
             <h2 class="faq-title">❓ Preguntas Frecuentes</h2>
             
@@ -1779,7 +1519,7 @@
                 <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" 
                    target="_blank" 
                    class="buy-button"
-                   rel="noopener">
+                   rel="noopener noreferrer">
                     Comenzar Ahora - Acceso Inmediato
                     <span class="price-tag">
                         <span class="price-original">$500 mxn</span>
@@ -1789,8 +1529,8 @@
                 </a>
             </div>
         </section>
-    </div>
 
+        <!-- Testimonials Section -->
         <section class="testimonials-section">
             <h2 class="testimonials-title">✨ Lo que dicen nuestros estudiantes</h2>
             
@@ -1842,7 +1582,7 @@
                 <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" 
                    target="_blank" 
                    class="buy-button"
-                   rel="noopener"
+                   rel="noopener noreferrer"
                    style="max-width: 400px; margin: 0 auto;">
                     Comprar Ahora
                     <span class="price-tag">
@@ -1854,19 +1594,22 @@
             </div>
         </section>
 
-    <a href="https://wa.me/5214621579719?text=Hola%2C%20vi%20todos%20los%20detalles%20del%20paquete%20de%20planos%20más%20videos%20y%20tengo%20la%20siguiente%20duda:"
-       class="whatsapp-float" 
-       target="_blank"
-       rel="noopener noreferrer"
-       title="Contactar por WhatsApp"
-       aria-label="Contactar por WhatsApp">
-        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
-             alt="WhatsApp"
-             width="35"
-             height="35"
-             loading="lazy">
-    </a>
+        <!-- WhatsApp Float Button -->
+        <a href="https://wa.me/5214621579719?text=Hola%2C%20vi%20todos%20los%20detalles%20del%20paquete%20de%20planos%20más%20videos%20y%20tengo%20la%20siguiente%20duda:"
+           class="whatsapp-float" 
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Contactar por WhatsApp"
+           aria-label="Contactar por WhatsApp">
+            <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
+                 alt="WhatsApp"
+                 width="35"
+                 height="35"
+                 loading="lazy">
+        </a>
+    </div>
 
+    <!-- Scripts -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
