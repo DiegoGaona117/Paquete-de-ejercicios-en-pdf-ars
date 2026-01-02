@@ -327,6 +327,14 @@
             width: 100%;
         }
 
+        .video-container:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button {
+    transition: transform 0.3s ease;
+}
+
         /* Support Section */
 .support-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -2283,7 +2291,7 @@ data-numposts="15"></div>
 
     <script>
         // Lazy load del video YouTube (ahorra datos móviles)
-        const videoContainer = document.getElementById('videoContainer');
+        const videoContainer = document.querySelector('.video-container');
         if (videoContainer) {
             videoContainer.addEventListener('click', function() {
                 const iframe = document.createElement('iframe');
