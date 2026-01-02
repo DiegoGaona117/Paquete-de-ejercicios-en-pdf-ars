@@ -327,6 +327,241 @@
             width: 100%;
         }
 
+        /* Support Section */
+.support-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    padding: 50px 25px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+}
+
+.support-section::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.support-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.support-badge {
+    display: inline-block;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+}
+
+.support-title {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+.highlight-text {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.2em;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.support-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.support-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.support-icon-large {
+    font-size: 8em;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.support-pulse {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: pulse-ring 2s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.support-text {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.support-subtitle {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.support-features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.support-feature {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    font-size: 2em;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.feature-text {
+    color: white;
+}
+
+.feature-text strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #FFD700;
+}
+
+.feature-text p {
+    font-size: 0.95em;
+    opacity: 0.95;
+    line-height: 1.5;
+}
+
+.support-cta {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.support-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    color: white;
+    padding: 16px 35px;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    margin-bottom: 12px;
+}
+
+.support-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+
+.support-button:active {
+    transform: scale(0.98);
+}
+
+.support-note {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    .support-section {
+        padding: 60px 40px;
+    }
+    
+    .support-title {
+        font-size: 2.5em;
+    }
+    
+    .support-content {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 50px;
+    }
+    
+    .support-subtitle {
+        font-size: 1.8em;
+    }
+    
+    .support-text {
+        padding: 40px;
+    }
+}
+
         /* Grupo CTA (Botón + Badges) */
         .cta-group {
             display: flex;
@@ -1470,6 +1705,70 @@
                 <div class="play-button">▶</div>
             </div>
         </section>
+
+        <!-- Apoyo Personalizado Section - INSERTAR DESPUÉS DEL HERO -->
+<section class="support-section">
+    <div class="support-container">
+        <div class="support-badge">⭐ EXCLUSIVO</div>
+        
+        <h2 class="support-title">
+            Lo que <span class="highlight-text">NINGÚN</span> curso te da
+        </h2>
+        
+        <div class="support-content">
+            <div class="support-visual">
+                <div class="support-icon-large">🎯</div>
+                <div class="support-pulse"></div>
+            </div>
+            
+            <div class="support-text">
+                <h3 class="support-subtitle">
+                    Apoyo Personalizado para Resolver Cualquier Duda que Tengas
+                </h3>
+                
+                <div class="support-features">
+                    <div class="support-feature">
+                        <div class="feature-icon">💬</div>
+                        <div class="feature-text">
+                            <strong>Respuesta directa por WhatsApp</strong>
+                            <p>¿Atorado en un plano? Envía tu duda y te ayudo personalmente</p>
+                        </div>
+                    </div>
+                    
+                    <div class="support-feature">
+                        <div class="feature-icon">🎥</div>
+                        <div class="feature-text">
+                            <strong>Videos explicativos personalizados</strong>
+                            <p>Si lo necesitas, grabo un video específico resolviendo tu problema</p>
+                        </div>
+                    </div>
+                    
+                    <div class="support-feature">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-text">
+                            <strong>Sin límite de consultas</strong>
+                            <p>Pregunta todas las veces que necesites, sin costo adicional</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="support-cta">
+                    <a href="https://wa.me/5214621579719?text=Hola%20Diego%2C%20me%20interesa%20el%20paquete%20de%2077%20planos%20de%20SolidWorks.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" 
+                       class="support-button"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
+                             alt="WhatsApp"
+                             loading="lazy"
+                             style="width: 24px; height: 24px;">
+                        Hablar con Diego Ahora
+                    </a>
+                    <p class="support-note">✅ Disponible para ayudarte en cada paso del camino</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Description Section -->
         <section class="description-section">
