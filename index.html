@@ -55,6 +55,209 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .demo-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        /* COUNTDOWN TIMER STYLES */
+        .countdown-banner {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF1717 100%);
+            color: white;
+            padding: 25px 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(255, 23, 23, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .countdown-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .countdown-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .time-unit {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 15px 10px;
+            border-radius: 10px;
+            min-width: 70px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .time-value {
+            font-size: 2em;
+            font-weight: bold;
+            display: block;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .time-label {
+            font-size: 0.7em;
+            text-transform: uppercase;
+            opacity: 0.9;
+            letter-spacing: 0.5px;
+        }
+
+        .countdown-message {
+            font-size: 0.95em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        /* EXPIRED STATE */
+        .countdown-banner.expired {
+            background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+        }
+
+        .expired-message {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        /* BUTTON STYLES */
+        .buy-button {
+            background: linear-gradient(45deg, #FF1717, #e74c3c);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .buy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 23, 23, 0.3);
+        }
+
+        .buy-button:active {
+            transform: scale(0.98);
+        }
+
+        .price-tag {
+            display: block;
+            font-size: 0.85em;
+            margin-top: 8px;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
+        .price-original {
+            text-decoration: line-through;
+            opacity: 0.8;
+            font-size: 0.9em;
+            margin-right: 8px;
+        }
+
+        .price-discount {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .price-save {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.75em;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+
+        /* DEMO SECTIONS */
+        .demo-section {
+            margin-top: 30px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border: 2px dashed #dee2e6;
+        }
+
+        .demo-section h3 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .countdown-timer {
+                gap: 10px;
+            }
+            
+            .time-unit {
+                min-width: 60px;
+                padding: 12px 8px;
+            }
+            
+            .time-value {
+                font-size: 1.5em;
+            }
+            
+            .time-label {
+                font-size: 0.65em;
+            }
+        }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             line-height: 1.6;
             color: #333;
