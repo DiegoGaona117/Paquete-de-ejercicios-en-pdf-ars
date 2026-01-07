@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- DESPUÉS (correcto): -->
-<meta property="fb:app_id" content="392241650294847" />
-<meta property="fb:admins" content="100003831708496" />
+    <!-- Meta Tags Facebook -->
+    <meta property="fb:app_id" content="392241650294847" />
+    <meta property="fb:admins" content="100003831708496" />
     
     <!-- Título optimizado para SEO y Conversión -->
     <title>Domina SolidWorks en 30 días con 77 Planos Profesionales</title>
@@ -48,1613 +48,11 @@
     <meta property="og:url" content="https://cursodiegogaona.com">
     <meta property="og:type" content="website">
 
-    <style>
-
-        .demo-container {
-            background: white;
-            border-radius: 20px;
-            padding: 40px 2px;
-            max-width: 1300px;
-            margin: 0 auto;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-
-        /* COUNTDOWN TIMER STYLES */
-        .countdown-banner {
-            background: linear-gradient(135deg, #FF6B6B 0%, #FF1717 100%);
-            color: white;
-            padding: 25px 20px;
-            border-radius: 15px;
-            text-align: center;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(255, 23, 23, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .countdown-banner::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            animation: shine 3s infinite;
-        }
-
-        @keyframes shine {
-            0% { left: -100%; }
-            100% { left: 100%; }
-        }
-
-        .countdown-title {
-            font-size: 1.3em;
-            font-weight: 700;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .countdown-timer {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .time-unit {
-            background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(10px);
-            padding: 15px 10px;
-            border-radius: 10px;
-            min-width: 70px;
-            border: 2px solid rgba(255,255,255,0.3);
-        }
-
-        .time-value {
-            font-size: 2em;
-            font-weight: bold;
-            display: block;
-            line-height: 1;
-            margin-bottom: 5px;
-        }
-
-        .time-label {
-            font-size: 0.7em;
-            text-transform: uppercase;
-            opacity: 0.9;
-            letter-spacing: 0.5px;
-        }
-
-        .countdown-message {
-            font-size: 0.95em;
-            opacity: 0.95;
-            font-weight: 500;
-        }
-
-        /* EXPIRED STATE */
-        .countdown-banner.expired {
-            background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
-        }
-
-        .expired-message {
-            font-size: 1.2em;
-            font-weight: 600;
-        }
-
-        /* BUTTON STYLES */
-        .buy-button {
-            background: red;
-            color: white;
-            border: none;
-            padding: 18px 40px;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .buy-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255, 23, 23, 0.3);
-        }
-
-        .buy-button:active {
-            transform: scale(0.98);
-        }
-
-        .price-tag {
-            display: block;
-            font-size: 0.85em;
-            margin-top: 8px;
-            font-weight: 600;
-            text-transform: none;
-            letter-spacing: normal;
-        }
-
-        .price-original {
-            text-decoration: line-through;
-            opacity: 0.8;
-            font-size: 0.9em;
-            margin-right: 8px;
-        }
-
-        .price-discount {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        .price-save {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.25);
-            padding: 3px 10px;
-            border-radius: 5px;
-            font-size: 0.75em;
-            margin-left: 8px;
-            font-weight: bold;
-        }
-
-        /* WhatsApp Button Inline - VISIBLE EN TODO MOMENTO */
-        .whatsapp-button-inline {
-            display: flex;
-            max-width: 500px;
-            padding: 12px 20px;
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            border-radius: 10px;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            margin: auto;
-            gap: 10px;
-            color: white;
-            font-weight: 600;
-            font-size: 1em;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-        }
-
-        .whatsapp-button-inline:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-        }
-
-        .whatsapp-button-inline:active {
-            transform: scale(0.98);
-        }
-
-        .whatsapp-button-inline img {
-            width: 24px;
-            height: 24px;
-        }
-
-        .whatsapp-button-inline span {
-            font-size: 0.95em;
-        }
-
-        /* DEMO SECTIONS */
-        .demo-section {
-            margin-top: 30px;
-            padding: 30px;
-            background: #f8f9fa;
-            border-radius: 15px;
-            border: 2px dashed #dee2e6;
-        }
-
-        .demo-section h3 {
-            margin-bottom: 20px;
-            color: #333;
-            text-align: center;
-        }
-
-        @media (max-width: 600px) {
-            .countdown-timer {
-                gap: 10px;
-            }
-            
-            .time-unit {
-                min-width: 60px;
-                padding: 12px 8px;
-            }
-            
-            .time-value {
-                font-size: 1.5em;
-            }
-            
-            .time-label {
-                font-size: 0.65em;
-            }
-        }
-    </style>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            line-height: 1.6;
-            color: #333;
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 15px;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 25px;
-            margin-bottom: 30px;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-            align-items: center;
-        }
-        
-        .hero-content h1 {
-            font-size: 1.6em;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            line-height: 1.3;
-            text-align: center;
-        }
-
-        /* Buttons Container */
-        .buttons-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-bottom: 20px;
-            align-items: center; /* Centrado en móvil */
-            width: 100%;
-        }
-
-        .video-container:hover .play-button {
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
-.play-button {
-    transition: transform 0.3s ease;
-}
-
-        /* Support Section */
-.support-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 20px;
-    padding: 50px 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
-}
-
-.support-section::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-    animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-.support-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-
-.support-badge {
-    display: inline-block;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
-    color: #000;
-    padding: 8px 20px;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 0.9em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-}
-
-.support-title {
-    font-size: 2em;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    margin-bottom: 40px;
-    line-height: 1.3;
-}
-
-.highlight-text {
-    background: linear-gradient(45deg, #FFD700, #FFA500);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 1.2em;
-    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-}
-
-.support-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.support-visual {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 200px;
-}
-
-.support-icon-large {
-    font-size: 8em;
-    position: relative;
-    z-index: 2;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-}
-
-.support-pulse {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    animation: pulse-ring 2s ease-out infinite;
-}
-
-@keyframes pulse-ring {
-    0% {
-        transform: scale(0.8);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1.5);
-        opacity: 0;
-    }
-}
-
-.support-text {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    padding: 15px;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.support-subtitle {
-    font-size: 1.5em;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 30px;
-    line-height: 1.4;
-}
-
-.support-features {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-bottom: 30px;
-}
-
-.support-feature {
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
-}
-
-.feature-icon {
-    font-size: 2em;
-    flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.2);
-    width: 50px;
-    height: 50px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    padding: 30px;
-}
-
-.feature-text {
-    color: white;
-}
-
-.feature-text strong {
-    display: block;
-    font-size: 1.1em;
-    margin-bottom: 5px;
-    color: #FFD700;
-}
-
-.feature-text p {
-    font-size: 0.95em;
-    opacity: 0.95;
-    line-height: 1.5;
-}
-
-.support-cta {
-    text-align: center;
-    padding-top: 25px;
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.support-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: linear-gradient(45deg, #25D366, #128C7E);
-    color: white;
-    padding: 16px 35px;
-    border-radius: 12px;
-    font-size: 1.1em;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-    margin-bottom: 12px;
-}
-
-.support-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
-}
-
-.support-button:active {
-    transform: scale(0.98);
-}
-
-.support-note {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9em;
-    margin: 0;
-}
-
-/* Desktop */
-@media (min-width: 769px) {
-    .support-section {
-        padding: 60px 40px;
-    }
-
-        .feature-icon {
-        font-size: 3em;
-        margin-bottom: 15px;
-        padding: 35px;
-    }
-    
-    .support-title {
-        font-size: 2.5em;
-    }
-    
-    .support-content {
-        grid-template-columns: 1fr 1.5fr;
-        gap: 50px;
-    }
-    
-    .support-subtitle {
-        font-size: 1.8em;
-    }
-    
-    .support-text {
-        padding: 40px;
-    }
-}
-
-        /* Grupo CTA (Botón + Badges) */
-        .cta-group {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            max-width: 400px;
-        }
-        
-        .buy-button {
-            background: linear-gradient(45deg, #FF1717, #e74c3c);
-            color: white;
-            border: none;
-            padding: 16px 30px;
-            font-size: 1.1em;
-            font-weight: bold;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-            min-height: 48px;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .price-tag {
-            display: block;
-            font-size: 0.85em;
-            margin-top: 6px;
-            font-weight: 600;
-            text-transform: none;
-            letter-spacing: normal;
-        }
-
-        .price-original {
-            text-decoration: line-through;
-            opacity: 0.8;
-            font-size: 0.9em;
-            margin-right: 8px;
-        }
-
-        .price-discount {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        .price-save {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.25);
-            padding: 2px 8px;
-            border-radius: 5px;
-            font-size: 0.75em;
-            margin-left: 8px;
-            font-weight: bold;
-        }
-        
-        .buy-button:active {
-            transform: scale(0.98);
-        }
-
-        /* Trust Badges (Sellos de Confianza) - MEJORADO */
-        .trust-badges {
-            text-align: center;
-            font-size: 0.75em;
-            color: #555;
-            margin-top: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        /* Diseño tipo "etiqueta" para mayor credibilidad */
-        .trust-item { 
-            display: flex; 
-            align-items: center; 
-            gap: 4px; 
-            background: rgba(0,0,0,0.04); /* Fondo sutil */
-            padding: 4px 8px;
-            border-radius: 4px;
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-
-        /* WhatsApp Button - Header Desktop / Mobile Inline */
-        .whatsapp-button {
-            display: flex;
-            width: fit-content;
-            padding: 10px 16px;
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            border-radius: 10px;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: transform 0.2s ease;
-            margin-top: 5px;
-        }
-
-        .whatsapp-button:active { transform: scale(0.95); }
-        .whatsapp-button img { width: 30px; height: 30px; }
-
-        /* WhatsApp Flotante - FIXED BUTTON */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            animation: pulse 2s infinite;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
-        }
-
-        .whatsapp-float:active {
-            transform: scale(0.95);
-        }
-
-        .whatsapp-float img {
-            width: 30px;
-            height: 30px;
-            object-fit: contain;
-        }
-
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); }
-            50% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8); }
-        }
-
-        .tagline-container { margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px; width: 100%; }
-        
-        .tagline {
-            color: #3498db;
-            font-weight: 600;
-            font-size: 1em;
-            text-align: center;
-            margin: 8px 0;
-        }
-        
-        /* Video Container */
-        .video-container {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-            background: #000;
-            aspect-ratio: 16/9;
-            cursor: pointer;
-        }
-        
-        .video-thumbnail {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 70px;
-            height: 70px;
-            background: rgba(255, 0, 0, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2em;
-            pointer-events: none;
-        }
-        
-        .video-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Description Section */
-        .description-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-
-        .description-title {
-            font-size: 1.6em;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 25px;
-            text-align: center;
-            line-height: 1.3;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .feature-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-
-
-        .feature-title {
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
-
-        .feature-description {
-            font-size: 1em;
-            opacity: 0.95;
-            line-height: 1.6;
-        }
-
-        .highlight {
-            background: linear-gradient(45deg, #f39c12, #e67e22);
-            color: white;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-
-        /* Installer Section */
-        .installer-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            border-radius: 20px;
-            padding: 40px 25px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-        }
-
-        .installer-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 15px;
-            line-height: 1.3;
-        }
-
-        .installer-subtitle {
-            font-size: 1.1em;
-            opacity: 0.9;
-            margin-bottom: 25px;
-            line-height: 1.5;
-        }
-
-        .solidworks-logo {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 25px;
-            background: white;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        }
-
-        .solidworks-logo img {
-            width: 70px;
-            height: 70px;
-            object-fit: contain;
-        }
-
-        /* Preview Section */
-        .preview-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 25px 0px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .preview-content {
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .preview-image {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-
-        /* Free Sample Section */
-        .free-sample-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 20px;
-            padding: 40px 25px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-        }
-
-        .free-sample-content {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .free-sample-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.3;
-        }
-
-        .free-sample-subtitle {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            opacity: 0.95;
-            line-height: 1.5;
-        }
-
-        .free-sample-button {
-            background: linear-gradient(45deg, #4CAF50, #45a049);
-            color: white;
-            border: none;
-            padding: 18px 40px;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
-            margin-bottom: 20px;
-            min-height: 48px;
-            touch-action: manipulation;
-        }
-
-        .free-sample-button:active {
-            transform: scale(0.98);
-        }
-
-        .free-sample-note {
-            font-size: 0.95em;
-            opacity: 0.85;
-            font-style: italic;
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-
-        .faq-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .faq-container {
-            max-width: 900px;
-            margin: 0 auto 30px;
-        }
-
-        .faq-item {
-            border-bottom: 2px solid #f0f0f0;
-            margin-bottom: 10px;
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-
-        .faq-question {
-            width: 100%;
-            background: none;
-            border: none;
-            padding: 20px 0;
-            text-align: left;
-            font-size: 1.1em;
-            font-weight: 600;
-            color: #2c3e50;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 15px;
-            transition: color 0.3s ease;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .faq-question:hover {
-            color: #3498db;
-        }
-
-        .faq-question:active {
-            transform: scale(0.98);
-        }
-
-        .faq-icon {
-            font-size: 1.5em;
-            font-weight: 300;
-            color: #3498db;
-            transition: transform 0.3s ease;
-            flex-shrink: 0;
-        }
-
-        .faq-question[aria-expanded="true"] .faq-icon {
-            transform: rotate(45deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            padding: 0;
-        }
-
-        .faq-answer.active {
-            max-height: 500px;
-            padding-bottom: 20px;
-        }
-
-        .faq-answer p {
-            color: #555;
-            font-size: 1em;
-            line-height: 1.7;
-            margin: 0;
-        }
-
-        .faq-answer strong {
-            color: #2c3e50;
-        }
-
-        .faq-cta {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 2px solid #f0f0f0;
-            margin-top: 30px;
-        }
-
-        .faq-cta-text {
-            font-size: 1.3em;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-
-        /* Package Section */
-        .package-section {
-            background: white; 
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-        
-        .package-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .package-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        
-        .package-item {
-            display: flex;
-            align-items: flex-start;
-            padding: 20px;
-            background: #f8f8ff;
-            border: 1px solid #e0e6ff;
-            border-radius: 12px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .package-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.15);
-        }
-        
-        .package-icon {
-            font-size: 2.5em;
-            color: #667eea;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-        
-        .package-content h3 {
-            font-size: 1.2em;
-            color: #2c3e50;
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-        
-        .package-content p {
-            font-size: 1em;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* Learning Section */
-        .learning-section {
-            background: white; 
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-
-        .learning-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .learning-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .learning-item {
-            display: flex;
-            align-items: flex-start;
-            background: #ffffff;
-            border-left: 5px solid #3498db;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        .learning-check {
-            font-size: 1.5em;
-            color: #27ae60;
-            margin-right: 10px;
-            line-height: 1;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .learning-item p {
-            font-size: 1em;
-            color: #333;
-            margin: 0;
-            line-height: 1.5;
-        }
-
-        /* Audience Section */
-        .audience-section {
-            background: white; 
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-
-        .audience-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .audience-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-        }
-
-        .audience-card {
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-
-        .audience-yes {
-            background: #e6fff3;
-            border: 2px solid #2ecc71;
-        }
-
-        .audience-no {
-            background: #fff0f0;
-            border: 2px solid #e74c3c;
-        }
-
-        .audience-card-title {
-            font-size: 1.4em;
-            margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        .audience-yes .audience-card-title { color: #27ae60; }
-        .audience-no .audience-card-title { color: #c0392b; }
-
-        .audience-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .audience-list li {
-            font-size: 1em;
-            color: #333;
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        .audience-yes .audience-list li::before {
-            content: "✅";
-            margin-right: 10px;
-            font-size: 1.2em;
-            line-height: 1;
-            flex-shrink: 0;
-        }
-
-        .audience-no .audience-list li::before {
-            content: "🚫";
-            margin-right: 10px;
-            font-size: 1.2em;
-            line-height: 1;
-            flex-shrink: 0;
-        }
-
-        /* Testimonials Section */
-        .testimonials-section {
-            background: #f0f4ff;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-
-        .testimonials-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border-top: 5px solid #667eea;
-            position: relative;
-        }
-
-        .testimonial-card::before {
-            content: "❝";
-            font-family: serif;
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            font-size: 4em;
-            color: #e0e6ff;
-            line-height: 0.5;
-            z-index: 1;
-        }
-
-        .testimonial-text {
-            font-size: 1.1em;
-            font-style: italic;
-            color: #444;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            z-index: 2;
-            position: relative;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            border-top: 1px solid #f0f0f0;
-            padding-top: 15px;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #ccc;
-            margin-right: 15px;
-            object-fit: cover;
-            border: 2px solid #667eea;
-        }
-
-        .author-details p {
-            margin: 0;
-            font-weight: bold;
-            color: #2c3e50;
-            font-size: 1em;
-        }
-
-        .author-details small {
-            color: #7f8c8d;
-            font-size: 0.85em;
-            font-weight: normal;
-        }
-
-        .rating {
-            color: #f39c12;
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-
-        /* Results Section */
-        .results-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-
-        .results-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .results-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .result-card {
-            background: #f8f8ff;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-
-        .result-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-
-        .result-card h3 {
-            font-size: 1.4em;
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        .result-card p {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* Transformation Section */
-        .transformation-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 40px 5px;
-            margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.8) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.6) 0%, transparent 20%);
-        }
-
-        .transformation-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #e74c3c, #3498db, #2ecc71);
-        }
-
-        .transformation-section:hover::before {
-            animation: shine 2s ease-in-out infinite;
-        }
-
-        .transformation-section h2 {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-            line-height: 1.3;
-        }
-
-        .transformation-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .before, .after {
-            padding: 30px 25px;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            position: relative;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        .before:hover, .after:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-        }
-
-        .before {
-            background: linear-gradient(135deg, #fff5f5 0%, #ffecec 100%);
-            border: 2px solid #e74c3c;
-            animation-delay: 0.1s;
-        }
-
-        .before::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, #e74c3c, #c0392b);
-            border-radius: 15px 15px 0 0;
-        }
-
-        .after {
-            background: linear-gradient(135deg, #f0fff4 0%, #e6ffe6 100%);
-            border: 2px solid #27ae60;
-            animation-delay: 0.3s;
-        }
-
-        .after::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, #27ae60, #219653);
-            border-radius: 15px 15px 0 0;
-        }
-
-        .before h3, .after h3 {
-            font-size: 1.5em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .before h3 { color: #c0392b; }
-        .after h3 { color: #27ae60; }
-
-        .before ul, .after ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .before li, .after li {
-            padding: 12px 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            font-size: 1.1em;
-            line-height: 1.5;
-            align-items: flex-start;
-            gap: 12px;
-            transition: all 0.3s ease;
-        }
-
-        .before li {
-            background: rgba(231, 76, 60, 0.08);
-            border-left: 4px solid #e74c3c;
-        }
-        .before li:hover {
-            background: rgba(231, 76, 60, 0.15);
-            transform: translateX(5px);
-        }
-
-        .after li {
-            background: rgba(39, 174, 96, 0.08);
-            border-left: 4px solid #27ae60;
-        }
-        .after li:hover {
-            background: rgba(39, 174, 96, 0.15);
-            transform: translateX(5px);
-        }
-
-        .before li::before, .after li::before {
-            font-size: 1.3em;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @keyframes shine {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        /* Desktop Optimizations */
-        @media (min-width: 769px) {
-            .container { padding: 20px; }
-            
-            .hero-section {
-                grid-template-columns: 1fr 1fr;
-                gap: 40px;
-                padding: 40px;
-                margin-bottom: 40px;
-            }
-            
-            .hero-content h1 { font-size: 2.5em; line-height: 1.2; text-align: left; }
-            
-            .buttons-container { 
-                flex-direction: row; 
-                align-items: flex-start; /* Alineación superior */
-                justify-content: flex-start; /* Alineado a la izquierda */
-                gap: 15px; 
-            }
-            
-            .cta-group { width: auto; max-width: none; flex: 1; }
-            
-            .buy-button {
-                flex: 1;
-                min-width: 250px;
-                padding: 18px 40px;
-                font-size: 1.3em;
-            }
-
-            .whatsapp-button {
-                display: flex; /* Visible en header de escritorio */
-                width: auto;
-                min-width: 60px;
-                padding: 10px 16px; /* Padding reducido */
-                font-size: 1.3em;
-                background: linear-gradient(45deg, #25D366, #128C7E);
-                border-radius: 10px;
-                align-items: center;
-                justify-content: center;
-                height: 52px; /* Alineado con el botón de compra */
-                margin-top: 0;
-            }
-            .whatsapp-button img { width: 32px; height: 32px; }
-
-            .whatsapp-float {
-                width: 60px; /* Tamaño escritorio */
-                height: 60px;
-            }
-            .whatsapp-float img {
-                width: 36px;
-                height: 36px;
-            }
-            
-            /* Trust badges alineados */
-            .trust-badges { justify-content: center; } 
-
-            .description-section { padding: 40px; margin-bottom: 40px; }
-            .description-title { font-size: 2em; }
-            
-            .features-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 30px;
-                margin-bottom: 30px;
-            }
-            .feature-card { padding: 30px; }
-            .feature-icon { font-size: 3em; margin-bottom: 15px; }
-
-            .installer-section { padding: 50px 40px; margin-bottom: 40px; }
-            .installer-title { font-size: 2.2em; margin-bottom: 20px; }
-            .solidworks-logo { width: 120px; height: 120px; margin-bottom: 30px; }
-            .solidworks-logo img { width: 80px; height: 80px; }
-
-            .free-sample-section { padding: 50px 40px; margin-bottom: 40px; }
-            .free-sample-title { font-size: 2.2em; }
-            .free-sample-button { padding: 20px 50px; font-size: 1.4em; }
-
-            .faq-section { padding: 50px 40px; margin-bottom: 40px; }
-            .faq-title { font-size: 2.2em; margin-bottom: 40px; }
-            .faq-question { padding: 25px 0; font-size: 1.2em; }
-            
-            .package-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
-            .learning-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 30px; }
-            .audience-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
-            .testimonials-grid { grid-template-columns: repeat(3, 1fr); gap: 40px; }
-            .results-grid { grid-template-columns: repeat(3, 1fr); }
-            
-            .transformation-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-            .transformation-section { padding: 50px 40px; }
-            .transformation-section h2 { font-size: 2.2em; }
-            .before h3, .after h3 { font-size: 1.7em; }
-        }
-
-        /* Reduced Motion */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-    </style>
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-        
     <div class="container">
         <!-- Hero Section -->
         <section class="hero-section">
@@ -1719,69 +117,69 @@
             </div>
         </section>
 
-        <!-- Apoyo Personalizado Section - INSERTAR DESPUÉS DEL HERO -->
-<section class="support-section">
-    <div class="support-container">
-        <div class="support-badge">⭐ EXCLUSIVO</div>
-        
-        <h2 class="support-title">
-            Lo que <span class="highlight-text">NINGÚN</span> curso te da
-        </h2>
-        
-        <div class="support-content">
-            <div class="support-visual">
-                <div class="support-icon-large">🎯</div>
-                <div class="support-pulse"></div>
-            </div>
-            
-            <div class="support-text">
-                <h3 class="support-subtitle">
-                    Apoyo Personalizado para Resolver Cualquier Duda que Tengas
-                </h3>
+        <!-- Apoyo Personalizado Section -->
+        <section class="support-section">
+            <div class="support-container">
+                <div class="support-badge">⭐ EXCLUSIVO</div>
                 
-                <div class="support-features">
-                    <div class="support-feature">
-                        <div class="feature-icon">💬</div>
-                        <div class="feature-text">
-                            <strong>Respuesta directa por WhatsApp</strong>
-                            <p>¿Atorado en un plano? Envía tu duda y te ayudo personalmente</p>
-                        </div>
+                <h2 class="support-title">
+                    Lo que <span class="highlight-text">NINGÚN</span> curso te da
+                </h2>
+                
+                <div class="support-content">
+                    <div class="support-visual">
+                        <div class="support-icon-large">🎯</div>
+                        <div class="support-pulse"></div>
                     </div>
                     
-                    <div class="support-feature">
-                        <div class="feature-icon">🎥</div>
-                        <div class="feature-text">
-                            <strong>Videos explicativos personalizados</strong>
-                            <p>Si lo necesitas, grabo un video específico resolviendo tu problema</p>
+                    <div class="support-text">
+                        <h3 class="support-subtitle">
+                            Apoyo Personalizado para Resolver Cualquier Duda que Tengas
+                        </h3>
+                        
+                        <div class="support-features">
+                            <div class="support-feature">
+                                <div class="feature-icon">💬</div>
+                                <div class="feature-text">
+                                    <strong>Respuesta directa por WhatsApp</strong>
+                                    <p>¿Atorado en un plano? Envía tu duda y te ayudo personalmente</p>
+                                </div>
+                            </div>
+                            
+                            <div class="support-feature">
+                                <div class="feature-icon">🎥</div>
+                                <div class="feature-text">
+                                    <strong>Videos explicativos personalizados</strong>
+                                    <p>Si lo necesitas, grabo un video específico resolviendo tu problema</p>
+                                </div>
+                            </div>
+                            
+                            <div class="support-feature">
+                                <div class="feature-icon">⚡</div>
+                                <div class="feature-text">
+                                    <strong>Sin límite de consultas</strong>
+                                    <p>Pregunta todas las veces que necesites, sin costo adicional</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="support-feature">
-                        <div class="feature-icon">⚡</div>
-                        <div class="feature-text">
-                            <strong>Sin límite de consultas</strong>
-                            <p>Pregunta todas las veces que necesites, sin costo adicional</p>
+                        
+                        <div class="support-cta">
+                            <a href="https://wa.me/5214621579719?text=Hola%20Diego%2C%20me%20interesa%20el%20paquete%20de%2077%20planos%20de%20SolidWorks.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" 
+                               class="support-button"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
+                                     alt="WhatsApp"
+                                     loading="lazy"
+                                     style="width: 24px; height: 24px;">
+                                Hablar con Diego Ahora
+                            </a>
+                            <p class="support-note">✅ Disponible para ayudarte en cada paso del camino</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="support-cta">
-                    <a href="https://wa.me/5214621579719?text=Hola%20Diego%2C%20me%20interesa%20el%20paquete%20de%2077%20planos%20de%20SolidWorks.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" 
-                       class="support-button"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
-                             alt="WhatsApp"
-                             loading="lazy"
-                             style="width: 24px; height: 24px;">
-                        Hablar con Diego Ahora
-                    </a>
-                    <p class="support-note">✅ Disponible para ayudarte en cada paso del camino</p>
-                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- Description Section -->
         <section class="description-section">
@@ -1823,7 +221,7 @@
                     <div class="package-icon">📄</div>
                     <div class="package-content">
                         <h3>Paquete PDF Completo</h3>
-                        <p><strong></strong>77 planos técnicos de piezas individuales, desde nivel básico hasta avanzado</p>
+                        <p>77 planos técnicos de piezas individuales, desde nivel básico hasta avanzado</p>
                     </div>
                 </div>
 
@@ -1911,39 +309,40 @@
             </div>
         </section>
 
+        <!-- Countdown Section -->
         <div id="cupon" class="demo-container">
-        <!-- COUNTDOWN BANNER -->
-        <div class="countdown-banner" id="countdownBanner">
-            <div class="countdown-title">⚡ OFERTA POR TIEMPO LIMITADO ⚡</div>
-            <div class="countdown-timer" id="countdownTimer">
-                <div class="time-unit">
-                    <span class="time-value" id="hours">00</span>
-                    <span class="time-label">Horas</span>
+            <div class="countdown-banner" id="countdownBanner">
+                <div class="countdown-title">⚡ OFERTA POR TIEMPO LIMITADO ⚡</div>
+                <div class="countdown-timer" id="countdownTimer">
+                    <div class="time-unit">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Horas</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Min</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Seg</span>
+                    </div>
                 </div>
-                <div class="time-unit">
-                    <span class="time-value" id="minutes">00</span>
-                    <span class="time-label">Min</span>
+                <div class="countdown-message" id="countdownMessage">
+                    🔥 ¡Aprovecha el 50% de descuento antes que termine!
                 </div>
-                <div class="time-unit">
-                    <span class="time-value" id="seconds">00</span>
-                    <span class="time-label">Seg</span>
-                </div>
+                
+                <a href="https://pay.hotmart.com/P102008003G?off=0unksroe&bid=1767332143277" 
+                   target="_blank" 
+                   class="buy-button cta-link"
+                   rel="noopener noreferrer">
+                    Comprar Ahora
+                    <span class="price-tag price-display">
+                        <span class="price-original">$27.99 USD</span>
+                        <span class="price-discount">$19.99 USD</span>
+                        <span class="price-save">AHORRA 33%</span>
+                    </span>
+                </a>
             </div>
-            <div class="countdown-message" id="countdownMessage">
-                🔥 ¡Aprovecha el 50% de descuento antes que termine!
-            </div>
-            <!-- Botón de Compra -->
-                        <a href="https://pay.hotmart.com/P102008003G?off=0unksroe&bid=1767332143277" 
-                           target="_blank" 
-                           class="buy-button cta-link"
-                           rel="noopener noreferrer">
-                            Comprar Ahora
-                            <span class="price-tag price-display">
-                                <span class="price-original">$27.99 USD</span>
-                                <span class="price-discount">$19.99 USD</span>
-                                <span class="price-save">AHORRA 33%</span>
-                            </span>
-                        </a>
         </div>
 
         <!-- Installer Section -->
@@ -1969,17 +368,6 @@
             </p>
             
             <div class="cta-group" style="margin: 0 auto;">
-                <!--<a href="https://pay.hotmart.com/P102008003G?off=0unksroe" 
-                   target="_blank" 
-                   class="buy-button"
-                   rel="noopener noreferrer">
-                    Obtener Acceso Completo - Planos + Videos
-                    <span class="price-tag">
-                                <span class="price-original">$27.99 usd</span>
-                                <span class="price-discount">$19.99 usd</span>
-                                <span class="price-save">AHORRA 33%</span>
-                            </span>
-                </a>-->
                 <div class="trust-badges" style="color: rgba(255,255,255,0.9); justify-content: center;">
                     <span class="trust-item" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);">🔒 Pago Seguro</span>
                     <span class="trust-item" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);">🛡️ Garantía Total 30 días</span>
@@ -2075,7 +463,6 @@
                         <li>✅ Interpretas planos profesionales con confianza</li>
                         <li>✅ Tienes 77 proyectos reales para tu portafolio</li>
                         <li>✅ Aprendes con guía paso a paso en video</li>
-                        <!-- Mejorar la sección "Después" -->
                         <li>✅ Completas proyectos reales en <strong>30 minutos en lugar de 3 horas</strong></li>
                         <li>✅ Aumentas tus posibilidades de empleo en <strong>50%</strong> con portafolio profesional</li>
                     </ul>
@@ -2133,374 +520,179 @@
                         <span>¿El instalador funciona en Mac o solo en Windows?</span>
                         <span class="faq-icon">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>El instalador es <strong>compatible únicamente con Windows 10 en adelante</strong>. No funciona en Mac de forma nativa.</p>
-                    </div>
+                    <div class="faq-answer">Continue5:12 p.m.                    <p>El instalador es <strong>compatible únicamente con Windows 10 en adelante</strong>. No funciona en Mac de forma nativa.</p>
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Funciona si tengo otra versión de SolidWorks (2018, 2020, 2025)?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p><strong>¡Sí, funciona al 100%!</strong> El curso enseña modelado profesional y lectura de planos, habilidades que son universales. No importa si tienes una versión antigua o la más reciente, podrás seguir todos los ejercicios sin ningún problema. <strong>La geometría no cambia.</strong></p>
-                    </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>¿Funciona si tengo otra versión de SolidWorks (2018, 2020, 2025)?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>¡Sí, funciona al 100%!</strong> El curso enseña modelado profesional y lectura de planos, habilidades que son universales. No importa si tienes una versión antigua o la más reciente, podrás seguir todos los ejercicios sin ningún problema. <strong>La geometría no cambia.</strong></p>
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Qué archivos incluye el paquete?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>El paquete contiene <strong>77 archivos PDF de planos técnicos profesionales</strong> + enlaces directos para acceder al video tutorial de cada pieza.</p>
-                    </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>¿Qué archivos incluye el paquete?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>El paquete contiene <strong>77 archivos PDF de planos técnicos profesionales</strong> + enlaces directos para acceder al video tutorial de cada pieza.</p>
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Los videos están en español o inglés?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p><strong>Todos los videos están en español</strong>, con explicaciones claras y detalladas para que puedas seguir cada paso sin problemas.</p>
-                    </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>¿Los videos están en español o inglés?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>Todos los videos están en español</strong>, con explicaciones claras y detalladas para que puedas seguir cada paso sin problemas.</p>
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Cuántos videos incluye y habrá más contenido en el futuro?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Actualmente incluye <strong>77 videos tutoriales</strong>. Lo mejor es que <strong>constantemente se agregan nuevos planos y videos</strong>, y todas las actualizaciones futuras son <strong>completamente GRATIS</strong> para quienes ya compraron.</p>
-                    </div>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>¿Cuántos videos incluye y habrá más contenido en el futuro?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Actualmente incluye <strong>77 videos tutoriales</strong>. Lo mejor es que <strong>constantemente se agregan nuevos planos y videos</strong>, y todas las actualizaciones futuras son <strong>completamente GRATIS</strong> para quienes ya compraron.</p>
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Las actualizaciones futuras tienen costo adicional?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p><strong>No. Todas las actualizaciones son gratis para siempre.</strong> Pago único y acceso de por vida a todo el contenido nuevo que se agregue.</p>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>¿Las actualizaciones futuras tienen costo adicional?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p><strong>No. Todas las actualizaciones son gratis para siempre.</strong> Pago único y acceso de por vida a todo el contenido nuevo que se agregue.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-cta">
+            <p class="faq-cta-text">¿Listo para dominar SolidWorks con planos profesionales?</p>
+            <div class="cta-group" style="margin: 0 auto;">
+                <a href="https://pay.hotmart.com/P102008003G?off=0unksroe&bid=1767332143277" 
+                   target="_blank" 
+                   class="buy-button cta-link"
+                   rel="noopener noreferrer">
+                    Comenzar Ahora
+                    <span class="price-tag price-display">
+                        <span class="price-original">$27.99 USD</span>
+                        <span class="price-discount">$19.99 USD</span>
+                        <span class="price-save">AHORRA 33%</span>
+                    </span>
+                </a>
+                <div class="trust-badges">
+                    <span class="trust-item">🔒 Pago 100% Seguro por Hotmart</span>
+                    <span class="trust-item">🛡️ Garantía Total 30 días</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2 class="testimonials-title">✨ Lo que dicen nuestros estudiantes</h2>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">
+                    "El instalador funcionó perfecto, sin problemas. Los videos son muy claros y el libro me dio la práctica real que buscaba. ¡Excelente relación calidad-precio! Lo recomiendo a cualquier estudiante de ingeniería."
+                </p>
+                <div class="testimonial-author">
+                    <img src="https://static.wixstatic.com/media/32c95b_7c53b2fe08c6472abea1f11dedd10170~mv2.png" alt="Avatar Juan M." class="author-avatar" loading="lazy">
+                    <div class="author-details">
+                        <p>Juan M.</p>
+                        <small>Estudiante de Ingeniería Mecánica</small>
                     </div>
                 </div>
             </div>
 
-            <div class="faq-cta">
-                <p class="faq-cta-text">¿Listo para dominar SolidWorks con planos profesionales?</p>
-                <div class="cta-group" style="margin: 0 auto;">
-                    <a href="https://pay.hotmart.com/P102008003G?off=0unksroe&bid=1767332143277" 
-               target="_blank" 
-               class="buy-button cta-link"
-               rel="noopener noreferrer">
-                Comenzar Ahora
-                <span class="price-tag price-display">
-                    <span class="price-original">$27.99 USD</span>
-                    <span class="price-discount">$19.99 USD</span>
-                    <span class="price-save">AHORRA 33%</span>
-                </span>
-            </a>
-                    <div class="trust-badges">
-                        <span class="trust-item">🔒 Pago 100% Seguro por Hotmart</span>
-                        <span class="trust-item">🛡️ Garantía Total 30 días</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials-section">
-            <h2 class="testimonials-title">✨ Lo que dicen nuestros estudiantes</h2>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="rating">★★★★★</div>
-                    <p class="testimonial-text">
-                        "El instalador funcionó perfecto, sin problemas. Los videos son muy claros y el libro me dio la práctica real que buscaba. ¡Excelente relación calidad-precio! Lo recomiendo a cualquier estudiante de ingeniería."
-                    </p>
-                    <div class="testimonial-author">
-                        <img src="https://static.wixstatic.com/media/32c95b_7c53b2fe08c6472abea1f11dedd10170~mv2.png" alt="Avatar Juan M." class="author-avatar" loading="lazy">
-                        <div class="author-details">
-                            <p>Juan M.</p>
-                            <small>Estudiante de Ingeniería Mecánica</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="rating">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Por fin encontré planos con medidas reales, no son solo ejercicios. Me ayudó muchísimo a armar mi portafolio. Las actualizaciones gratuitas son un plus increíble, estoy muy satisfecha con la compra."
-                    </p>
-                    <div class="testimonial-author">
-                        <img src="https://static.wixstatic.com/media/32c95b_113e9b88f0c442c798e6f58e8b470c4c~mv2.png" alt="Avatar Ana R." class="author-avatar" loading="lazy">
-                        <div class="author-details">
-                            <p>Ana R.</p>
-                            <small>Diseñadora Industrial</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="rating">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Soy técnico y necesitaba mejorar mi interpretación de planos. Intento resolver las piezas por mi mismo pero el video tutorial para cada pieza es un salvavidas. Comprarlo a este precio fue la mejor inversión para mi desarrollo profesional en SolidWorks."
-                    </p>
-                    <div class="testimonial-author">
-                        <img src="https://static.wixstatic.com/media/32c95b_5336d0946b644da68878df30073aae69~mv2.png" alt="Avatar Luis G." class="author-avatar" loading="lazy">
-                        <div class="author-details">
-                            <p>Luis G.</p>
-                            <small>Técnico Mecánico Industrial</small>
-                        </div>
+            <div class="testimonial-card">
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">
+                    "Por fin encontré planos con medidas reales, no son solo ejercicios. Me ayudó muchísimo a armar mi portafolio. Las actualizaciones gratuitas son un plus increíble, estoy muy satisfecha con la compra."
+                </p>
+                <div class="testimonial-author">
+                    <img src="https://static.wixstatic.com/media/32c95b_113e9b88f0c442c798e6f58e8b470c4c~mv2.png" alt="Avatar Ana R." class="author-avatar" loading="lazy">
+                    <div class="author-details">
+                        <p>Ana R.</p>
+                        <small>Diseñadora Industrial</small>
                     </div>
                 </div>
             </div>
 
-            <div id="comentarios" class="fb-comments" 
-data-href="https://diegogaona117.github.io/Paquete-de-ejercicios-en-pdf-ars/" 
-data-width="100%" 
-data-numposts="15"></div>
-            
-            <div class="faq-cta" style="margin-top: 40px; border-top: none;">
-                <div class="cta-group" style="margin: 0 auto;">
-                    <a href="https://pay.hotmart.com/P102008003G?off=0unksroe&bid=1767332143277" 
-               target="_blank" 
-               class="buy-button cta-link"
-               rel="noopener noreferrer">
-                Comprar Ahora
-                <span class="price-tag price-display">
-                    <span class="price-original">$27.99 USD</span>
-                    <span class="price-discount">$19.99 USD</span>
-                    <span class="price-save">AHORRA 33%</span>
-                </span>
-            </a>
-                    <div class="trust-badges">
-                        <span class="trust-item">🛡️ Compra protegida con Garantía</span>
+            <div class="testimonial-card">
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">
+                    "Soy técnico y necesitaba mejorar mi interpretación de planos. Intento resolver las piezas por mi mismo pero el video tutorial para cada pieza es un salvavidas. Comprarlo a este precio fue la mejor inversión para mi desarrollo profesional en SolidWorks."
+                </p>
+                <div class="testimonial-author">
+                    <img src="https://static.wixstatic.com/media/32c95b_5336d0946b644da68878df30073aae69~mv2.png" alt="Avatar Luis G." class="author-avatar" loading="lazy">
+                    <div class="author-details">
+                        <p>Luis G.</p>
+                        <small>Técnico Mecánico Industrial</small>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- WhatsApp Float Button -->
-        <a href="https://wa.me/5214621579719?text=Hola%20Diego%2C%20me%20interesa%20el%20paquete%20de%2077%20planos%20de%20SolidWorks.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F"
-           class="whatsapp-float" 
-           target="_blank"
-           rel="noopener noreferrer"
-           title="Contactar por WhatsApp"
-           aria-label="Contactar por WhatsApp">
-            <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
-                 alt="WhatsApp"
-                 loading="lazy">
-        </a>
-    </div>
+        <!-- Facebook Comments Plugin -->
+        <div id="comentarios" class="fb-comments" 
+             data-href="https://diegogaona117.github.io/Paquete-de-ejercicios-en-pdf-ars/" 
+             data-width="100%" 
+             data-numposts="15">
+        </div>
+        
+        <div class="faq-cta" style="margin-top: 40px; border-top: none;">
+            <div class="cta-group" style="margin: 0 auto;">
+                <a href="https://pay.hotmart.com/P102008003G?off=0unksroe&bid=1767332143277" 
+                   target="_blank" 
+                   class="buy-button cta-link"
+                   rel="noopener noreferrer">
+                    Comprar Ahora
+                    <span class="price-tag price-display">
+                        <span class="price-original">$27.99 USD</span>
+                        <span class="price-discount">$19.99 USD</span>
+                        <span class="price-save">AHORRA 33%</span>
+                    </span>
+                </a>
+                <div class="trust-badges">
+                    <span class="trust-item">🛡️ Compra protegida con Garantía</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Scripts -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-RN68VLQLTW');
-    </script>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5214621579719?text=Hola%20Diego%2C%20me%20interesa%20el%20paquete%20de%2077%20planos%20de%20SolidWorks.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%3F"
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       title="Contactar por WhatsApp"
+       aria-label="Contactar por WhatsApp">
+        <img src="https://static.wixstatic.com/media/32c95b_1342cb0eae024b6bad8dace1d8e8f0a4~mv2.webp" 
+             alt="WhatsApp"
+             loading="lazy">
+    </a>
+</div>
 
-    <script>
-        // Lazy load del video YouTube (ahorra datos móviles)
-        const videoContainer = document.querySelector('.video-container');
-        if (videoContainer) {
-            videoContainer.addEventListener('click', function() {
-                const iframe = document.createElement('iframe');
-                iframe.src = 'https://www.youtube.com/embed/GD6Wpsdcq_Y?si=IDl2EVkFWI1E9K-J&autoplay=1';
-                iframe.title = 'Detalles libro SolidWorks';
-                iframe.frameBorder = '0';
-                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-                iframe.allowFullscreen = true;
-                
-                this.innerHTML = '';
-                this.appendChild(iframe);
-            }, { once: true });
-        }
-
-        // FAQ Accordion functionality
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', function() {
-                const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                const answer = this.nextElementSibling;
-                
-                // Close all other open FAQs
-                document.querySelectorAll('.faq-question').forEach(otherButton => {
-                    if (otherButton !== this) {
-                        otherButton.setAttribute('aria-expanded', 'false');
-                        otherButton.nextElementSibling.classList.remove('active');
-                    }
-                });
-                
-                // Toggle current FAQ
-                this.setAttribute('aria-expanded', !isExpanded);
-                answer.classList.toggle('active');
-            });
-        });
-    </script>
-    <div id="fb-root"></div>
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" 
-src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v24.0&appId=392241650294847"></script>
-        <script>
-        // ============================================
-        // CONFIGURACIÓN DEL CONTADOR - 36 HORAS
-        // ============================================
-        const CONFIG = {
-            // ENLACES DE COMPRA
-            discountLink: 'https://pay.hotmart.com/P102008003G?off=0unksroe&bid=1767332143277',
-            regularLink: 'https://pay.hotmart.com/P102008003G?off=yifidpxx',
-            
-            // PRECIOS
-            discountPrice: {
-                original: '$27.99 USD',
-                sale: '$19.99 USD',
-                save: 'AHORRA 33%'
-            },
-            regularPrice: {
-                original: '',
-                sale: '$27.99 USD',
-                save: ''
-            },
-            
-            // DURACIÓN: 24 HORAS FIJAS
-            countdownHours: 24
-        };
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v24.0&appId=392241650294847">
+</script>
 
-        // ============================================
-        // INICIALIZACIÓN
-        // ============================================
-        let countdownInterval;
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
 
-        function initCountdown() {
-            // Verificar si ya existe un countdown en localStorage
-            let endTime = localStorage.getItem('countdownEndTime');
-            
-            if (!endTime) {
-                // Primera vez: crear nuevo countdown de 36 horas
-                const now = new Date().getTime();
-                const duration = CONFIG.countdownHours * 60 * 60 * 1000;
-                endTime = now + duration;
-                localStorage.setItem('countdownEndTime', endTime);
-            }
-
-            // Iniciar el contador
-            updateCountdown(parseInt(endTime));
-            countdownInterval = setInterval(() => updateCountdown(parseInt(endTime)), 1000);
-        }
-
-        // ============================================
-        // ACTUALIZAR CONTADOR
-        // ============================================
-        function updateCountdown(endTime) {
-            const now = new Date().getTime();
-            const distance = endTime - now;
-
-            if (distance < 0) {
-                // Tiempo expirado
-                clearInterval(countdownInterval);
-                showExpiredState();
-                return;
-            }
-
-            // Calcular tiempo restante
-            const hours = Math.floor(distance / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Actualizar display del contador
-            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-
-            // Actualizar mensaje según tiempo restante
-            updateUrgencyMessage(hours);
-
-            // Actualizar TODOS los botones con descuento
-            updateAllButtons(true);
-        }
-
-        // ============================================
-        // MENSAJES DINÁMICOS DE URGENCIA
-        // ============================================
-        function updateUrgencyMessage(hours) {
-            const message = document.getElementById('countdownMessage');
-            
-            if (hours < 6) {
-                message.innerHTML = '🔥 ¡ÚLTIMAS 6 HORAS! No dejes pasar esta oportunidad';
-            } else if (hours < 12) {
-                message.innerHTML = '⚠️ ¡Quedan menos de 12 horas! El descuento termina pronto';
-            } else if (hours < 24) {
-                message.innerHTML = '⏰ ¡Menos de 24 horas! Aprovecha antes que termine';
-            } else {
-                message.innerHTML = '🔥 ¡Aprovecha el 50% de descuento antes que termine!';
-            }
-        }
-
-        // ============================================
-        // ESTADO EXPIRADO
-        // ============================================
-        function showExpiredState() {
-            const banner = document.getElementById('countdownBanner');
-            const timer = document.getElementById('countdownTimer');
-            const message = document.getElementById('countdownMessage');
-            
-            // Cambiar apariencia del banner
-            banner.classList.add('expired');
-            timer.style.display = 'none';
-            
-            message.innerHTML = '<div class="expired-message">⏰ La oferta especial ha finalizado</div>';
-            
-            // Actualizar TODOS los botones a precio regular
-            updateAllButtons(false);
-        }
-
-        // ============================================
-        // ACTUALIZAR TODOS LOS BOTONES Y PRECIOS
-        // ============================================
-        function updateAllButtons(isDiscount) {
-            // Seleccionar TODOS los enlaces de compra en la página
-            const allBuyButtons = document.querySelectorAll('.cta-link');
-            const allPriceDisplays = document.querySelectorAll('.price-display');
-            
-            // Actualizar enlaces
-            allBuyButtons.forEach(button => {
-                button.href = isDiscount ? CONFIG.discountLink : CONFIG.regularLink;
-            });
-            
-            // Actualizar precios
-            allPriceDisplays.forEach(priceTag => {
-                if (isDiscount) {
-                    priceTag.innerHTML = `
-                        <span class="price-original">${CONFIG.discountPrice.original}</span>
-                        <span class="price-discount">${CONFIG.discountPrice.sale}</span>
-                        <span class="price-save">${CONFIG.discountPrice.save}</span>
-                    `;
-                } else {
-                    priceTag.innerHTML = `
-                        <span class="price-discount">${CONFIG.regularPrice.sale}</span>
-                    `;
-                }
-            });
-        }
-
-        // ============================================
-        // FUNCIÓN DE PRUEBA (eliminar en producción)
-        // ============================================
-        function testExpiration() {
-            clearInterval(countdownInterval);
-            showExpiredState();
-            console.log('✅ Simulando expiración del contador...');
-        }
-
-        // ============================================
-        // INICIAR AL CARGAR LA PÁGINA
-        // ============================================
-        window.addEventListener('DOMContentLoaded', initCountdown);
-    </script>
-</body>
-</html>
+<!-- JAVASCRIPT EXTERNO -->
+<script src="script.js"></script>
