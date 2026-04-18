@@ -137,8 +137,6 @@
             transform: scale(0.98);
         }
 
-
-
         /* Trust Badges */
         .trust-badges {
             text-align: center;
@@ -161,8 +159,6 @@
             border-radius: 4px;
             border: 1px solid rgba(0,0,0,0.05);
         }
-
-
 
         .tagline-container { margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px; width: 100%; }
         
@@ -521,6 +517,54 @@
             line-height: 1.6;
         }
 
+        /* Also Includes Banner */
+        .also-includes-banner {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border: 2px solid #22c55e;
+            border-radius: 14px;
+            padding: 20px 22px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.12);
+        }
+
+        .also-includes-banner .badge {
+            background: #22c55e;
+            color: white;
+            font-size: 0.75em;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 9px;
+            border-radius: 20px;
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .also-includes-banner .content p {
+            font-size: 1em;
+            color: #15803d;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .also-includes-banner .content small {
+            font-size: 0.9em;
+            color: #166534;
+            line-height: 1.5;
+            display: block;
+        }
+
+        .also-includes-banner .content a {
+            color: #15803d;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
         /* Learning Section */
         .learning-section {
             background: white; 
@@ -733,6 +777,41 @@
             font-size: 1.4em;
             margin-bottom: 12px;
             letter-spacing: 2px;
+        }
+
+        /* Ver más reseñas button */
+        .reviews-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #2c3e50;
+            border: 2px solid #d1d5db;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-top: 30px;
+        }
+
+        .reviews-more-btn:hover {
+            border-color: #4285F4;
+            color: #4285F4;
+            box-shadow: 0 4px 16px rgba(66, 133, 244, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .reviews-more-btn:active {
+            transform: scale(0.98);
+        }
+
+        .google-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
         }
 
         /* Results Section */
@@ -1027,7 +1106,6 @@
         </section>
 
         <!-- Prerequisite Notice -->
-        <!-- Prerequisite Notice -->
         <div style="
             background: #f0f7ff;
             border: 2px solid #3b82f6;
@@ -1130,6 +1208,20 @@
                         <h3>Actualizaciones Gratis</h3>
                         <p><strong>Acceso de por vida</strong> a todos los nuevos planos y videos que se agreguen al paquete</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- También incluye banner -->
+            <div class="also-includes-banner">
+                <span class="badge">🎁 También incluye</span>
+                <div class="content">
+                    <p>Paquete de Ejercicios en PDF (200 planos) — Ejercicios adicionales para reforzar lo aprendido</p>
+                    <small>
+                        Accede al contenido completo en: 
+                        <a href="https://diegogaona117.github.io/Paquete-de-ejercicios-en-pdf/" target="_blank" rel="noopener noreferrer">
+                            diegogaona117.github.io/Paquete-de-ejercicios-en-pdf
+                        </a>
+                    </small>
                 </div>
             </div>
         </section>
@@ -1394,8 +1486,6 @@
         <!-- Testimonials Section -->
         <section class="testimonials-section">
             <h2 class="testimonials-title">✨ Lo que dicen nuestros estudiantes</h2>
-            
-            
 
             <div class="testimonials-grid" style="grid-template-columns: 1fr; max-width: 650px; margin: 0 auto;">
                 <div class="testimonial-card">
@@ -1425,7 +1515,24 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <!-- Botón Ver más comentarios -->
+            <div style="text-align: center;">
+                <a href="https://www.google.com/maps/place/Curso+Diego+Gaona/@23.2124756,-113.2621557,5z/data=!4m8!3m7!1s0x842c7f134b6368ff:0xd595cfaec1c632b1!8m2!3d23.5541269!4d-102.6205!9m1!1b1!16s%2Fg%2F11yv9vn59_?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="reviews-more-btn">
+                    <!-- Google "G" icon SVG -->
+                    <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                        <path fill="none" d="M0 0h48v48H0z"/>
+                    </svg>
+                    Ver más reseñas en Google
+                </a>
             </div>
             
             <div class="faq-cta" style="margin-top: 40px; border-top: none;">
