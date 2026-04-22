@@ -1631,5 +1631,28 @@
     <script async defer crossorigin="anonymous" 
     src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v24.0&appId=392241650294847"></script>
 
+    <script>
+    // Meta CAPI - ViewContent al 75% de scroll
+    let viewContentFired = false;
+
+    window.addEventListener('scroll', function () {
+        if (viewContentFired) return;
+
+        const scrolled = window.scrollY + window.innerHeight;
+        const total = document.documentElement.scrollHeight;
+        const percent = (scrolled / total) * 100;
+
+        if (percent >= 75) {
+            viewContentFired = true;
+            fbq('track', 'ViewContent', {
+                content_name: 'Paquete 77 Planos PDF',
+                content_category: 'SolidWorks',
+                currency: 'MXN',
+                value: 149
+            });
+        }
+    }, { passive: true });
+</script>
+
 </body>
 </html>
