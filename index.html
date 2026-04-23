@@ -1632,25 +1632,41 @@
     src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v24.0&appId=392241650294847"></script>
 
     <script>
-    // Meta CAPI - ViewContent al 75% de scroll
-    let viewContentFired = false;
+    // Meta CAPI - Medición granular de Scroll (Custom Events)
+    const scrollMilestones = {
+        10: false,
+        25: false,
+        50: false,
+        75: false,
+        100: false
+    };
 
     window.addEventListener('scroll', function () {
-        if (viewContentFired) return;
-
+        // Calculamos qué porcentaje de la página ha bajado el usuario
         const scrolled = window.scrollY + window.innerHeight;
         const total = document.documentElement.scrollHeight;
-        const percent = (scrolled / total) * 100;
+        const percent = Math.round((scrolled / total) * 100);
 
-        if (percent >= 75) {
-            viewContentFired = true;
-            fbq('track', 'ViewContent', {
-                content_name: 'Paquete 77 Planos PDF',
-                content_category: 'SolidWorks',
-                currency: 'MXN',
-                value: 149
-            });
-        }
+        // Recorremos nuestros porcentajes objetivo
+        Object.keys(scrollMilestones).forEach(milestone => {
+            const milestoneLimit = Number(milestone);
+            
+            // Si el usuario cruzó la línea y el evento aún no se ha disparado
+            if (percent >= milestoneLimit && !scrollMilestones[milestone]) {
+                scrollMilestones[milestone] = true; // Lo bloqueamos para que no se dispare 1000 veces
+                
+                // Armamos el nombre del evento (Ej: "Scroll_25%")
+                // Ajusta este string si en tu imagen el nombre es diferente
+                const NombreDelEvento = `Scroll_${milestoneLimit}%`; 
+
+                // Disparamos el evento personalizado a Meta
+                fbq('trackCustom', NombreDelEvento, {
+                    content_name: 'Paquete 77 Planos PDF',
+                    content_category: 'SolidWorks',
+                    scroll_depth: milestoneLimit // Mandamos el dato extra por si lo ocupas en tus reglas
+                });
+            }
+        });
     }, { passive: true });
 </script>
 
