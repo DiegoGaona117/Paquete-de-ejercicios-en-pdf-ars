@@ -71,9 +71,8 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             padding: 25px;
             margin-bottom: 30px;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
+            display: flex;
+            flex-direction: column;
             align-items: center;
         }
         
@@ -85,137 +84,7 @@
             line-height: 1.3;
             text-align: center;
         }
-
-        /* Buttons Container */
-        .buttons-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-bottom: 20px;
-            align-items: center;
-            width: 100%;
-        }
-
-        /* Grupo CTA */
-        .cta-group {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            max-width: 400px;
-        }
         
-        .buy-button {
-            background: linear-gradient(45deg, #FF1717, #e74c3c);
-            color: white;
-            border: none;
-            padding: 16px 30px;
-            font-size: 1.1em;
-            font-weight: bold;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-            min-height: 48px;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .buy-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255, 23, 23, 0.3);
-        }
-
-        .buy-button:active {
-            transform: scale(0.98);
-        }
-
-        /* Trust Badges */
-        .trust-badges {
-            text-align: center;
-            font-size: 0.75em;
-            color: #555;
-            margin-top: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .trust-item { 
-            display: flex; 
-            align-items: center; 
-            gap: 4px; 
-            background: rgba(0,0,0,0.04);
-            padding: 4px 8px;
-            border-radius: 4px;
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-
-        .tagline-container { margin-top: 25px; border-top: 1px solid #eee; padding-top: 15px; width: 100%; }
-        
-        .tagline {
-            color: #3498db;
-            font-weight: 600;
-            font-size: 1em;
-            text-align: center;
-            margin: 8px 0;
-        }
-        
-        /* Video Container */
-        .video-container {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-            background: #000;
-            aspect-ratio: 16/9;
-            cursor: pointer;
-        }
-        
-        .video-thumbnail {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        
-        .video-container:hover .play-button {
-            transform: translate(-50%, -50%) scale(1.1);
-        }
-
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 70px;
-            height: 70px;
-            background: rgba(255, 0, 0, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2em;
-            pointer-events: none;
-            transition: transform 0.3s ease;
-        }
-        
-        .video-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
         /* Description Section */
         .description-section {
             background: white;
@@ -275,7 +144,7 @@
             font-weight: bold;
         }
 
-        /* Preview Section */
+        /* Preview Section (Layout Original Stacked) */
         .preview-section {
             background: white;
             border-radius: 20px;
@@ -296,67 +165,6 @@
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
             margin-bottom: 20px;
-        }
-
-        /* Free Sample Section */
-        .free-sample-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 20px;
-            padding: 40px 25px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-        }
-
-        .free-sample-content {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .free-sample-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.3;
-        }
-
-        .free-sample-subtitle {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            opacity: 0.95;
-            line-height: 1.5;
-        }
-
-        .free-sample-button {
-            background: linear-gradient(45deg, #4CAF50, #45a049);
-            color: white;
-            border: none;
-            padding: 18px 40px;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
-            margin-bottom: 20px;
-            min-height: 48px;
-            touch-action: manipulation;
-        }
-
-        .free-sample-button:active {
-            transform: scale(0.98);
-        }
-
-        .free-sample-note {
-            font-size: 0.95em;
-            opacity: 0.85;
-            font-style: italic;
         }
 
         /* FAQ Section */
@@ -459,8 +267,99 @@
             margin-bottom: 20px;
         }
 
-        /* Package Section */
-        .package-section {
+         /* Ver más reseñas button */
+        .reviews-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #2c3e50;
+            border: 2px solid #d1d5db;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-top: 30px;
+        }
+
+        .reviews-more-btn:hover {
+            border-color: #4285F4;
+            color: #4285F4;
+            box-shadow: 0 4px 16px rgba(66, 133, 244, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .reviews-more-btn:active {
+            transform: scale(0.98);
+        }
+
+        .google-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+
+        .buy-button {
+            background: linear-gradient(45deg, #FF1717, #e74c3c);
+            color: white;
+            border: none;
+            padding: 16px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            min-height: 48px;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            position: relative;
+            overflow: hidden;
+            width: 350px;
+            margin: auto;
+        }
+
+        .buy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 23, 23, 0.3);
+        }
+
+        .buy-button:active {
+            transform: scale(0.98);
+        }
+
+        .trust-badges {
+            text-align: center;
+            font-size: 0.75em;
+            color: #555;
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 4px; 
+            background: rgba(0,0,0,0.04);
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* Bonus Section */
+        .bonus-section {
             background: white; 
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -468,7 +367,7 @@
             margin-bottom: 30px;
         }
         
-        .package-title {
+        .bonus-title {
             font-size: 1.8em;
             font-weight: 700;
             color: #2c3e50;
@@ -476,94 +375,43 @@
             margin-bottom: 30px;
         }
         
-        .package-grid {
+        .bonus-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 20px;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
         }
         
-        .package-item {
-            display: flex;
-            align-items: flex-start;
-            padding: 20px;
-            background: #f8f8ff;
-            border: 1px solid #e0e6ff;
-            border-radius: 12px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .package-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.15);
-        }
-        
-        .package-icon {
-            font-size: 2.5em;
-            color: #667eea;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-        
-        .package-content h3 {
-            font-size: 1.2em;
-            color: #2c3e50;
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-        
-        .package-content p {
-            font-size: 1em;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* Also Includes Banner */
-        .also-includes-banner {
+        .bonus-card {
             background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
             border: 2px solid #22c55e;
-            border-radius: 14px;
-            padding: 20px 22px;
-            display: flex;
-            align-items: flex-start;
-            gap: 14px;
-            margin-top: 20px;
+            border-radius: 15px;
+            padding: 25px;
+            position: relative;
             box-shadow: 0 4px 15px rgba(34, 197, 94, 0.12);
+            transition: transform 0.3s ease;
         }
 
-        .also-includes-banner .badge {
+        .bonus-card:hover { transform: translateY(-5px); }
+
+        .bonus-badge {
+            position: absolute;
+            top: -14px;
+            left: 20px;
             background: #22c55e;
             color: white;
-            font-size: 0.75em;
+            font-size: 0.8em;
             font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            padding: 3px 9px;
+            padding: 4px 12px;
             border-radius: 20px;
-            white-space: nowrap;
-            flex-shrink: 0;
-            margin-top: 2px;
+            letter-spacing: 0.5px;
         }
 
-        .also-includes-banner .content p {
-            font-size: 1em;
-            color: #15803d;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-
-        .also-includes-banner .content small {
-            font-size: 0.9em;
-            color: #166534;
-            line-height: 1.5;
-            display: block;
-        }
-
-        .also-includes-banner .content a {
-            color: #15803d;
-            font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 2px;
-        }
+        .bonus-icon { font-size: 2.5em; margin-bottom: 10px; display: block; }
+        .bonus-card h3 { font-size: 1.2em; color: #15803d; margin-bottom: 8px; font-weight: 700; }
+        .bonus-card p { font-size: 1em; color: #166534; line-height: 1.5; margin: 0; }
 
         /* Learning Section */
         .learning-section {
@@ -600,463 +448,70 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
-        .learning-check {
-            font-size: 1.5em;
-            color: #27ae60;
-            margin-right: 10px;
-            line-height: 1;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .learning-item p {
-            font-size: 1em;
-            color: #333;
-            margin: 0;
-            line-height: 1.5;
-        }
+        .learning-check { font-size: 1.5em; color: #27ae60; margin-right: 10px; line-height: 1; font-weight: bold; flex-shrink: 0; }
+        .learning-item p { font-size: 1em; color: #333; margin: 0; line-height: 1.5; }
 
         /* Audience Section */
         .audience-section {
             background: white; 
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px 10px;
+            padding: 30px 15px;
             margin-bottom: 30px;
         }
 
-        .audience-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
+        .audience-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        .audience-grid { max-width: 800px; margin: 0 auto; }
+        .audience-card { padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); background: #e6fff3; border: 2px solid #2ecc71; }
+        .audience-card-title { font-size: 1.4em; margin-bottom: 20px; text-align: center; color: #27ae60; font-weight: 800; }
+        .audience-list { list-style: none; padding-left: 0; }
+        .audience-list li { font-size: 1.1em; color: #333; margin-bottom: 15px; line-height: 1.5; display: flex; align-items: flex-start; gap: 12px; }
+        .audience-list li::before { content: "✅"; flex-shrink: 0; }
 
-        .audience-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-        }
-
-        .audience-card {
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-        }
-
-        .audience-yes {
-            background: #e6fff3;
-            border: 2px solid #2ecc71;
-        }
-
-        .audience-no {
-            background: #fff0f0;
-            border: 2px solid #e74c3c;
-        }
-
-        .audience-card-title {
-            font-size: 1.4em;
-            margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        .audience-yes .audience-card-title { color: #27ae60; }
-        .audience-no .audience-card-title { color: #c0392b; }
-
-        .audience-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .audience-list li {
-            font-size: 1em;
-            color: #333;
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        .audience-yes .audience-list li::before {
-            content: "✅";
-            margin-right: 10px;
-        }
-
-        .audience-no .audience-list li::before {
-            content: "🚫";
-            margin-right: 10px;
-        }
-
-        /* Testimonials Section */
-        .testimonials-section {
-            background: #f0f4ff;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-
-        .testimonials-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border-top: 5px solid #667eea;
-            position: relative;
-        }
-
-        .testimonial-card::before {
-            content: "❝";
-            font-family: serif;
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            font-size: 4em;
-            color: #e0e6ff;
-            line-height: 0.5;
-            z-index: 1;
-            margin-top: 5px;
-        }
-
-        .testimonial-text {
-            font-size: 1.1em;
-            font-style: italic;
-            color: #444;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            z-index: 2;
-            position: relative;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            border-top: 1px solid #f0f0f0;
-            padding-top: 15px;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #ccc;
-            margin-right: 15px;
-            object-fit: cover;
-            border: 2px solid #667eea;
-        }
-
-        .author-details p {
-            margin: 0;
-            font-weight: bold;
-            color: #2c3e50;
-            font-size: 1em;
-        }
-
-        .author-details small {
-            color: #7f8c8d;
-            font-size: 0.85em;
-        }
-
-        .rating {
-            color: #f59e0b;
-            font-size: 1.4em;
-            margin-bottom: 12px;
-            letter-spacing: 2px;
-        }
-
-        /* Ver más reseñas button */
-        .reviews-more-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: white;
-            color: #2c3e50;
-            border: 2px solid #d1d5db;
-            padding: 14px 28px;
-            border-radius: 50px;
-            font-size: 1em;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            margin-top: 30px;
-        }
-
-        .reviews-more-btn:hover {
-            border-color: #4285F4;
-            color: #4285F4;
-            box-shadow: 0 4px 16px rgba(66, 133, 244, 0.2);
-            transform: translateY(-2px);
-        }
-
-        .reviews-more-btn:active {
-            transform: scale(0.98);
-        }
-
-        .google-icon {
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-        }
-
-        /* Results Section */
-        .results-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px 10px;
-            margin-bottom: 30px;
-        }
-
-        .results-title {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .results-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .result-card {
-            background: #f8f8ff;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-
-        .result-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-
-        .result-card h3 {
-            font-size: 1.4em;
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-
-        .result-card p {
-            color: #555;
-            line-height: 1.6;
-        }
+        /* Results & Testimonials */
+        .results-section { background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 30px 10px; margin-bottom: 30px; }
+        .results-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 40px; }
+        .results-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 900px; margin: 0 auto; }
+        .result-card { background: #f8f8ff; padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .result-icon { font-size: 3em; margin-bottom: 15px; }
+        .result-card h3 { font-size: 1.4em; color: #2c3e50; margin-bottom: 15px; }
+        .result-card p { color: #555; line-height: 1.6; }
 
         /* Transformation Section */
-        .transformation-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 40px 5px;
-            margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .transformation-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #e74c3c, #3498db, #2ecc71);
-        }
-
-        .transformation-section h2 {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-            line-height: 1.3;
-        }
-
-        .transformation-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .before, .after {
-            padding: 30px 25px;
-            border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            position: relative;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .before:hover, .after:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-        }
-
-        .before {
-            background: linear-gradient(135deg, #fff5f5 0%, #ffecec 100%);
-            border: 2px solid #e74c3c;
-        }
-
-        .before::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 5px;
-            background: linear-gradient(90deg, #e74c3c, #c0392b);
-            border-radius: 15px 15px 0 0;
-        }
-
-        .after {
-            background: linear-gradient(135deg, #f0fff4 0%, #e6ffe6 100%);
-            border: 2px solid #27ae60;
-        }
-
-        .after::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 5px;
-            background: linear-gradient(90deg, #27ae60, #219653);
-            border-radius: 15px 15px 0 0;
-        }
-
-        .before h3, .after h3 {
-            font-size: 1.5em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
+        .transformation-section { background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 40px 5px; margin-bottom: 30px; position: relative; overflow: hidden; }
+        .transformation-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #e74c3c, #3498db, #2ecc71); }
+        .transformation-section h2 { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 40px; line-height: 1.3; }
+        .transformation-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 1000px; margin: 0 auto; }
+        .before, .after { padding: 30px 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); position: relative; transition: transform 0.3s ease; }
+        .before { background: linear-gradient(135deg, #fff5f5 0%, #ffecec 100%); border: 2px solid #e74c3c; }
+        .after { background: linear-gradient(135deg, #f0fff4 0%, #e6ffe6 100%); border: 2px solid #27ae60; }
+        .before h3, .after h3 { font-size: 1.5em; font-weight: 700; margin-bottom: 20px; text-align: center; }
         .before h3 { color: #c0392b; }
         .after h3 { color: #27ae60; }
+        .before ul, .after ul { list-style: none; padding: 0; }
+        .before li, .after li { padding: 12px 15px; margin-bottom: 10px; border-radius: 8px; font-size: 1.1em; line-height: 1.5; }
+        .before li { background: rgba(231, 76, 60, 0.08); border-left: 4px solid #e74c3c; }
+        .after li { background: rgba(39, 174, 96, 0.08); border-left: 4px solid #27ae60; }
 
-        .before ul, .after ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .before li, .after li {
-            padding: 12px 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            font-size: 1.1em;
-            line-height: 1.5;
-            transition: all 0.3s ease;
-        }
-
-        .before li {
-            background: rgba(231, 76, 60, 0.08);
-            border-left: 4px solid #e74c3c;
-        }
-        .before li:hover { background: rgba(231, 76, 60, 0.15); transform: translateX(5px); }
-
-        .after li {
-            background: rgba(39, 174, 96, 0.08);
-            border-left: 4px solid #27ae60;
-        }
-        .after li:hover { background: rgba(39, 174, 96, 0.15); transform: translateX(5px); }
+        /* Testimonials */
+        .testimonials-section { background: #f0f4ff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 30px 10px; margin-bottom: 30px; }
+        .testimonials-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 40px; }
+        .testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 900px; margin: 0 auto; }
+        .testimonial-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 5px solid #667eea; position: relative; }
+        .testimonial-text { font-size: 1.1em; font-style: italic; color: #444; margin-bottom: 20px; line-height: 1.6; }
+        .author-details p { margin: 0; font-weight: bold; color: #2c3e50; font-size: 1em; }
+        .rating { color: #f59e0b; font-size: 1.4em; margin-bottom: 12px; letter-spacing: 2px; }
 
         /* Desktop Optimizations */
         @media (min-width: 769px) {
-            .container { padding: 20px; }
-            
-            .hero-section {
-                grid-template-columns: 1fr 1fr;
-                gap: 40px;
-                padding: 40px;
-                margin-bottom: 40px;
-            }
-            
-            .hero-content h1 { font-size: 2.5em; line-height: 1.2; text-align: left; }
-            
-            .buttons-container { 
-                flex-direction: row; 
-                align-items: flex-start;
-                justify-content: flex-start;
-                gap: 15px; 
-            }
-            
-            .cta-group { width: auto; max-width: none; flex: 1; }
-            
-            .buy-button {
-                flex: 1;
-                min-width: 250px;
-                padding: 18px 40px;
-                font-size: 1.3em;
-            }
-
-            .whatsapp-float {
-                width: 60px;
-                height: 60px;
-            }
-            .whatsapp-float img {
-                width: 36px;
-                height: 36px;
-            }
-            
-            .trust-badges { justify-content: center; }
-
-            .description-section { padding: 40px; margin-bottom: 40px; }
+            .hero-content h1 { font-size: 2.5em; }
+            .description-section { padding: 40px; }
             .description-title { font-size: 2em; }
-            
-            .features-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 30px;
-                margin-bottom: 30px;
-            }
-            .feature-card { padding: 30px; }
-            .feature-icon { font-size: 3em; margin-bottom: 15px; }
-
-            .free-sample-section { padding: 50px 40px; margin-bottom: 40px; }
-            .free-sample-title { font-size: 2.2em; }
-            .free-sample-button { padding: 20px 50px; font-size: 1.4em; }
-
-            .faq-section { padding: 50px 40px; margin-bottom: 40px; }
-            .faq-title { font-size: 2.2em; margin-bottom: 40px; }
-            .faq-question { padding: 25px 0; font-size: 1.2em; }
-            
-            .package-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+            .features-grid { grid-template-columns: repeat(3, 1fr); gap: 30px; }
+            .bonus-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
             .learning-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 30px; }
-            .audience-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
-            .testimonials-grid { grid-template-columns: repeat(3, 1fr); gap: 40px; }
             .results-grid { grid-template-columns: repeat(3, 1fr); }
-            
             .transformation-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-            .transformation-section { padding: 50px 40px; }
-            .transformation-section h2 { font-size: 2.2em; }
-            .before h3, .after h3 { font-size: 1.7em; }
-
-            .price-display { justify-content: flex-start; }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                transition-duration: 0.01ms !important;
-            }
         }
     </style>
 </head>
@@ -1066,121 +521,21 @@
     <div class="container">
         <!-- Hero Section -->
         <section class="hero-section">
-            <div class="hero-content">
-                <h1>📚 Práctica guiada de planos en PDF + Videos Tutoriales</h1>
-
-                <!-- Precio -->
-                <div class="price-display" style="
-                    display: flex;
-                    align-items: center;
-                    gap: 16px;
-                    margin-bottom: 20px;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                ">
-                    <span style="
-                        font-size: 1.1em;
-                        color: #999;
-                        text-decoration: line-through;
-                        font-weight: 500;
-                    ">$299 MXN</span>
-                    <span style="
-                        font-size: 2.2em;
-                        font-weight: 800;
-                        color: #e74c3c;
-                        line-height: 1;
-                    ">$149 MXN</span>
-                    <span style="
-                        background: #e74c3c;
-                        color: white;
-                        font-size: 0.85em;
-                        font-weight: 700;
-                        padding: 5px 12px;
-                        border-radius: 20px;
-                    ">50% OFF</span>
-                </div>
+            <div class="hero-content" style="max-width: 850px; margin: 0 auto;">
+                <h1 style="text-align: center; margin-bottom: 15px;">🚀 Domina SolidWorks y arma tu portafolio sin perder horas buscando tutoriales</h1>
                 
-                <div class="buttons-container">
-                    <div class="cta-group">
-                        <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" 
-                           target="_blank" 
-                           class="buy-button"
-                           rel="noopener noreferrer">
-                            Comprar Ahora
-                        </a>
-                        
-                        <div class="trust-badges">
-                            <span class="trust-item">🔒 Pago Seguro</span>
-                            <span class="trust-item">🛡️ Garantía Total 7 días</span>
-                            <span class="trust-item">⚡ Acceso Inmediato</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tagline-container">
-                    <div class="tagline" style="color: #27ae60;">🚀 ¡Domina SolidWorks en 30 días o menos!</div>
-                    <div class="tagline" style="color: #2c3e50;">💎 Único pago de $149 MXN • Acceso de por vida</div>
-                    <p style="text-align: center; color: #555; font-size: 0.9em; margin-top: 10px; font-weight: 500;">
-                        ✅ Pruébalo sin riesgo: Si no te convence, te devolvemos el 100% de tu dinero.
+                <div style="font-size: 1.1em; color: #4b5563; line-height: 1.6; max-width: 750px; margin: 25px auto 0 auto; text-align: left; background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: #2c3e50;">📦 ¿Qué es exactamente?</strong><br>
+                        Un paquete de práctica intensiva con 77 planos técnicos industriales en PDF interactivo y sus respectivos 77 videos tutoriales explicados paso a paso.
+                    </p>
+                    <p style="margin: 0;">
+                        <strong style="color: #2c3e50;">🎯 ¿Para qué te va a servir?</strong><br>
+                        Para eliminar la frustración de perder tiempo buscando ejercicios sueltos o planos borrosos en internet. Te da una ruta directa y estructurada para dominar la lectura de documentación técnica real, ganar velocidad modelando y tener las piezas listas para armar tu portafolio profesional.
                     </p>
                 </div>
             </div>
-            
-            <div class="video-container">
-                <img src="https://static.wixstatic.com/media/32c95b_1aff33112fd7422e88b7743fda2f6d8c~mv2.webp" 
-                     alt="Video presentación SolidWorks"
-                     class="video-thumbnail"
-                     loading="lazy"
-                     width="581"
-                     height="327">
-                <div class="play-button">▶</div>
-            </div>
         </section>
-
-        <!-- Prerequisite Notice -->
-        <div style="
-            background: #f0f7ff;
-            border: 2px solid #3b82f6;
-            border-radius: 16px;
-            padding: 24px 28px;
-            margin-bottom: 30px;
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.12);
-        ">
-            <span style="font-size: 2em; flex-shrink: 0; line-height: 1;">🎯</span>
-            <div>
-                <p style="font-size: 1.1em; font-weight: 700; color: #1e40af; margin-bottom: 8px;">
-                    ¿Ya sabes los conceptos básicos de SolidWorks? Este paquete es perfecto para ti
-                </p>
-                <p style="font-size: 1em; color: #1e3a8a; line-height: 1.6; margin: 0;">
-                    Está diseñado para personas que <strong>ya conocen las herramientas básicas del programa</strong> y quieren dar el siguiente paso: practicar con planos técnicos reales y tener un video tutorial a la mano para resolver cualquier duda en el momento.
-                    <br><br>
-                    <strong>¿Todavía no tienes esa base?</strong> No te preocupes, también tenemos algo para ti:
-                    <br><br>
-                    <a href="https://hotmart.com/es/marketplace/productos/curso-de-solidworks-modulo-de-pieza/L88923459X" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       style="
-                           display: inline-block;
-                           background: linear-gradient(45deg, #2563eb, #1d4ed8);
-                           color: white;
-                           font-weight: 700;
-                           font-size: 1em;
-                           padding: 12px 24px;
-                           border-radius: 8px;
-                           text-decoration: none;
-                           box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-                           transition: all 0.2s ease;
-                       "
-                       onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 18px rgba(37,99,235,0.4)'"
-                       onmouseout="this.style.transform='';this.style.boxShadow='0 4px 12px rgba(37,99,235,0.3)'">
-                        👉 Ver curso de SolidWorks desde cero
-                    </a>
-                </p>
-            </div>
-        </div>
 
         <!-- Description Section -->
         <section class="description-section">
@@ -1213,51 +568,6 @@
             </div>
         </section>
 
-        <!-- Package Section -->
-        <section class="package-section">
-            <h2 class="package-title">📦 ¿Qué vas a recibir exactamente?</h2>
-            
-            <div class="package-grid">
-                <div class="package-item">
-                    <div class="package-icon">📄</div>
-                    <div class="package-content">
-                        <h3>Paquete PDF Completo</h3>
-                        <p>77 planos técnicos de piezas individuales, desde nivel básico hasta avanzado</p>
-                    </div>
-                </div>
-
-                <div class="package-item">
-                    <div class="package-icon">🎬</div>
-                    <div class="package-content">
-                        <h3>77 Videos Tutoriales</h3>
-                        <p>Cada plano incluye su <strong>video paso a paso en español</strong> para que nunca te quedes atorado</p>
-                    </div>
-                </div>
-
-                <div class="package-item">
-                    <div class="package-icon">🔄</div>
-                    <div class="package-content">
-                        <h3>Actualizaciones Gratis</h3>
-                        <p><strong>Acceso de por vida</strong> a todos los nuevos planos y videos que se agreguen al paquete</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- También incluye banner -->
-            <div class="also-includes-banner">
-                <span class="badge">🎁 También incluye</span>
-                <div class="content">
-                    <p>Paquete de Ejercicios en PDF (200 planos) — Ejercicios adicionales para reforzar lo aprendido</p>
-                    <small>
-                        Accede al contenido completo en: 
-                        <a href="https://diegogaona117.github.io/Paquete-de-ejercicios-en-pdf/" target="_blank" rel="noopener noreferrer">
-                            diegogaona117.github.io/Paquete-de-ejercicios-en-pdf
-                        </a>
-                    </small>
-                </div>
-            </div>
-        </section>
-
         <!-- Learning Section -->
         <section class="learning-section">
             <h2 class="learning-title">🎓 Lo que aprenderás</h2>
@@ -1267,75 +577,76 @@
                     <span class="learning-check">✅</span>
                     <p>Modelado de <strong>piezas mecánicas individuales</strong> desde básico a avanzado</p>
                 </div>
-
                 <div class="learning-item">
                     <span class="learning-check">✅</span>
                     <p>Interpretación de <strong>planos técnicos profesionales</strong> con todas sus especificaciones</p>
                 </div>
-
                 <div class="learning-item">
                     <span class="learning-check">✅</span>
                     <p>Técnicas y herramientas <strong>usadas en la industria real</strong></p>
                 </div>
-
                 <div class="learning-item">
                     <span class="learning-check">✅</span>
                     <p>Progresión estructurada: <strong>empieza con piezas simples, termina modelando piezas complejas</strong></p>
                 </div>
-
-                <div class="learning-item">
+                <div class="learning-item" style="grid-column: 1 / -1; max-width: 440px; margin: 0 auto;">
                     <span class="learning-check">✅</span>
                     <p>Geometrías avanzadas: <strong>redondeos, chaflanes, cortes complejos, barridos, simetrías, matrices</strong></p>
                 </div>
             </div>
         </section>
 
-        <!-- Audience Section -->
-        <section class="audience-section">
-            <h2 class="audience-title">¿Para quién es este paquete?</h2>
-            
-            <div class="audience-grid">
-                <div class="audience-card audience-yes">
-                    <h3 class="audience-card-title">ES PERFECTO PARA TI SI:</h3>
-                    <ul class="audience-list">
-                        <li>Eres <strong>estudiante de ingeniería</strong> o diseño industrial</li>
-                        <li>Eres <strong>técnico</strong> que quiere mejorar sus habilidades en SolidWorks</li>
-                        <li>Necesitas <strong>práctica con planos reales</strong> para tu portafolio</li>
-                        <li>Buscas <strong>ejemplos profesionales</strong> que puedas seguir paso a paso</li>
-                        <li>Quieres aprender con <strong>progresión estructurada</strong> desde básico a avanzado</li>
-                    </ul>
-                </div>
+        <!-- Preview Section -->
+        <section class="preview-section">
+            <h2 class="preview-title">Planos en PDF que contiene este paquete</h2>
+            <div class="preview-content">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_68cf75ac2a4f41ffaab41803899d8ff2~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_4b8f3c9a162247aeba41ea11c26bd901~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy">
+                </picture>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_3c1f1e237b5240c5bc2b096821ccb3e6~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_2756659dba344b2fa7ef2f2d01101c15~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy">
+                </picture>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_cd14b0f19dfc43fb8edc22ca633c4bce~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_871f6733582c4fc7a2bd8cbcc7f21911~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy">
+                </picture>
+            </div>
+        </section>
 
-                <div class="audience-card audience-no">
-                    <h3 class="audience-card-title">❌ NO ES PARA TI SI:</h3>
-                    <ul class="audience-list">
-                        <li><strong>No tienes ningún conocimiento</strong> de SolidWorks — primero necesitas un curso introductorio</li>
-                        <li>Ya tienes <strong>+1 año de experiencia</strong> profesional con SolidWorks</li>
-                        <li>Buscas específicamente <strong>proyectos de ensambles</strong> (este paquete son piezas individuales)</li>
-                    </ul>
+        <!-- Bonus Section -->
+        <section class="bonus-section">
+            <h2 class="bonus-title">🎁 Bonos exclusivos al inscribirte hoy</h2>
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <span class="bonus-badge">Bono #1</span>
+                    <span class="bonus-icon">📄</span>
+                    <h3>200 Planos de Ejercicios Extra</h3>
+                    <p>Un segundo paquete en PDF con 200 piezas adicionales de distintos niveles para seguir puliendo tu técnica.</p>
+                </div>
+                <div class="bonus-card">
+                    <span class="bonus-badge">Bono #2</span>
+                    <span class="bonus-icon">🔄</span>
+                    <h3>Actualizaciones de por vida</h3>
+                    <p>Tendrás acceso gratuito y de por vida a todos los nuevos planos y videos que se sigan agregando al paquete.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Preview Section -->
-        <section class="preview-section">
-            <h2 class="audience-title">Planos en PDF que contiene este paquete</h2>
-            <div class="preview-content">
-                <picture>
-                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_68cf75ac2a4f41ffaab41803899d8ff2~mv2.webp">
-                    <source media="(min-width: 501px) and (max-width: 1023px)" srcset="https://static.wixstatic.com/media/32c95b_4b8f3c9a162247aeba41ea11c26bd901~mv2.webp">
-                    <img src="https://static.wixstatic.com/media/32c95b_4b8f3c9a162247aeba41ea11c26bd901~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy" width="1200" height="800">
-                </picture>
-                <picture>
-                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_3c1f1e237b5240c5bc2b096821ccb3e6~mv2.webp">
-                    <source media="(min-width: 501px) and (max-width: 1023px)" srcset="https://static.wixstatic.com/media/32c95b_2756659dba344b2fa7ef2f2d01101c15~mv2.webp">
-                    <img src="https://static.wixstatic.com/media/32c95b_2756659dba344b2fa7ef2f2d01101c15~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy" width="1200" height="800">
-                </picture>
-                <picture>
-                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_cd14b0f19dfc43fb8edc22ca633c4bce~mv2.webp">
-                    <source media="(min-width: 501px) and (max-width: 1023px)" srcset="https://static.wixstatic.com/media/32c95b_871f6733582c4fc7a2bd8cbcc7f21911~mv2.webp">
-                    <img src="https://static.wixstatic.com/media/32c95b_871f6733582c4fc7a2bd8cbcc7f21911~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy" width="1200" height="800">
-                </picture>
+        <!-- Audience Section -->
+        <section class="audience-section">
+            <h2 class="audience-title">¿Este paquete es para ti?</h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <h3 class="audience-card-title">DISEÑADO ESPECIALMENTE PARA:</h3>
+                    <ul class="audience-list">
+                        <li><strong>Estudiantes de Ingeniería y Diseño Industrial</strong> que necesitan pasar de la teoría a la práctica con proyectos reales que puedan incluir en sus trabajos.</li>
+                        <li><strong>Autodidactas y Técnicos</strong> que ya conocen las herramientas básicas pero se sienten estancados y necesitan una ruta clara para avanzar de nivel.</li>
+                        <li><strong>Cualquier usuario que valore su tiempo</strong> y prefiera tener 77 planos de alta calidad organizados, en lugar de perder horas buscando tutoriales incompletos o borrosos.</li>
+                        <li><strong>Futuros profesionales</strong> que quieran construir un portafolio sólido de modelado industrial con piezas mecánicas de nivel profesional.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -1351,66 +662,71 @@
                 <div class="result-card">
                     <div class="result-icon">📈</div>
                     <h3>Mejoraron su portafolio</h3>
-                    <p>Los estudiantes que completan el paquete logran armar un portafolio profesional con los planos.</p>
+                    <p>Logran armar un portafolio profesional con los planos reales.</p>
                 </div>
                 <div class="result-card">
                     <div class="result-icon">⏱️</div>
                     <h3>Ahorraron tiempo</h3>
-                    <p>Los estudiantes reportan ahorrar meses de aprendizaje autodidacta gracias a la práctica guiada.</p>
+                    <p>Reportan ahorrar meses de aprendizaje autodidacta gracias a la práctica guiada.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Free Sample Section -->
-        <section class="free-sample-section">
-            <div class="free-sample-content">
-                <h2 class="free-sample-title">
-                    🎁 ¿Quieres ver la calidad de nuestros planos?
-                </h2>
-                <p class="free-sample-subtitle">
-                    Descarga algunos planos de muestra completamente GRATIS y comprueba por ti mismo la calidad profesional de nuestro contenido
-                </p>
-                
-                <a href="https://drive.google.com/drive/u/0/folders/1UsTtGKXgguc7PElcl3y6Vt433DZj8Nvq" 
-                   class="free-sample-button" 
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    📋 Ver Planos GRATIS
-                </a>
-                
-                <p class="free-sample-note">
-                    💡 Sin compromiso • Descarga inmediata • Calidad profesional garantizada
-                </p>
             </div>
         </section>
 
         <!-- Transformation Section -->
         <section class="transformation-section">
-            <h2>De Principiante a Profesional en 4 Semanas o menos</h2>
+            <h2>Deja de perder tiempo buscando tutoriales sueltos y construye un portafolio real</h2>
             <div class="transformation-grid">
                 <div class="before">
                     <h3>ANTES:</h3>
                     <ul>
-                        <li>❌ Te cuesta interpretar planos complejos</li>
-                        <li>❌ Pierdes horas buscando ejercicios</li>
-                        <li>❌ No tienes retroalimentación</li>
-                        <li>❌ No tienes aprendizaje progresivo</li>
-                        <li>❌ No sabes si tus piezas están realmente bien</li>
-                        <li>❌ Si tienes dudas, hasta ahí llegaste</li>
+                        <li>❌ Pierdes horas buscando ejercicios decentes en internet.</li>
+                        <li>❌ Te cuesta interpretar documentación compleja.</li>
+                        <li>❌ Si tienes dudas o el software hace algo raro, hasta ahí llegaste.</li>
                     </ul>
                 </div>
                 <div class="after">
                     <h3>DESPUÉS:</h3>
                     <ul>
-                        <li>✅ Interpretas planos profesionales con confianza</li>
-                        <li>✅ Tienes 77 proyectos reales para tu portafolio</li>
-                        <li>✅ Aprendes con guía paso a paso en video</li>
-                        <li>✅ Completas proyectos reales en <strong>menos tiempo</strong></li>
-                        <li>✅ Aumentas tus posibilidades de empleo con portafolio profesional</li>
+                        <li>✅ Tienes 77 proyectos reales listos para tu portafolio.</li>
+                        <li>✅ Interpretas planos profesionales con confianza.</li>
+                        <li>✅ Aprendes con guía paso a paso en video.</li>
                     </ul>
                 </div>
             </div>
+
+            
+            <div class="faq-cta">
+                <p class="faq-cta-text">¿Listo para dominar SolidWorks con planos profesionales?</p>
+                <div style="background: #ffffff; border: 2px solid #e2e8f0; border-radius: 16px; padding: 30px; max-width: 500px; margin: 0 auto 30px auto; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: left;">
+                    <h3 style="text-align: center; font-size: 1.5em; color: #2c3e50; margin-bottom: 20px; border-bottom: 2px dashed #e2e8f0; padding-bottom: 15px;">📦 Resumen de tu pedido</h3>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="margin-bottom: 12px;">📄 <strong>77 Planos Industriales</strong> en PDF</li>
+                        <li style="margin-bottom: 12px;">🎬 <strong>77 Videos Tutoriales</strong> paso a paso</li>
+                        <li style="margin-bottom: 12px;">🎁 <strong>Bono:</strong> 200 Ejercicios adicionales</li>
+                        <li style="margin-bottom: 12px;">🔄 <strong>Actualizaciones gratis</strong> de por vida</li>
+                        <li style="margin-bottom: 12px;">☝ <strong>Único pago</strong></li>
+                        <li style="margin-bottom: 12px;">💾 <strong>Descarga inmediata</strong></li>
+
+                    </ul>
+                    <div style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center; margin-bottom: 20px;">
+                        <span style="font-size: 1em; color: #94a3b8; text-decoration: line-through; display: block; margin-bottom: 5px;">Precio regular: $299 MXN</span>
+                        <span style="font-size: 2.2em; font-weight: 800; color: #e74c3c;">$149 MXN</span>
+                    </div>
+                    <p style="text-align: center; color: #64748b; font-size: 0.9em;">✅ Garantía de 7 días.</p>
+                </div>
+
+                <div class="cta-group" style="margin: 0 auto;">
+                    <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" target="_blank" class="buy-button" rel="noopener noreferrer">Comprar Ahora</a>
+                    <div class="trust-badges">
+                        <span class="trust-item">🔒 Pago Seguro por Hotmart</span>
+                        <span class="trust-item">🛡️ Garantía Total 7 días</span>
+                    </div>
+                </div>
+            </div>
         </section>
+        </section>
+
+        
 
         <!-- FAQ Section -->
         <section class="faq-section">
@@ -1498,21 +814,7 @@
                 </div>
             </div>
 
-            <div class="faq-cta">
-                <p class="faq-cta-text">¿Listo para dominar SolidWorks con planos profesionales?</p>
-                <div class="cta-group" style="margin: 0 auto;">
-                    <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" 
-                       target="_blank" 
-                       class="buy-button"
-                       rel="noopener noreferrer">
-                        Comenzar Ahora
-                    </a>
-                    <div class="trust-badges">
-                        <span class="trust-item">🔒 Pago 100% Seguro por Hotmart</span>
-                        <span class="trust-item">🛡️ Garantía Total 7 días</span>
-                    </div>
-                </div>
-            </div>
+            
         </section>
 
         <!-- Testimonials Section -->
@@ -1566,23 +868,7 @@
                 </a>
             </div>
             
-            <div class="faq-cta" style="margin-top: 40px; border-top: none;">
-                <div class="cta-group" style="margin: 0 auto;">
-                    <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" 
-                       target="_blank" 
-                       class="buy-button"
-                       rel="noopener noreferrer">
-                        Comprar Ahora
-                    </a>
-                    <div class="trust-badges">
-                        <span class="trust-item">🛡️ Compra protegida con Garantía</span>
-                    </div>
-                </div>
-            </div>
         </section>
-
-    </div>
-
     <!-- Scripts -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
     <script>
@@ -1593,82 +879,26 @@
     </script>
 
     <script>
-        // Lazy load YouTube video
-        const videoContainer = document.querySelector('.video-container');
-        if (videoContainer) {
-            videoContainer.addEventListener('click', function() {
-                const iframe = document.createElement('iframe');
-                iframe.src = 'https://www.youtube.com/embed/GD6Wpsdcq_Y?si=IDl2EVkFWI1E9K-J&autoplay=1';
-                iframe.title = 'Detalles libro SolidWorks';
-                iframe.frameBorder = '0';
-                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-                iframe.allowFullscreen = true;
-                this.innerHTML = '';
-                this.appendChild(iframe);
-            }, { once: true });
-        }
-
-        // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', function() {
-                const isExpanded = this.getAttribute('aria-expanded') === 'true';
                 const answer = this.nextElementSibling;
-                
-                document.querySelectorAll('.faq-question').forEach(otherButton => {
-                    if (otherButton !== this) {
-                        otherButton.setAttribute('aria-expanded', 'false');
-                        otherButton.nextElementSibling.classList.remove('active');
-                    }
-                });
-                
-                this.setAttribute('aria-expanded', !isExpanded);
+                this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false');
                 answer.classList.toggle('active');
             });
         });
+
+        const scrollMilestones = { 10: false, 25: false, 50: false, 75: false, 100: false };
+        window.addEventListener('scroll', function () {
+            const scrolled = window.scrollY + window.innerHeight;
+            const total = document.documentElement.scrollHeight;
+            const percent = Math.round((scrolled / total) * 100);
+            Object.keys(scrollMilestones).forEach(milestone => {
+                if (percent >= Number(milestone) && !scrollMilestones[milestone]) {
+                    scrollMilestones[milestone] = true;
+                    fbq('trackCustom', `Scroll_${milestone}%`, { content_name: 'Paquete 77 Planos PDF' });
+                }
+            });
+        }, { passive: true });
     </script>
-
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" 
-    src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v24.0&appId=392241650294847"></script>
-
-    <script>
-    // Meta CAPI - Medición granular de Scroll (Custom Events)
-    const scrollMilestones = {
-        10: false,
-        25: false,
-        50: false,
-        75: false,
-        100: false
-    };
-
-    window.addEventListener('scroll', function () {
-        // Calculamos qué porcentaje de la página ha bajado el usuario
-        const scrolled = window.scrollY + window.innerHeight;
-        const total = document.documentElement.scrollHeight;
-        const percent = Math.round((scrolled / total) * 100);
-
-        // Recorremos nuestros porcentajes objetivo
-        Object.keys(scrollMilestones).forEach(milestone => {
-            const milestoneLimit = Number(milestone);
-            
-            // Si el usuario cruzó la línea y el evento aún no se ha disparado
-            if (percent >= milestoneLimit && !scrollMilestones[milestone]) {
-                scrollMilestones[milestone] = true; // Lo bloqueamos para que no se dispare 1000 veces
-                
-                // Armamos el nombre del evento (Ej: "Scroll_25%")
-                // Ajusta este string si en tu imagen el nombre es diferente
-                const NombreDelEvento = `Scroll_${milestoneLimit}%`; 
-
-                // Disparamos el evento personalizado a Meta
-                fbq('trackCustom', NombreDelEvento, {
-                    content_name: 'Paquete 77 Planos PDF',
-                    content_category: 'SolidWorks',
-                    scroll_depth: milestoneLimit // Mandamos el dato extra por si lo ocupas en tus reglas
-                });
-            }
-        });
-    }, { passive: true });
-</script>
-
 </body>
 </html>
