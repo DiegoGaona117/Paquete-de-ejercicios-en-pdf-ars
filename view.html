@@ -1,1 +1,862 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta property="fb:app_id" content="392241650294847" />
+    <meta property="fb:admins" content="100003831708496" />
+    
+    <title>Domina SolidWorks en 30 días con 77 Planos Profesionales</title>
+    
+    <meta name="description" content="Domina SolidWorks con práctica real. Descarga el libro con 77 planos técnicos y videos explicativos paso a paso. Ideal para estudiantes y profesionales.">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+    
+    <link rel="preconnect" href="https://static.wixstatic.com">
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '373277814132384');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=373277814132384&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Libro SolidWorks +77 Planos + Videos Tutoriales">
+    <meta property="og:description" content="Aprende SolidWorks con práctica real. 77 Planos PDF + Videos explicativos paso a paso para cada pieza.">
+    <meta property="og:image" content="https://static.wixstatic.com/media/32c95b_1aff33112fd7422e88b7743fda2f6d8c~mv2.webp">
+    <meta property="og:url" content="https://cursodiegogaona.com">
+    <meta property="og:type" content="website">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            line-height: 1.6;
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-align: center;
+        }
+        
+        /* Description Section */
+        .description-section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 10px;
+            margin-bottom: 30px;
+        }
+
+        .description-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon { font-size: 2.5em; margin-bottom: 15px; }
+        .feature-title { font-size: 1.3em; font-weight: bold; margin-bottom: 12px; }
+        .feature-description { font-size: 1em; opacity: 0.95; line-height: 1.6; }
+
+        .highlight {
+            background: linear-gradient(45deg, #000000, #000000);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* Preview Section */
+        .preview-section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 25px 0px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .preview-content { max-width: 100%; margin: 0 auto; }
+
+        .preview-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 10px;
+            margin-bottom: 30px;
+        }
+
+        .faq-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        .faq-container { max-width: 900px; margin: 0 auto 30px; }
+        .faq-item { border-bottom: 2px solid #f0f0f0; margin-bottom: 10px; }
+        .faq-item:last-child { border-bottom: none; }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 20px 0;
+            text-align: left;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            transition: color 0.3s ease;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .faq-question:hover { color: #3498db; }
+        .faq-question:active { transform: scale(0.98); }
+
+        .faq-icon {
+            font-size: 1.5em;
+            font-weight: 300;
+            color: #3498db;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0;
+        }
+
+        .faq-answer.active { max-height: 500px; padding-bottom: 20px; }
+        .faq-answer p { color: #555; font-size: 1em; line-height: 1.7; margin: 0; }
+        .faq-answer strong { color: #2c3e50; }
+
+        .faq-cta { text-align: center; padding-top: 20px; border-top: 2px solid #f0f0f0; margin-top: 30px; }
+        .faq-cta-text { font-size: 1.3em; font-weight: 600; color: #2c3e50; margin-bottom: 20px; }
+
+        /* Ver más reseñas button */
+        .reviews-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #2c3e50;
+            border: 2px solid #d1d5db;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-top: 30px;
+        }
+
+        .reviews-more-btn:hover {
+            border-color: #4285F4;
+            color: #4285F4;
+            box-shadow: 0 4px 16px rgba(66, 133, 244, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .reviews-more-btn:active { transform: scale(0.98); }
+        .google-icon { width: 20px; height: 20px; flex-shrink: 0; }
+
+        .buy-button {
+            background: linear-gradient(45deg, #FF1717, #e74c3c);
+            color: white;
+            border: none;
+            padding: 16px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            min-height: 48px;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            position: relative;
+            overflow: hidden;
+            width: 350px;
+            margin: auto;
+        }
+
+        .buy-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 23, 23, 0.3);
+        }
+
+        .buy-button:active { transform: scale(0.98); }
+
+        .trust-badges {
+            text-align: center;
+            font-size: 0.75em;
+            color: #555;
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 4px; 
+            background: rgba(0,0,0,0.04);
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* Bonus Section */
+        .bonus-section {
+            background: white; 
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 10px;
+            margin-bottom: 30px;
+        }
+        
+        .bonus-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 30px; }
+        
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .bonus-card {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border: 2px solid #22c55e;
+            border-radius: 15px;
+            padding: 25px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .bonus-card:hover { transform: translateY(-5px); }
+
+        .bonus-badge {
+            position: absolute;
+            top: -14px;
+            left: 20px;
+            background: #22c55e;
+            color: white;
+            font-size: 0.8em;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .bonus-icon { font-size: 2.5em; margin-bottom: 10px; display: block; }
+        .bonus-card h3 { font-size: 1.2em; color: #15803d; margin-bottom: 8px; font-weight: 700; }
+        .bonus-card p { font-size: 1em; color: #166534; line-height: 1.5; margin: 0; }
+
+        /* Learning Section */
+        .learning-section {
+            background: white; 
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 10px;
+            margin-bottom: 30px;
+        }
+
+        .learning-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 30px; }
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .learning-item {
+            display: flex;
+            align-items: flex-start;
+            background: #ffffff;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .learning-check { font-size: 1.5em; color: #27ae60; margin-right: 10px; line-height: 1; font-weight: bold; flex-shrink: 0; }
+        .learning-item p { font-size: 1em; color: #333; margin: 0; line-height: 1.5; }
+
+        /* Audience Section */
+        .audience-section {
+            background: white; 
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 15px;
+            margin-bottom: 30px;
+        }
+
+        .audience-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 30px; }
+
+        /* Results */
+        .results-section { background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 30px 10px; margin-bottom: 30px; }
+        .results-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 40px; }
+        .results-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 900px; margin: 0 auto; }
+        .result-card { background: #f8f8ff; padding: 30px; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .result-icon { font-size: 3em; margin-bottom: 15px; }
+        .result-card h3 { font-size: 1.4em; color: #2c3e50; margin-bottom: 15px; }
+        .result-card p { color: #555; line-height: 1.6; }
+
+        /* Transformation Section */
+        .transformation-section { background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 40px 5px; margin-bottom: 30px; position: relative; overflow: hidden; }
+        .transformation-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #e74c3c, #3498db, #2ecc71); }
+        .transformation-section h2 { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 40px; line-height: 1.3; }
+        .transformation-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 1000px; margin: 0 auto; }
+        .before, .after { padding: 30px 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); position: relative; transition: transform 0.3s ease; }
+        .before { background: linear-gradient(135deg, #fff5f5 0%, #ffecec 100%); border: 2px solid #e74c3c; }
+        .after { background: linear-gradient(135deg, #f0fff4 0%, #e6ffe6 100%); border: 2px solid #27ae60; }
+        .before h3, .after h3 { font-size: 1.5em; font-weight: 700; margin-bottom: 20px; text-align: center; }
+        .before h3 { color: #c0392b; }
+        .after h3 { color: #27ae60; }
+        .before ul, .after ul { list-style: none; padding: 0; }
+        .before li, .after li { padding: 12px 15px; margin-bottom: 10px; border-radius: 8px; font-size: 1.1em; line-height: 1.5; }
+        .before li { background: rgba(231, 76, 60, 0.08); border-left: 4px solid #e74c3c; }
+        .after li { background: rgba(39, 174, 96, 0.08); border-left: 4px solid #27ae60; }
+
+        /* Testimonials */
+        .testimonials-section { background: #f0f4ff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 30px 10px; margin-bottom: 30px; }
+        .testimonials-title { font-size: 1.8em; font-weight: 700; color: #2c3e50; text-align: center; margin-bottom: 40px; }
+        .testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width: 900px; margin: 0 auto; }
+        .testimonial-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 5px solid #667eea; position: relative; }
+        .testimonial-text { font-size: 1.1em; font-style: italic; color: #444; margin-bottom: 20px; line-height: 1.6; }
+        .author-details p { margin: 0; font-weight: bold; color: #2c3e50; font-size: 1em; }
+        .rating { color: #f59e0b; font-size: 1.4em; margin-bottom: 12px; letter-spacing: 2px; }
+
+        /* Desktop Optimizations */
+        @media (min-width: 769px) {
+            .hero-content h1 { font-size: 2.5em; }
+            .description-section { padding: 40px; }
+            .description-title { font-size: 2em; }
+            .features-grid { grid-template-columns: repeat(3, 1fr); gap: 30px; }
+            .bonus-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+            .learning-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 30px; }
+            .results-grid { grid-template-columns: repeat(3, 1fr); }
+            .transformation-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+        }
+    </style>
+</head>
+
+<body>
+        
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content" style="max-width: 850px; margin: 0 auto;">
+                <h1 style="text-align: center; margin-bottom: 15px;">🚀 Domina SolidWorks y arma tu portafolio sin perder horas buscando tutoriales</h1>
+                
+                <div style="font-size: 1.1em; color: #4b5563; line-height: 1.6; max-width: 750px; margin: 25px auto 0 auto; text-align: left; background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: #2c3e50;">📦 ¿Qué es exactamente?</strong><br>
+                        Un paquete de práctica intensiva con 77 planos técnicos industriales en PDF interactivo y sus respectivos 77 videos tutoriales explicados paso a paso.
+                    </p>
+                    <p style="margin: 0;">
+                        <strong style="color: #2c3e50;">🎯 ¿Para qué te va a servir?</strong><br>
+                        Para eliminar la frustración de perder tiempo buscando ejercicios sueltos o planos borrosos en internet. Te da una ruta directa y estructurada para dominar la lectura de documentación técnica real, ganar velocidad modelando y tener las piezas listas para armar tu portafolio profesional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Description Section -->
+        <section class="description-section">
+            <h2 class="description-title">🔥 ¿Aprendiendo SolidWorks pero sin planos REALES para Practicar?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <div class="feature-title">Paquete Completo PDF</div>
+                    <div class="feature-description">
+                        <span class="highlight">77 planos</span> técnicos profesionales desde piezas simples hasta diseños complejos industriales
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎥</div>
+                    <div class="feature-title">Videos Explicativos</div>
+                    <div class="feature-description">
+                        <span class="highlight">Cada plano incluye su video tutorial</span> paso a paso en alta definición - nunca más te quedarás trabado
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏭</div>
+                    <div class="feature-title">Piezas Industriales</div>
+                    <div class="feature-description">
+                        Todas las medidas y especificaciones completas - <span class="highlight">diseños REALES</span> que se usan en la industria
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Section -->
+        <section class="learning-section">
+            <h2 class="learning-title">🎓 Lo que aprenderás</h2>
+            
+            <div class="learning-grid">
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Modelado de <strong>piezas mecánicas individuales</strong> desde básico a avanzado</p>
+                </div>
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Interpretación de <strong>planos técnicos profesionales</strong> con todas sus especificaciones</p>
+                </div>
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Técnicas y herramientas <strong>usadas en la industria real</strong></p>
+                </div>
+                <div class="learning-item">
+                    <span class="learning-check">✅</span>
+                    <p>Progresión estructurada: <strong>empieza con piezas simples, termina modelando piezas complejas</strong></p>
+                </div>
+                <div class="learning-item" style="grid-column: 1 / -1; max-width: 440px; margin: 0 auto;">
+                    <span class="learning-check">✅</span>
+                    <p>Geometrías avanzadas: <strong>redondeos, chaflanes, cortes complejos, barridos, simetrías, matrices</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preview Section -->
+        <section class="preview-section">
+            <h2 class="preview-title">Planos en PDF que contiene este paquete</h2>
+            <div class="preview-content">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_68cf75ac2a4f41ffaab41803899d8ff2~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_4b8f3c9a162247aeba41ea11c26bd901~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy">
+                </picture>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_3c1f1e237b5240c5bc2b096821ccb3e6~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_2756659dba344b2fa7ef2f2d01101c15~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy">
+                </picture>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="https://static.wixstatic.com/media/32c95b_cd14b0f19dfc43fb8edc22ca633c4bce~mv2.webp">
+                    <img src="https://static.wixstatic.com/media/32c95b_871f6733582c4fc7a2bd8cbcc7f21911~mv2.webp" alt="Vista previa planos SolidWorks" class="preview-image" loading="lazy">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Bonus Section -->
+        <section class="bonus-section">
+            <h2 class="bonus-title">🎁 Bonos exclusivos al inscribirte hoy</h2>
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <span class="bonus-badge">Bono #1</span>
+                    <span class="bonus-icon">📄</span>
+                    <h3>200 Planos de Ejercicios Extra</h3>
+                    <p>Un segundo paquete en PDF con 200 piezas adicionales de distintos niveles para seguir puliendo tu técnica.</p>
+                </div>
+                <div class="bonus-card">
+                    <span class="bonus-badge">Bono #2</span>
+                    <span class="bonus-icon">🔄</span>
+                    <h3>Actualizaciones de por vida</h3>
+                    <p>Tendrás acceso gratuito y de por vida a todos los nuevos planos y videos que se sigan agregando al paquete.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Section -->
+        <section class="audience-section">
+            <h2 class="audience-title">¿Este paquete es para ti?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; max-width: 860px; margin: 0 auto;">
+                <div style="background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: #e6fff3; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2em;">🎓</div>
+                    <div>
+                        <p style="font-weight: 700; color: #2c3e50; margin: 0 0 6px;">Estudiantes de ingeniería y diseño industrial</p>
+                        <p style="font-size: 0.95em; color: #555; line-height: 1.5; margin: 0;">Que necesitan pasar de la teoría a la práctica con proyectos reales que incluir en sus trabajos.</p>
+                    </div>
+                </div>
+                <div style="background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: #e6fff3; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2em;">🔧</div>
+                    <div>
+                        <p style="font-weight: 700; color: #2c3e50; margin: 0 0 6px;">Autodidactas y técnicos</p>
+                        <p style="font-size: 0.95em; color: #555; line-height: 1.5; margin: 0;">Que ya conocen las herramientas básicas pero se sienten estancados y necesitan una ruta clara para avanzar de nivel.</p>
+                    </div>
+                </div>
+                <div style="background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: #e6fff3; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2em;">⏱️</div>
+                    <div>
+                        <p style="font-weight: 700; color: #2c3e50; margin: 0 0 6px;">Cualquier usuario que valore su tiempo</p>
+                        <p style="font-size: 0.95em; color: #555; line-height: 1.5; margin: 0;">Que prefiera tener 77 planos de alta calidad organizados, en lugar de perder horas buscando tutoriales incompletos.</p>
+                    </div>
+                </div>
+                <div style="background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: #e6fff3; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2em;">💼</div>
+                    <div>
+                        <p style="font-weight: 700; color: #2c3e50; margin: 0 0 6px;">Futuros profesionales</p>
+                        <p style="font-size: 0.95em; color: #555; line-height: 1.5; margin: 0;">Que quieran construir un portafolio sólido de modelado industrial con piezas mecánicas de nivel profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section">
+            <h2 class="results-title">🚀 Resultados que han logrado nuestros estudiantes</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">💼</div>
+                    <h3>Consiguieron trabajo</h3>
+                    <p>Muchos de nuestros estudiantes consiguieron empleo en el sector después de completar el curso.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">📈</div>
+                    <h3>Mejoraron su portafolio</h3>
+                    <p>Logran armar un portafolio profesional con los planos reales.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">⏱️</div>
+                    <h3>Ahorraron tiempo</h3>
+                    <p>Reportan ahorrar meses de aprendizaje autodidacta gracias a la práctica guiada.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transformation Section -->
+        <section class="transformation-section">
+            <h2>Deja de perder tiempo buscando tutoriales sueltos y construye un portafolio real</h2>
+            <div class="transformation-grid">
+                <div class="before">
+                    <h3>ANTES:</h3>
+                    <ul>
+                        <li>❌ Pierdes horas buscando ejercicios decentes en internet.</li>
+                        <li>❌ Te cuesta interpretar documentación compleja.</li>
+                        <li>❌ Si tienes dudas o el software hace algo raro, hasta ahí llegaste.</li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <h3>DESPUÉS:</h3>
+                    <ul>
+                        <li>✅ Tienes 77 proyectos reales listos para tu portafolio.</li>
+                        <li>✅ Interpretas planos profesionales con confianza.</li>
+                        <li>✅ Aprendes con guía paso a paso en video.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <p class="faq-cta-text">¿Listo para dominar SolidWorks con planos profesionales?</p>
+                <div style="background: #ffffff; border: 2px solid #e2e8f0; border-radius: 16px; padding: 30px; max-width: 500px; margin: 0 auto 30px auto; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: left;">
+                    <h3 style="text-align: center; font-size: 1.5em; color: #2c3e50; margin-bottom: 20px; border-bottom: 2px dashed #e2e8f0; padding-bottom: 15px;">📦 Resumen de tu pedido</h3>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="margin-bottom: 12px;">📄 <strong>77 Planos Industriales</strong> en PDF</li>
+                        <li style="margin-bottom: 12px;">🎬 <strong>77 Videos Tutoriales</strong> paso a paso</li>
+                        <li style="margin-bottom: 12px;">🎁 <strong>Bono:</strong> 200 Ejercicios adicionales</li>
+                        <li style="margin-bottom: 12px;">🔄 <strong>Actualizaciones gratis</strong> de por vida</li>
+                        <li style="margin-bottom: 12px;">☝ <strong>Único pago</strong></li>
+                        <li style="margin-bottom: 12px;">💾 <strong>Descarga inmediata</strong></li>
+                    </ul>
+                    <div style="background: #f8fafc; padding: 15px; border-radius: 12px; text-align: center; margin-bottom: 20px;">
+                        <span style="font-size: 1em; color: #94a3b8; text-decoration: line-through; display: block; margin-bottom: 5px;">Precio regular: $299 MXN</span>
+                        <span style="font-size: 2.2em; font-weight: 800; color: #e74c3c;">$149 MXN</span>
+                    </div>
+                    <p style="text-align: center; color: #64748b; font-size: 0.9em;">✅ Garantía de 7 días.</p>
+                </div>
+
+                <div class="cta-group" style="margin: 0 auto;">
+                    <a href="https://pay.hotmart.com/P102008003G?off=o9ma7ahc" target="_blank" class="buy-button" rel="noopener noreferrer">Comprar Ahora</a>
+                    <div class="trust-badges">
+                        <span class="trust-item">🔒 Pago Seguro por Hotmart</span>
+                        <span class="trust-item">🛡️ Garantía Total 7 días</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="faq-title">❓ Preguntas Frecuentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cada plano incluye su video tutorial?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>¡Sí!</strong> Cada uno de los 77 planos incluye su video explicativo paso a paso en español. Nunca te quedarás trabado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cómo recibo el producto después de comprar?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La compra se realiza a través de <strong>Hotmart</strong> (plataforma segura). Una vez que completes el pago, recibirás un correo electrónico con las instrucciones para crear tu cuenta y acceder inmediatamente a todo el contenido.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Ofrecen garantía de devolución?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Sí, tienes 7 días de garantía.</strong> Si el contenido no cumple tus expectativas, puedes solicitar el reembolso completo dentro de los primeros 7 días después de tu compra.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Funciona si tengo otra versión de SolidWorks (2018, 2020, 2025)?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>¡Sí, funciona al 100%!</strong> El curso enseña modelado profesional y lectura de planos, habilidades que son universales. No importa si tienes una versión antigua o la más reciente, podrás seguir todos los ejercicios sin ningún problema. <strong>La geometría no cambia.</strong></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Qué archivos incluye el paquete?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El paquete contiene <strong>77 archivos PDF de planos técnicos profesionales</strong> + enlaces directos para acceder al video tutorial de cada pieza.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Los videos están en español o inglés?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Todos los videos están en español</strong>, con explicaciones claras y detalladas para que puedas seguir cada paso sin problemas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Cuántos videos incluye y habrá más contenido en el futuro?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Actualmente incluye <strong>77 videos tutoriales</strong>. Lo mejor es que <strong>constantemente se agregan nuevos planos y videos</strong>, y todas las actualizaciones futuras son <strong>completamente GRATIS</strong> para quienes ya compraron.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>¿Las actualizaciones futuras tienen costo adicional?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>No. Todas las actualizaciones son gratis para siempre.</strong> Pago único y acceso de por vida a todo el contenido nuevo que se agregue.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <h2 class="testimonials-title">✨ Lo que dicen nuestros estudiantes</h2>
+
+            <div class="testimonials-grid" style="grid-template-columns: 1fr; max-width: 650px; margin: 0 auto;">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <span style="font-size:0.75em; font-weight:800; color:#2c3e50; vertical-align:middle; margin-right:6px;">5.0</span>★★★★★
+                    </div>
+                    <p class="testimonial-text">
+                        "Esto es lo que buscaba, directo y al grano, ya solo escojo el plano que quiero y si tengo dudas con un clic lo veo 👍"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-details">
+                            <p>Rodrigo T.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <span style="font-size:0.75em; font-weight:800; color:#2c3e50; vertical-align:middle; margin-right:6px;">5.0</span>★★★★★
+                    </div>
+                    <p class="testimonial-text">
+                        "Buen Curso, es perfecto para iniciar y además con el aprendizaje obtenido puedes realizar piezas con un grado de complejidad alto."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-details">
+                            <p>Tyut 3222</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="https://www.google.com/maps/place/Curso+Diego+Gaona/@23.2124756,-113.2621557,5z/data=!4m8!3m7!1s0x842c7f134b6368ff:0xd595cfaec1c632b1!8m2!3d23.5541269!4d-102.6205!9m1!1b1!16s%2Fg%2F11yv9vn59_?hl=es-419&entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="reviews-more-btn">
+                    <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                        <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                        <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                        <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                        <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                        <path fill="none" d="M0 0h48v48H0z"/>
+                    </svg>
+                    Ver más reseñas en Google
+                </a>
+            </div>
+        </section>
+
+    </div><!-- /container -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RN68VLQLTW');
+    </script>
+
+    <script>
+        // ─── FAQ Accordion ───────────────────────────────────────────
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false');
+                answer.classList.toggle('active');
+            });
+        });
+
+        // ─── Scroll Milestones ───────────────────────────────────────
+        const scrollMilestones = { 10: false, 25: false, 50: false, 75: false, 100: false };
+        window.addEventListener('scroll', function () {
+            const scrolled = window.scrollY + window.innerHeight;
+            const total = document.documentElement.scrollHeight;
+            const percent = Math.round((scrolled / total) * 100);
+            Object.keys(scrollMilestones).forEach(milestone => {
+                if (percent >= Number(milestone) && !scrollMilestones[milestone]) {
+                    scrollMilestones[milestone] = true;
+                    fbq('trackCustom', `Scroll_${milestone}%`, { content_name: 'Paquete 77 Planos PDF' });
+                }
+            });
+        }, { passive: true });
+
+        
+    </script>
+
+    <!-- ─── LocalStorage: registro de visita ─────────────────────── -->
+<script>
+    (function() {
+        const KEY = 'fb_visita';
+        
+        // Solo guardar si no existe aún (primera visita)
+        if (!localStorage.getItem(KEY)) {
+            const datos = {
+                fecha: new Date().toISOString(),
+                url:   window.location.href,
+                ref:   document.referrer || 'directo'
+            };
+            localStorage.setItem(KEY, 'ok');
+        }
+
+        // Función de consulta disponible globalmente
+        window.leerVisita = function() {
+            const raw = localStorage.getItem(KEY);
+            return raw ? JSON.parse(raw) : null;
+        };
+    })();
+</script>
+
+</body>
+</html>
