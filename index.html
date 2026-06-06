@@ -909,7 +909,8 @@
                 fbc: getCookie('_fbc'),
                 user_agent: navigator.userAgent,
                 fuente: 'landing-77 planos-pdf',   // ← diferente al otro landing
-                trafico: 'entrada'
+                trafico: 'entrada',
+                referrer: document.referrer || 'directo'   // ← agregar
             })
         });
     }
