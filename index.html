@@ -859,12 +859,61 @@
             localStorage.setItem(KEY, 'ok');
         }
 
-        // Función de consulta disponible globalmente
         window.leerVisita = function() {
             const raw = localStorage.getItem(KEY);
             return raw ? JSON.parse(raw) : null;
         };
     })();
+
+    // ─── Order Code + PageView Tracking ──────────────────────────
+    const WEBHOOK_GS = 'https://script.google.com/macros/s/AKfycbyXoFp_WCJqRxh4WhMsSWifzbGZK0vO1DQVlV5de3srP2h36isCf28VMoaSzMLGKBsW/exec';
+
+    function getOrCreateOrderCode() {
+        let code = localStorage.getItem('order_code');
+        if (!code) {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let random = '';
+            for (let i = 0; i < 5; i++) {
+                random += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            code = 'PL-' + random;
+            localStorage.setItem('order_code', code);
+        }
+        return code;
+    }
+
+    function getCookie(name) {
+        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        return match ? match[2] : '';
+    }
+
+    async function trackPageView() {
+        let ip = '', pais = '';
+        try {
+            const geo = await fetch('https://ipapi.co/json/');
+            const geoData = await geo.json();
+            ip = geoData.ip;
+            pais = geoData.country_name;
+        } catch(e) {}
+
+        fetch(WEBHOOK_GS, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain' },
+            body: JSON.stringify({
+                tipo: 'pageview',
+                timestamp: new Date().toISOString(),
+                ip,
+                pais,
+                fbp: getCookie('_fbp'),
+                fbc: getCookie('_fbc'),
+                user_agent: navigator.userAgent,
+                fuente: 'landing-77 planos-pdf'   // ← diferente al otro landing
+            })
+        });
+    }
+
+    const ORDER_CODE = getOrCreateOrderCode();
+    trackPageView();
 </script>
 
 
