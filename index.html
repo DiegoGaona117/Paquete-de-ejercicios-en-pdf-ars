@@ -818,105 +818,94 @@
       gtag('config', 'G-RN68VLQLTW');
     </script>
 
-    <script>
-        // ─── FAQ Accordion ───────────────────────────────────────────
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', function() {
-                const answer = this.nextElementSibling;
-                this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false');
-                answer.classList.toggle('active');
-            });
-        });
-
-        // ─── Scroll Milestones ───────────────────────────────────────
-        const scrollMilestones = { 10: false, 25: false, 50: false, 75: false, 100: false };
-        window.addEventListener('scroll', function () {
-            const scrolled = window.scrollY + window.innerHeight;
-            const total = document.documentElement.scrollHeight;
-            const percent = Math.round((scrolled / total) * 100);
-            Object.keys(scrollMilestones).forEach(milestone => {
-                if (percent >= Number(milestone) && !scrollMilestones[milestone]) {
-                    scrollMilestones[milestone] = true;
-                    fbq('trackCustom', `Scroll_${milestone}%`, { content_name: 'Paquete 77 Planos PDF' });
-                }
-            });
-        }, { passive: true });
-
-        
-    </script>
-    <!-- ─── LocalStorage: registro de visita ─────────────────────── -->
+    <!-- ─── FAQ Accordion ───────────────────────────────────────────── -->
 <script>
-    (function() {
-        const KEY = 'fb_visita';
-        
-        // Solo guardar si no existe aún (primera visita)
-        if (!localStorage.getItem(KEY)) {
-            const datos = {
-                fecha: new Date().toISOString(),
-                url:   window.location.href,
-                ref:   document.referrer || 'directo'
-            };
-            localStorage.setItem(KEY, 'ok');
-        }
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', function() {
+      const answer = this.nextElementSibling;
+      this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false');
+      answer.classList.toggle('active');
+    });
+  });
 
-        window.leerVisita = function() {
-            const raw = localStorage.getItem(KEY);
-            return raw ? JSON.parse(raw) : null;
-        };
-    })();
+  /* ── Scroll Milestones ── */
+  const scrollMilestones = { 10: false, 25: false, 50: false, 75: false, 100: false };
+  window.addEventListener('scroll', function () {
+    const scrolled = window.scrollY + window.innerHeight;
+    const total = document.documentElement.scrollHeight;
+    const percent = Math.round((scrolled / total) * 100);
+    Object.keys(scrollMilestones).forEach(milestone => {
+      if (percent >= Number(milestone) && !scrollMilestones[milestone]) {
+        scrollMilestones[milestone] = true;
+        if (typeof fbq !== 'undefined') fbq('trackCustom', `Scroll_${milestone}%`, { content_name: 'Paquete 77 Planos PDF' });
+      }
+    });
+  }, { passive: true });
 
-    // ─── Order Code + PageView Tracking ──────────────────────────
-    const WEBHOOK_GS = 'https://script.google.com/macros/s/AKfycbyXoFp_WCJqRxh4WhMsSWifzbGZK0vO1DQVlV5de3srP2h36isCf28VMoaSzMLGKBsW/exec';
+  /* ── SETEA KEY DE ESTE LANDING (va primero) ── */
+  localStorage.setItem('fb_visita', 'ok');
 
-    function getOrCreateOrderCode() {
-        let code = localStorage.getItem('order_code');
-        if (!code) {
-            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-            let random = '';
-            for (let i = 0; i < 5; i++) {
-                random += chars.charAt(Math.floor(Math.random() * chars.length));
-            }
-            code = 'PL-' + random;
-            localStorage.setItem('order_code', code);
-        }
-        return code;
+  /* ── ORDER CODE ── */
+  function getOrCreateOrderCode() {
+    let code = localStorage.getItem('order_code');
+    if (!code) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      let random = '';
+      for (let i = 0; i < 5; i++) {
+        random += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      code = 'PL-' + random;
+      localStorage.setItem('order_code', code);
     }
+    return code;
+  }
 
-    function getCookie(name) {
-        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-        return match ? match[2] : '';
-    }
+  const ORDER_CODE = getOrCreateOrderCode();
 
-    async function trackPageView() {
-        let ip = '', pais = '';
-        try {
-            const geo = await fetch('https://ipapi.co/json/');
-            const geoData = await geo.json();
-            ip = geoData.ip;
-            pais = geoData.country_name;
-        } catch(e) {}
+  const WEBHOOK_GS = 'https://script.google.com/macros/s/AKfycbyXoFp_WCJqRxh4WhMsSWifzbGZK0vO1DQVlV5de3srP2h36isCf28VMoaSzMLGKBsW/exec';
 
-        fetch(WEBHOOK_GS, {
-            method: 'POST',
-            headers: { 'Content-Type': 'text/plain' },
-            body: JSON.stringify({
-                tipo: 'pageview',
-                order_code: ORDER_CODE,
-                timestamp: new Date().toISOString(),
-                ip,
-                pais,
-                fbp: getCookie('_fbp'),
-                fbc: getCookie('_fbc'),
-                user_agent: navigator.userAgent,
-                fuente: 'landing-77 planos-pdf',   // ← diferente al otro landing
-                trafico: 'entrada',
-                referrer: document.referrer || 'directo'   // ← agregar
-            })
-        });
-    }
+  function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : '';
+  }
 
-    const ORDER_CODE = getOrCreateOrderCode();
-    trackPageView();
+  /* ── TRACKING GAS — solo si ya visitó el landing de curso ── */
+  async function trackPageView() {
+    if (localStorage.getItem('fb_visita2') !== 'ok') return;
+
+    let ip = '', pais = '';
+    try {
+      const geo = await fetch('https://ipapi.co/json/');
+      const geoData = await geo.json();
+      ip = geoData.ip;
+      pais = geoData.country_name;
+    } catch(e) {}
+
+    fetch(WEBHOOK_GS, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({
+        tipo: 'pageview',
+        order_code: ORDER_CODE,
+        timestamp: new Date().toISOString(),
+        ip,
+        pais,
+        fbp: getCookie('_fbp'),
+        fbc: getCookie('_fbc'),
+        user_agent: navigator.userAgent,
+        fuente: 'landing-77-planos-pdf',
+        trafico: 'retargeting',
+        referrer: document.referrer || 'directo'
+      })
+    });
+  }
+
+  trackPageView();
+
+  /* ── META PIXEL — ViewContent si ya visitó el landing de curso ── */
+  if (localStorage.getItem('fb_visita2') === 'ok') {
+    if (typeof fbq !== 'undefined') fbq('track', 'ViewContent');
+  }
 </script>
 
 
