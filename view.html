@@ -36,6 +36,16 @@
     /></noscript>
     <!-- End Facebook Pixel Code -->
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RN68VLQLTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RN68VLQLTW');
+</script>
+
     <!-- Open Graph -->
     <meta property="og:title" content="Libro SolidWorks +77 Planos + Videos Tutoriales">
     <meta property="og:description" content="Aprende SolidWorks con práctica real. 77 Planos PDF + Videos explicativos paso a paso para cada pieza.">
@@ -656,6 +666,12 @@
                         <span class="trust-item">🛡️ Garantía Total 7 días</span>
                     </div>
                 </div>
+                <p style="text-align: center; margin-top: 18px; font-size: 0.95em; color: #64748b;">
+  ¿Tienes dudas antes de comprar?
+  <a href="#" id="open-chat-link" style="color: #3498db; font-weight: 600; text-decoration: none;">
+    💬 Pregunta aquí
+  </a>
+</p>
             </div>
         </section>
 
@@ -808,54 +824,107 @@
       gtag('config', 'G-RN68VLQLTW');
     </script>
 
-    <script>
-        // ─── FAQ Accordion ───────────────────────────────────────────
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', function() {
-                const answer = this.nextElementSibling;
-                this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false');
-                answer.classList.toggle('active');
-            });
-        });
-
-        // ─── Scroll Milestones ───────────────────────────────────────
-        const scrollMilestones = { 10: false, 25: false, 50: false, 75: false, 100: false };
-        window.addEventListener('scroll', function () {
-            const scrolled = window.scrollY + window.innerHeight;
-            const total = document.documentElement.scrollHeight;
-            const percent = Math.round((scrolled / total) * 100);
-            Object.keys(scrollMilestones).forEach(milestone => {
-                if (percent >= Number(milestone) && !scrollMilestones[milestone]) {
-                    scrollMilestones[milestone] = true;
-                    fbq('trackCustom', `Scroll_${milestone}%`, { content_name: 'Paquete 77 Planos PDF' });
-                }
-            });
-        }, { passive: true });
-
-        
-    </script>
-
-    <!-- ─── LocalStorage: registro de visita ─────────────────────── -->
+    <!-- ─── FAQ Accordion ───────────────────────────────────────────── -->
 <script>
-    (function() {
-        const KEY = 'fb_visita';
-        
-        // Solo guardar si no existe aún (primera visita)
-        if (!localStorage.getItem(KEY)) {
-            const datos = {
-                fecha: new Date().toISOString(),
-                url:   window.location.href,
-                ref:   document.referrer || 'directo'
-            };
-            localStorage.setItem(KEY, 'ok');
-        }
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', function() {
+      const answer = this.nextElementSibling;
+      this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false');
+      answer.classList.toggle('active');
+    });
+  });
 
-        // Función de consulta disponible globalmente
-        window.leerVisita = function() {
-            const raw = localStorage.getItem(KEY);
-            return raw ? JSON.parse(raw) : null;
-        };
-    })();
+  /* ── Scroll Milestones ── */
+  const scrollMilestones = { 10: false, 25: false, 50: false, 75: false, 100: false };
+  window.addEventListener('scroll', function () {
+    const scrolled = window.scrollY + window.innerHeight;
+    const total = document.documentElement.scrollHeight;
+    const percent = Math.round((scrolled / total) * 100);
+    Object.keys(scrollMilestones).forEach(milestone => {
+      if (percent >= Number(milestone) && !scrollMilestones[milestone]) {
+        scrollMilestones[milestone] = true;
+        if (typeof fbq !== 'undefined') fbq('trackCustom', `Scroll_${milestone}%`, { content_name: 'Paquete 77 Planos PDF' });
+      }
+    });
+  }, { passive: true });
+
+  /* ── SETEA KEY DE ESTE LANDING (va primero) ── */
+  localStorage.setItem('fb_visita', 'ok');
+
+  /* ── ORDER CODE ── */
+  function getOrCreateOrderCode() {
+    let code = localStorage.getItem('order_code');
+    if (!code) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      let random = '';
+      for (let i = 0; i < 5; i++) {
+        random += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      code = 'PL-' + random;
+      localStorage.setItem('order_code', code);
+    }
+    return code;
+  }
+
+  const ORDER_CODE = getOrCreateOrderCode();
+
+  const WEBHOOK_GS = 'https://script.google.com/macros/s/AKfycbyXoFp_WCJqRxh4WhMsSWifzbGZK0vO1DQVlV5de3srP2h36isCf28VMoaSzMLGKBsW/exec';
+
+  function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : '';
+  }
+
+  /* ── TRACKING GAS — solo si ya visitó el landing de curso ── */
+  async function trackPageView() {
+    if (localStorage.getItem('fb_visita2') !== 'ok') return;
+
+    let ip = '', pais = '';
+    try {
+      const geo = await fetch('https://ipapi.co/json/');
+      const geoData = await geo.json();
+      ip = geoData.ip;
+      pais = geoData.country_name;
+    } catch(e) {}
+
+    fetch(WEBHOOK_GS, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({
+        tipo: 'pageview',
+        order_code: ORDER_CODE,
+        timestamp: new Date().toISOString(),
+        ip,
+        pais,
+        fbp: getCookie('_fbp'),
+        fbc: getCookie('_fbc'),
+        user_agent: navigator.userAgent,
+        fuente: 'landing-77-planos-pdf',
+        trafico: 'retargeting2',
+        referrer: document.referrer || 'directo'
+      })
+    });
+  }
+
+  trackPageView();
+
+  /* ── META PIXEL — ViewContent si ya visitó el landing de curso ── */
+  if (localStorage.getItem('fb_visita2') === 'ok') {
+    if (typeof fbq !== 'undefined') fbq('track', 'ViewContent');
+  }
+
+  /* ── Abrir chat desde link debajo del botón ── */
+  document.getElementById('open-chat-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('solidworks-chat-button').click();
+  });
+</script>
+<script
+  src="https://asistente-solidworks.onrender.com/static/chat-widget.js"
+  data-title="Asistente Virtual"
+  data-label="Pregunta aquí"
+  data-label-hide-ms="6000"
+  data-initial-message="Hola, puedo ayudarte con dudas sobre el paquete de 77 planos y videos de SolidWorks.">
 </script>
 
 </body>
